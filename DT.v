@@ -16,9 +16,11 @@ reg [6:0] x,y;
 reg [3:0] current_state;
 reg [3:0] next_state;
 reg [4:0] counter;
-reg [15:0] dataTemp0,dataTemp1;
+
 //state
-parameter IDLE = 4'd0;
+parameter INIT = 4'd0;
+parameter READ_INIT = 4'd10;
+parameter WRITE_INIT = 4'd11;
 parameter READ_F_0 = 4'd1; //READ_FORWARD
 parameter READ_F_1 = 4'd2;
 parameter FORWARD = 4'd3;
@@ -52,12 +54,13 @@ begin
 	if(!reset) x <= 7'd0;
 	else
 	begin
-		if(current_state == WRITE_F) 
+		if(current_state == WRITE_INIT && counter == 5'd16) 
 		begin
 			if(x == 7'd7) x <= 7'd0;
 			else x <= x + 7'd1;
 		end
 	end
+
 end
 
 always@(posedge clk or negedge reset)
@@ -65,9 +68,10 @@ begin
 	if(!reset) y <= 7'd0;
 	else
 	begin
-		if(current_state == WRITE_F)
+		if(current_state == WRITE_INIT && counter == 5'd16)
 		begin
-			if(x == 7'd7) y <= y + 7'd1;
+			if(x == 7'd7 && y== 7'd127) y <= 7'd1;
+			else if(x == 7'd7) y <= y + 7'd1;
 		end
 	end
 end
@@ -76,14 +80,15 @@ end
 always@(posedge clk or negedge reset)
 begin
 	if(!reset) counter <= 5'd0;
-	else if(current_state == FORWARD) counter <= counter + 1'd1;
+	else if(counter == 5'd16) counter <= 5'd0;
+	else if(current_state == WRITE_INIT) counter <= counter + 1'd1;
 	//else counter <= 5'd0;
 end
 
 //state switch
 always@(posedge clk or negedge reset)
 begin
-	if(!reset) current_state <= READ_F_0;
+	if(!reset) current_state <= INIT;
 	else current_state <= next_state;
 end
 
@@ -91,9 +96,22 @@ end
 always@(*)
 begin
 	case(current_state)
-	IDLE:
+	INIT:
 	begin
-	
+		next_state = READ_INIT;
+	end
+	READ_INIT:
+	begin
+		next_state = WRITE_INIT;
+	end
+	WRITE_INIT:
+	begin
+		if(counter == 5'd16)
+		begin
+			if(x == 7'd7 && y == 7'd127) next_state = READ_F_0;
+			else next_state = READ_INIT;
+		end
+		else next_state = WRITE_INIT;
 	end
 	READ_F_0:
 	begin
@@ -135,7 +153,7 @@ begin
 	begin
 		next_state = FINISH;
 	end
-	default: next_state = IDLE;
+	default: next_state = INIT;
 	endcase
 end
 //ouput logic
@@ -144,7 +162,7 @@ end
 always@(posedge clk or negedge reset)
 begin
 	if(!reset) sti_rd <= 1'd0;
-	else if(next_state == READ_F_0 || next_state == READ_F_1) sti_rd <= 1'd1;
+	else if(next_state == READ_INIT) sti_rd <= 1'd1;
 	else sti_rd <= 1'd0;
 end
 
@@ -152,6 +170,7 @@ end
 always@(posedge clk or negedge reset)
 begin
 	if(!reset) res_wr <= 1'd0;
+	else if(current_state == WRITE_INIT && counter >= 5'd1) res_wr <= 1'd1;
 	else if(next_state == WRITE_F || next_state == WRITE_B) res_wr <= 1'd1;
 	else res_wr <= 1'd0;
 end
@@ -160,7 +179,8 @@ end
 always@(posedge clk or negedge reset)
 begin
 	if(!reset) res_rd <= 1'd0;
-	//else if(next_state)
+	else if(next_state == READ_F_0 || next_state == READ_F_1) res_rd <= 1'd1;
+	else res_rd <= 1'd0;
 end
 
 //done
@@ -174,36 +194,48 @@ end
 always@(posedge clk or negedge reset)
 begin
 	if(!reset) sti_addr <= 10'd0;
-	else if(next_state == READ_F_0) sti_addr <= {y-7'd1,x[2:0]};
-	else if(next_state == READ_F_1) sti_addr <= {y,x[2:0]};
+	else if(next_state == READ_INIT) sti_addr <= {y,x[2:0]};
 end
 
 //res_addr
 always@(posedge clk or negedge reset)
 begin
 	if(!reset) res_addr <= 14'd0;
-//	else if(next_state == WRITE_F) res_addr <= 
+	else if(current_state == WRITE_INIT) 
+	begin
+		if(counter == 5'd16) res_addr <= {y,x[2:0],4'b1111};
+		else res_addr <= {y,x[2:0],counter[3:0]} - 1'd1;
+	end
+	else if(next_state == READ_F_0) res_addr <= {y-1'd1,x};
+	else if(next_state == READ_F_0) res_addr <= {y,x};
 end
 
-reg [7:0] cmpTemp0,cmpTemp1;
 //res_do output data
 always@(posedge clk or negedge reset)
 begin
 	if(!reset) res_do <= 8'd0;
-	else if(current_state == READ_F_0) dataTemp0 <= sti_di;
-	else if(current_state == READ_F_1) dataTemp1 <= sti_di;
-	else if(current_state == FORWARD)
+	else if(current_state == WRITE_INIT)
 	begin
 		case(counter)
-		5'd0: 
-		begin
-			if(dataTemp1[7])
-			begin
-				//min(dataTemp0[1],dataTemp0[2],dataTemp1[1],dataTemp0[3],dataTemp0);
-			end
-		end
+		5'd0: stiTemp <= sti_di;
+		5'd1: res_do <= stiTemp[0];
+		5'd2: res_do <= stiTemp[1];
+		5'd3: res_do <= stiTemp[2];
+		5'd4: res_do <= stiTemp[3];
+		5'd5: res_do <= stiTemp[4];
+		5'd6: res_do <= stiTemp[5];
+		5'd7: res_do <= stiTemp[6];
+		5'd8: res_do <= stiTemp[7];
+		5'd9: res_do <= stiTemp[8];
+		5'd10: res_do <= stiTemp[9];
+		5'd11: res_do <= stiTemp[10];
+		5'd12: res_do <= stiTemp[11];
+		5'd13: res_do <= stiTemp[12];
+		5'd14: res_do <= stiTemp[13];
+		5'd15: res_do <= stiTemp[14];
+		5'd16: res_do <= stiTemp[15];
 		endcase
-	end
+	end		
 end
 
 
