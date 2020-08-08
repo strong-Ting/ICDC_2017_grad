@@ -1,0 +1,56 @@
+[*]
+[*] GTKWave Analyzer v3.3.100 (w)1999-2019 BSI
+[*] Sat Aug 08 14:17:43 2020
+[*]
+[dumpfile] "C:\Users\lin\Desktop\CIC_my\CIC_2017_grad\DT.vcd"
+[dumpfile_mtime] "Sat Aug 08 14:15:20 2020"
+[dumpfile_size] 5468352
+[savefile] "C:\Users\lin\Desktop\CIC_my\CIC_2017_grad\DT.gtkw"
+[timestart] 203520
+[size] 1920 1017
+[pos] -1 -1
+*-14.000000 255000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] testfixture.
+[sst_width] 197
+[signals_width] 174
+[sst_expanded] 1
+[sst_vpaned_height] 300
+@28
+testfixture.u_dut.clk
+@24
+testfixture.u_dut.counter[4:0]
+testfixture.u_dut.current_state[3:0]
+testfixture.u_dut.next_state[3:0]
+@22
+testfixture.u_dut.x[6:0]
+@24
+testfixture.u_dut.y[6:0]
+@28
+testfixture.u_dut.sti_di[15:0]
+@c00024
+testfixture.u_dut.sti_addr[9:0]
+@28
+(0)testfixture.u_dut.sti_addr[9:0]
+(1)testfixture.u_dut.sti_addr[9:0]
+(2)testfixture.u_dut.sti_addr[9:0]
+(3)testfixture.u_dut.sti_addr[9:0]
+(4)testfixture.u_dut.sti_addr[9:0]
+(5)testfixture.u_dut.sti_addr[9:0]
+(6)testfixture.u_dut.sti_addr[9:0]
+(7)testfixture.u_dut.sti_addr[9:0]
+(8)testfixture.u_dut.sti_addr[9:0]
+(9)testfixture.u_dut.sti_addr[9:0]
+@1401200
+-group_end
+@28
+testfixture.u_dut.sti_rd
+@25
+testfixture.u_dut.res_addr[13:0]
+@28
+testfixture.u_dut.res_wr
+@22
+testfixture.u_dut.res_do[7:0]
+@28
+testfixture.u_dut.sti_rd
+[pattern_trace] 1
+[pattern_trace] 0
