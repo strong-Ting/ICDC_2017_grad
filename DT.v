@@ -22,6 +22,7 @@ reg [7:0] line_buffer1 [2:0];
 parameter INIT = 4'd0;
 parameter READ_INIT = 4'd10;
 parameter WRITE_INIT = 4'd11;
+parameter WRITE_INIT_FINISH = 4'd12; // to delay 1 clk
 parameter READ_F_0 = 4'd1; //READ_FORWARD
 parameter READ_F_1 = 4'd2;
 parameter FORWARD = 4'd3;
@@ -61,7 +62,7 @@ begin
 			if(x == 7'd7) x <= 7'd0;
 			else x <= x + 7'd1;
 		end
-		else if(current_state == WRITE_F)
+		else if(current_state == FORWARD || current_state == BACKWARD)
 		begin
 			if(x == 7'd127) x<= 7'd0;
 			else x <= x + 7'd1;
@@ -80,7 +81,7 @@ begin
 			if(x == 7'd7 && y== 7'd127) y <= 7'd1;
 			else if(x == 7'd7) y <= y + 7'd1;
 		end
-		else if(current_state == WRITE_F)
+		else if(current_state == FORWARD || current_state ==  BACKWARD)
 		begin
 			if(x == 7'd127) y <= y + 7'd1;
 		end
@@ -119,10 +120,14 @@ begin
 	begin
 		if(counter == 5'd16)
 		begin
-			if(res_addr == 14'd16382) next_state = READ_F_0; //16383 = 128*128
+			if(res_addr == 14'd16382) next_state = WRITE_INIT_FINISH; //16384 = 128*128
 			else next_state = READ_INIT;
 		end
 		else next_state = WRITE_INIT;
+	end
+	WRITE_INIT_FINISH: // to delay 1 clk
+	begin
+		next_state =  READ_F_0;
 	end
 	READ_F_0:
 	begin
@@ -138,7 +143,7 @@ begin
 	end
 	WRITE_F:
 	begin
-		if(x == 7'd7 && y == 7'd127) next_state = READ_B_0;
+		if(x == 7'd127 && y == 7'd127) next_state = READ_B_0;
 		else next_state = READ_F_0;
 	end
 	READ_B_0:
@@ -151,8 +156,7 @@ begin
 	end
 	BACKWARD:
 	begin
-		if(counter == 5'd16) next_state = WRITE_B;//counter
-		else next_state = BACKWARD;
+		next_state = WRITE_B;
 	end
 	WRITE_B:
 	begin
@@ -181,7 +185,7 @@ always@(posedge clk or negedge reset)
 begin
 	if(!reset) res_wr <= 1'd0;
 	else if(current_state == WRITE_INIT && counter >= 5'd1) res_wr <= 1'd1;
-	else if(next_state == WRITE_F || next_state == WRITE_B) res_wr <= 1'd1;
+	else if(next_state == WRITE_F /*|| next_state == WRITE_B*/) res_wr <= 1'd1;
 	else res_wr <= 1'd0;
 end
 
@@ -207,16 +211,18 @@ begin
 	else if(next_state == READ_INIT) sti_addr <= {y,x[2:0]};
 end
 
+
 //res_addr
 always@(posedge clk or negedge reset)
 begin
 	if(!reset) res_addr <= 14'd0;
-	else if(current_state == WRITE_INIT)  res_addr <= {y,x[2:0],4'd0}+counter -1'd1 ;
+	else if(current_state == WRITE_INIT)  res_addr <= {y,x[2:0],4'd0}+counter -1'd1 ; 
 	else if(next_state == READ_F_0) res_addr <= {y-1'd1,x};
-	else if(next_state == READ_F_0) res_addr <= {y,x};
+	else if(next_state == READ_F_1) res_addr <= {y,x};
+//	else if( == WRITE_F) res_addr <= {y,x}-1'd1;
 end
 
-reg [7:0] stiTemp;
+reg [15:0] stiTemp;
 reg [7:0] cmpTemp0,cmpTemp1;
 //res_do output data
 always@(posedge clk or negedge reset)
@@ -246,19 +252,22 @@ begin
 	end		
 	else if(current_state == WRITE_F)
 	begin
-		if(line_buffer0[0]>line_buffer0[1]) cmpTemp0 = line_buffer0[1];
-		else cmpTemp0 = line_buffer0[0];
+		if(line_buffer1[1] == 1'd1)
+		begin
+			if(line_buffer0[0]>line_buffer0[1]) cmpTemp0 = line_buffer0[1];
+			else cmpTemp0 = line_buffer0[0];
 
-		if(line_buffer0[2]>line_buffer1[0]) cmpTemp1 = line_buffer1[0];
-		else cmpTemp1 = line_buffer0[2];
+			if(line_buffer0[2]>line_buffer1[0]) cmpTemp1 = line_buffer1[0];
+			else cmpTemp1 = line_buffer0[2];
 
-		if(cmpTemp0>cmpTemp1) res_do <= cmpTemp1;
-		else res_do <= cmpTemp0;
+			if(cmpTemp0>cmpTemp1) res_do <= cmpTemp1+1'd1;
+			else res_do <= cmpTemp0+1'd1;
+		end
 	end
 end
 
 //line buffer
-always@(posedge clk or posedge reset)
+always@(negedge clk or negedge reset)
 begin
 	if(!reset)
 	begin

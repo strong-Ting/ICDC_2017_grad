@@ -1,15 +1,15 @@
 [*]
 [*] GTKWave Analyzer v3.3.100 (w)1999-2019 BSI
-[*] Sat Aug 08 14:17:43 2020
+[*] Sun Aug 09 08:51:13 2020
 [*]
 [dumpfile] "C:\Users\lin\Desktop\CIC_my\CIC_2017_grad\DT.vcd"
-[dumpfile_mtime] "Sat Aug 08 14:15:20 2020"
-[dumpfile_size] 5468352
+[dumpfile_mtime] "Sun Aug 09 08:42:53 2020"
+[dumpfile_size] 11073746
 [savefile] "C:\Users\lin\Desktop\CIC_my\CIC_2017_grad\DT.gtkw"
-[timestart] 203520
+[timestart] 545753520
 [size] 1920 1017
 [pos] -1 -1
-*-14.000000 255000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+*-14.000000 545815000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
 [treeopen] testfixture.
 [sst_width] 197
 [signals_width] 174
@@ -44,13 +44,16 @@ testfixture.u_dut.sti_addr[9:0]
 -group_end
 @28
 testfixture.u_dut.sti_rd
-@25
+@24
 testfixture.u_dut.res_addr[13:0]
 @28
 testfixture.u_dut.res_wr
-@22
+@23
 testfixture.u_dut.res_do[7:0]
 @28
 testfixture.u_dut.sti_rd
+testfixture.u_dut.res_rd
+@22
+testfixture.u_dut.res_di[7:0]
 [pattern_trace] 1
 [pattern_trace] 0
