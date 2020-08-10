@@ -57,7 +57,8 @@ DT u_dut(		.clk( clk ), .reset( reset ),
 			.res_rd( res_rd ),
 			.res_addr( res_addr ),
 			.res_do( res_do ),
-			.res_di( res_di ) );
+			.res_di( res_di ),
+			.fw_finish(fwpass_finish) );
 			
 sti_ROM  u_sti_ROM(.sti_rd(sti_rd), .sti_data(sti_di), .sti_addr(sti_addr), .clk(clk), .reset(reset));
 res_RAM  u_res_RAM(.res_rd(res_rd), .res_wr(res_wr), .res_addr(res_addr), .res_datain(res_do), .res_dataout(res_di), .clk(clk));   
@@ -97,7 +98,7 @@ initial begin
 end
 
 
-/*
+
 initial begin // FW-PASS result compare
 fwpass_chk = 0;
 	#(`CYCLE*3);
@@ -123,7 +124,7 @@ fwpass_chk = 0;
 					
   				end					
 	end
-end */
+end 
 
 initial begin // BC-PASS result compare
 bcpass_chk = 0;
@@ -160,19 +161,19 @@ initial begin
             $display("---------- The test result is ..... PASS --------------------\n");
 	    $display("                                                     \n");
          end
-	/*else if ( fw_err == 0) begin
+	   else if ( fw_err == 0) begin
 	    $display("Forward-Pass PASS! but Back-Pass FAIL, There are %d errors at back-pass run\n", bc_err);
 	    $display("--------------- The test result is .....FAIL ----------------\n");
-         end*/
+         end
        else begin
-	    //$display("FAIL! There are %d errors at forward-pass run!\n", fw_err);
+	    $display("FAIL! There are %d errors at forward-pass run!\n", fw_err);
 	    $display("FAIL! There are %d errors at functional simulation !\n", bc_err);
 	    $display("---------- The test result is .....FAIL -------------\n");
          end
 	 $display("-----------------------------------------------------\n");
       #(`CYCLE/3); $finish;
 end
-/*
+
 initial begin
 	@(posedge fwpass_chk) #1;
 	 if ( fw_err == 0) begin
@@ -186,7 +187,7 @@ initial begin
 	    $display("---------- The test result is .....FAIL -------------\n");
 	    $display("                                                     \n");
 	 end   
-end*/
+end
    
 endmodule
 

@@ -1,31 +1,22 @@
 [*]
 [*] GTKWave Analyzer v3.3.100 (w)1999-2019 BSI
-[*] Sun Aug 09 08:51:13 2020
+[*] Mon Aug 10 17:07:14 2020
 [*]
 [dumpfile] "C:\Users\lin\Desktop\CIC_my\CIC_2017_grad\DT.vcd"
-[dumpfile_mtime] "Sun Aug 09 08:42:53 2020"
-[dumpfile_size] 11073746
+[dumpfile_mtime] "Mon Aug 10 17:06:00 2020"
+[dumpfile_size] 3062492
 [savefile] "C:\Users\lin\Desktop\CIC_my\CIC_2017_grad\DT.gtkw"
-[timestart] 545753520
-[size] 1920 1017
+[timestart] 10873520
+[size] 1920 1008
 [pos] -1 -1
-*-14.000000 545815000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+*-14.000000 10939220 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
 [treeopen] testfixture.
 [sst_width] 197
 [signals_width] 174
 [sst_expanded] 1
-[sst_vpaned_height] 300
+[sst_vpaned_height] 294
 @28
 testfixture.u_dut.clk
-@24
-testfixture.u_dut.counter[4:0]
-testfixture.u_dut.current_state[3:0]
-testfixture.u_dut.next_state[3:0]
-@22
-testfixture.u_dut.x[6:0]
-@24
-testfixture.u_dut.y[6:0]
-@28
 testfixture.u_dut.sti_di[15:0]
 @c00024
 testfixture.u_dut.sti_addr[9:0]
@@ -44,16 +35,72 @@ testfixture.u_dut.sti_addr[9:0]
 -group_end
 @28
 testfixture.u_dut.sti_rd
-@24
+@c00022
+testfixture.u_dut.sti_di[15:0]
+@28
+(0)testfixture.u_dut.sti_di[15:0]
+(1)testfixture.u_dut.sti_di[15:0]
+(2)testfixture.u_dut.sti_di[15:0]
+(3)testfixture.u_dut.sti_di[15:0]
+(4)testfixture.u_dut.sti_di[15:0]
+(5)testfixture.u_dut.sti_di[15:0]
+(6)testfixture.u_dut.sti_di[15:0]
+(7)testfixture.u_dut.sti_di[15:0]
+(8)testfixture.u_dut.sti_di[15:0]
+(9)testfixture.u_dut.sti_di[15:0]
+(10)testfixture.u_dut.sti_di[15:0]
+(11)testfixture.u_dut.sti_di[15:0]
+(12)testfixture.u_dut.sti_di[15:0]
+(13)testfixture.u_dut.sti_di[15:0]
+(14)testfixture.u_dut.sti_di[15:0]
+(15)testfixture.u_dut.sti_di[15:0]
+@1401200
+-group_end
+@c00024
 testfixture.u_dut.res_addr[13:0]
 @28
+(0)testfixture.u_dut.res_addr[13:0]
+(1)testfixture.u_dut.res_addr[13:0]
+(2)testfixture.u_dut.res_addr[13:0]
+(3)testfixture.u_dut.res_addr[13:0]
+(4)testfixture.u_dut.res_addr[13:0]
+(5)testfixture.u_dut.res_addr[13:0]
+(6)testfixture.u_dut.res_addr[13:0]
+(7)testfixture.u_dut.res_addr[13:0]
+(8)testfixture.u_dut.res_addr[13:0]
+(9)testfixture.u_dut.res_addr[13:0]
+(10)testfixture.u_dut.res_addr[13:0]
+(11)testfixture.u_dut.res_addr[13:0]
+(12)testfixture.u_dut.res_addr[13:0]
+(13)testfixture.u_dut.res_addr[13:0]
+@1401200
+-group_end
+@28
 testfixture.u_dut.res_wr
-@23
+@24
 testfixture.u_dut.res_do[7:0]
 @28
 testfixture.u_dut.sti_rd
 testfixture.u_dut.res_rd
-@22
+@24
 testfixture.u_dut.res_di[7:0]
+@c00022
+testfixture.u_dut.current_State[3:0]
+@28
+(0)testfixture.u_dut.current_State[3:0]
+(1)testfixture.u_dut.current_State[3:0]
+(2)testfixture.u_dut.current_State[3:0]
+(3)testfixture.u_dut.current_State[3:0]
+@1401200
+-group_end
+@25
+testfixture.u_dut.next_State[3:0]
+@24
+testfixture.u_dut.counter[3:0]
+testfixture.u_dut.minTemp[7:0]
+@22
+testfixture.u_dut.res_do[7:0]
+@28
+testfixture.u_dut.fw_finish
 [pattern_trace] 1
 [pattern_trace] 0
