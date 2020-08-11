@@ -16,6 +16,7 @@ module DT(
 reg [3:0] current_State;
 reg [3:0] next_State;
 reg [7:0] minTemp;
+reg [3:0] counter;
 
 //state
 parameter INIT = 4'd0;
@@ -25,14 +26,12 @@ parameter WRITE_INIT_FINISH = 4'd3; // to delay 1 clk
 parameter READ_F = 4'd4; //READ_FORWARD
 parameter FORWARD = 4'd5;
 parameter WRITE_F = 4'd6; //WRITE_FORWARD
-parameter FORWARD_FINISH = 4'd11;
-parameter READ_B = 4'd7; //READ_BACKWARD
-parameter BACKWARD = 4'd8;
-parameter WRITE_B = 4'd9; //WRITE_BACKWARD
-parameter FINISH = 4'd10;
+parameter FORWARD_FINISH = 4'd7;
+parameter READ_B = 4'd8; //READ_BACKWARD
+parameter BACKWARD = 4'd9;
+parameter WRITE_B = 4'd10; //WRITE_BACKWARD
+parameter FINISH = 4'd11;
 
-reg [3:0] counter;
-reg [13:0] addrCounter;
 
 always@(posedge clk or negedge reset)
 begin
@@ -43,8 +42,14 @@ end
 always@(*)
 begin
 	case(current_State)
-	INIT: next_State = READ_INIT;
-	READ_INIT: next_State = WRITE_INIT;
+	INIT:
+	begin
+		next_State = READ_INIT;
+	end
+	READ_INIT: 
+	begin
+		next_State = WRITE_INIT;
+	end
 	WRITE_INIT:
 	begin
 		if(counter == 4'd15)
@@ -54,7 +59,10 @@ begin
 		end
 		else next_State = WRITE_INIT;
 	end
-	WRITE_INIT_FINISH: next_State = READ_F;
+	WRITE_INIT_FINISH: 
+	begin
+		next_State = READ_F;
+	end
 	READ_F:
 	begin
 		if(res_di) next_State = FORWARD;
@@ -167,7 +175,6 @@ begin
 		4'd2: res_addr <= res_addr + 14'd1;
 		4'd3: res_addr <= res_addr + 14'd126;
 		4'd4: res_addr <= res_addr + 14'd1;
-		//4'd5: res_addr <= res_addr + 14'd1;
 		endcase
 	end
 	else if(next_State == BACKWARD || current_State == BACKWARD)
@@ -191,8 +198,8 @@ begin
 	else if(current_State == FINISH) done <= 1'd1;
 end
 
-wire [7:0] addOneTemp;
-assign addOneTemp = res_di + 1'd1;
+wire [7:0] res_di_addOne;
+assign res_di_addOne = res_di + 1'd1;
 //minTemp
 always@(posedge clk or negedge reset)
 begin
@@ -205,7 +212,7 @@ begin
 	else if(current_State == READ_B) minTemp <= res_di;
 	else if(current_State == BACKWARD)
 	begin
-		if(minTemp>addOneTemp) minTemp <= addOneTemp;
+		if(minTemp>res_di_addOne) minTemp <= res_di_addOne;
 	end
 end
 
