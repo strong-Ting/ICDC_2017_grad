@@ -29,6 +29,7 @@ parameter F1 = 5'd6;
 parameter F2 = 5'd7;
 parameter F3 = 5'd8;
 parameter F4 = 5'd9;
+parameter F5 = 5'd10;
 
 parameter WRITE_F = 5'd11; //WRITE_FORWARD
 parameter FORWARD_FINISH = 5'd12;
@@ -38,6 +39,7 @@ parameter B1 = 5'd15;
 parameter B2 = 5'd16;
 parameter B3 = 5'd17;
 parameter B4 = 5'd18;
+parameter B5 = 5'd19;
 
 parameter WRITE_B = 5'd20; //WRITE_BACKWARD
 parameter FINISH = 5'd21;
@@ -100,6 +102,10 @@ begin
 	end
 	F4:
 	begin
+		next_State = F5;
+	end
+	F5:
+	begin
 		next_State = WRITE_F;
 	end
 	WRITE_F:
@@ -137,6 +143,10 @@ begin
 		next_State = B4;
 	end
 	B4:
+	begin
+		next_State = B5;
+	end
+	B5:
 	begin
 		next_State = WRITE_B;
 	end
@@ -234,22 +244,27 @@ begin
 end
 
 wire [7:0] res_di_addOne;
-assign res_di_addOne = res_di + 1'd1;
+assign res_di_addOne = res_diTemp + 1'd1;
 
 wire CurrentBACKWARD_check;
-assign CurrentBACKWARD_check = (current_State == B0) || (current_State == B1) || (current_State == B2) || (current_State == B3) ||(current_State == B4);
+assign CurrentBACKWARD_check = (current_State == B1) || (current_State == B2) || (current_State == B3) || (current_State == B4) ||(current_State == B5);
 
-
+reg [7:0] res_diTemp;
+always@(posedge clk or negedge reset)
+begin
+	if(!reset) res_diTemp <= 8'd0;
+	else res_diTemp <= res_di;
+end
 //minTemp
 always@(posedge clk or negedge reset)
 begin
 	if(!reset) minTemp <= 8'd0;
-	else if(current_State == F0)  minTemp <= res_di;
-	else if(current_State == F1 ||(current_State == F2) || (current_State == F3) || (current_State == F4)  )
+	else if(current_State == F1)  minTemp <= res_diTemp;
+	else if(current_State == F2 ||(current_State == F3) || (current_State == F4) || (current_State == F5)  )
 	begin
-		if(minTemp>res_di) minTemp <= res_di; 
+		if(minTemp>res_diTemp) minTemp <= res_diTemp; 
 	end
-	else if(current_State == READ_B) minTemp <= res_di;
+	else if(current_State == B0) minTemp <= res_diTemp;
 	else if(CurrentBACKWARD_check)
 	begin
 		if(minTemp>res_di_addOne) minTemp <= res_di_addOne;
