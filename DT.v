@@ -13,24 +13,34 @@ module DT(
 	output reg fw_finish
 	);
 
-reg [3:0] current_State;
-reg [3:0] next_State;
+reg [4:0] current_State;
+reg [4:0] next_State;
 reg [7:0] minTemp;
 reg [3:0] counter;
 
 //state
-parameter INIT = 4'd0;
-parameter READ_INIT = 4'd1;
-parameter WRITE_INIT = 4'd2;
-parameter WRITE_INIT_FINISH = 4'd3; // to delay 1 clk
-parameter READ_F = 4'd4; //READ_FORWARD
-parameter FORWARD = 4'd5;
-parameter WRITE_F = 4'd6; //WRITE_FORWARD
-parameter FORWARD_FINISH = 4'd7;
-parameter READ_B = 4'd8; //READ_BACKWARD
-parameter BACKWARD = 4'd9;
-parameter WRITE_B = 4'd10; //WRITE_BACKWARD
-parameter FINISH = 4'd11;
+parameter INIT = 5'd0;
+parameter READ_INIT = 5'd1;
+parameter WRITE_INIT = 5'd2;
+parameter WRITE_INIT_FINISH = 5'd3; // to delay 1 clk
+parameter READ_F = 5'd4; //READ_FORWARD
+parameter F0 = 5'd5; //FORWARD
+parameter F1 = 5'd6;
+parameter F2 = 5'd7;
+parameter F3 = 5'd8;
+parameter F4 = 5'd9;
+
+parameter WRITE_F = 5'd11; //WRITE_FORWARD
+parameter FORWARD_FINISH = 5'd12;
+parameter READ_B = 5'd13; //READ_BACKWARD
+parameter B0 = 5'd14; //BACKWARD
+parameter B1 = 5'd15;
+parameter B2 = 5'd16;
+parameter B3 = 5'd17;
+parameter B4 = 5'd18;
+
+parameter WRITE_B = 5'd20; //WRITE_BACKWARD
+parameter FINISH = 5'd21;
 
 
 always@(posedge clk or negedge reset)
@@ -65,17 +75,32 @@ begin
 	end
 	READ_F:
 	begin
-		if(res_di) next_State = FORWARD;
+		if(res_di) next_State = F0;
 		else
 		begin
 			if(res_addr == 14'd16255) next_State = FORWARD_FINISH;
 			else next_State = READ_F;
 		end 
 	end
-	FORWARD:
+	F0:
 	begin
-		if(counter == 4'd5) next_State = WRITE_F;
-		else next_State = FORWARD;
+		next_State = F1;
+	end
+	F1:
+	begin
+		next_State = F2;
+	end
+	F2:
+	begin
+		next_State = F3;
+	end
+	F3:
+	begin
+		next_State = F4;
+	end
+	F4:
+	begin
+		next_State = WRITE_F;
 	end
 	WRITE_F:
 	begin
@@ -88,17 +113,32 @@ begin
 	end
 	READ_B:
 	begin
-		if(res_di) next_State = BACKWARD;
+		if(res_di) next_State = B0;
 		else
 		begin
 			if(res_addr == 14'd128) next_State = FINISH;
 			else next_State = READ_B;
 		end
 	end
-	BACKWARD:
+	B0:
 	begin
-		if(counter == 4'd5) next_State = WRITE_B;
-		else next_State = BACKWARD;
+		next_State = B1;
+	end
+	B1:
+	begin
+		next_State = B2;
+	end
+	B2:
+	begin
+		next_State = B3;
+	end
+	B3:
+	begin
+		next_State = B4;
+	end
+	B4:
+	begin
+		next_State = WRITE_B;
 	end
 	WRITE_B:
 	begin
@@ -125,8 +165,6 @@ begin
 	if(!reset) counter <= 4'd15;
 	else if(next_State == READ_INIT) counter <= 4'd15;
 	else if(next_State == WRITE_INIT || current_State == WRITE_INIT) counter <= counter - 4'd1;
-	else if(next_State == FORWARD || next_State == BACKWARD) counter <= counter + 4'd1;
-	else if(next_State == WRITE_F || next_State == WRITE_B) counter <= 4'd0;
 end
 
 //sti_rd
@@ -144,11 +182,18 @@ begin
 	else if(current_State == READ_INIT) sti_addr <= sti_addr + 1'd1;
 end
 
+wire NextFORWARD_check;
+assign NextFORWARD_check = (next_State == F0) || (next_State == F1) || (next_State == F2) || (next_State == F3) ||(next_State == F4);
+
+wire NextBACKWARD_check;
+assign NextBACKWARD_check = (next_State == B0) || (next_State == B1) || (next_State == B2) || (next_State == B3) ||(next_State == B4);
+
+
 //res_rd
 always@(posedge clk or negedge reset)
 begin
 	if(!reset) res_rd <= 1'd0;
-	else if(next_State == READ_F || next_State == FORWARD || next_State == READ_B || next_State == BACKWARD) res_rd <= 1'd1;
+	else if(next_State == READ_F || NextFORWARD_check || next_State == READ_B || NextBACKWARD_check) res_rd <= 1'd1;
 	else res_rd <= 1'd0;
 end
 
@@ -167,26 +212,16 @@ begin
 	else if(next_State == WRITE_INIT) res_addr <= res_addr + 14'd1;
 	else if(current_State == WRITE_INIT_FINISH) res_addr <= 14'd128;
 	else if(current_State == FORWARD_FINISH) res_addr <= 14'd16255;
-	else if(next_State == FORWARD || current_State == FORWARD)
-	begin
-		case(counter)
-		4'd0: res_addr <= res_addr - 14'd129;
-		4'd1: res_addr <= res_addr + 14'd1;
-		4'd2: res_addr <= res_addr + 14'd1;
-		4'd3: res_addr <= res_addr + 14'd126;
-		4'd4: res_addr <= res_addr + 14'd1;
-		endcase
-	end
-	else if(next_State == BACKWARD || current_State == BACKWARD)
-	begin
-		case(counter)
-		4'd0: res_addr <= res_addr + 14'd129;
-		4'd1: res_addr <= res_addr - 14'd1;
-		4'd2: res_addr <= res_addr - 14'd1;
-		4'd3: res_addr <= res_addr - 14'd126;
-		4'd4: res_addr <= res_addr - 14'd1;
-		endcase
-	end
+	else if( next_State == F0) res_addr <= res_addr - 14'd129;
+	else if( next_State == F1) res_addr <= res_addr + 14'd1;
+	else if( next_State == F2) res_addr <= res_addr + 14'd1;
+	else if( next_State == F3) res_addr <= res_addr + 14'd126;
+	else if( next_State == F4) res_addr <= res_addr + 14'd1;
+	else if( next_State == B0) res_addr <= res_addr + 14'd129;
+	else if( next_State == B1) res_addr <= res_addr - 14'd1;
+	else if( next_State == B2) res_addr <= res_addr - 14'd1;
+	else if( next_State == B3) res_addr <= res_addr - 14'd126;
+	else if( next_State == B4) res_addr <= res_addr - 14'd1;
 	else if(current_State == READ_F || current_State == WRITE_F) res_addr <= res_addr + 14'd1;
 	else if(current_State == READ_B || current_State == WRITE_B) res_addr <= res_addr - 14'd1;
 end
@@ -200,17 +235,22 @@ end
 
 wire [7:0] res_di_addOne;
 assign res_di_addOne = res_di + 1'd1;
+
+wire CurrentBACKWARD_check;
+assign CurrentBACKWARD_check = (current_State == B0) || (current_State == B1) || (current_State == B2) || (current_State == B3) ||(current_State == B4);
+
+
 //minTemp
 always@(posedge clk or negedge reset)
 begin
 	if(!reset) minTemp <= 8'd0;
-	else if(current_State == FORWARD)
+	else if(current_State == F0)  minTemp <= res_di;
+	else if(current_State == F1 ||(current_State == F2) || (current_State == F3) || (current_State == F4)  )
 	begin
-		if(counter == 4'd1)  minTemp <= res_di;
-		else if(minTemp>res_di) minTemp <= res_di; 
+		if(minTemp>res_di) minTemp <= res_di; 
 	end
 	else if(current_State == READ_B) minTemp <= res_di;
-	else if(current_State == BACKWARD)
+	else if(CurrentBACKWARD_check)
 	begin
 		if(minTemp>res_di_addOne) minTemp <= res_di_addOne;
 	end
