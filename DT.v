@@ -68,7 +68,7 @@ begin
 		if(res_di) next_State = FORWARD;
 		else
 		begin
-			if(res_addr == 14'd16255) next_State = FORWARD_FINISH;
+			if(res_addr == 14'd16254) next_State = FORWARD_FINISH;
 			else next_State = READ_F;
 		end 
 	end
@@ -79,7 +79,7 @@ begin
 	end
 	WRITE_F:
 	begin
-		if(res_addr == 14'd16255) next_State = FORWARD_FINISH;
+		if(res_addr == 14'd16254) next_State = FORWARD_FINISH;
 		else next_State = READ_F;
 	end
 	FORWARD_FINISH:
