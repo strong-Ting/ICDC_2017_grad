@@ -1,0 +1,10 @@
+//
+// File created by:  ncverilog
+// Do not modify this file
+//
+-VFILE
+../CIC_2019_grad/tsmc13_neg.v
+-DEFINE
+SDF
+-DEFINE
+TB1
