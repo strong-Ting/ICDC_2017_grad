@@ -1,0 +1,13 @@
+//
+// File created by:  irun
+// Do not modify this file
+
+s1::(16Sep2020:18:01:15):( ncverilog testfixture.v ../syn/DT_syn.v -v ../../CIC_2019_grad/sim/tsmc13_neg.v +define+SDF )
+s2::(16Sep2020:18:01:24):( ncverilog testfixture.v ../syn/DT_syn.v -v ../../CIC_2019_grad/sim/tsmc13_neg.v +define+SDF +define+MD4 )
+s3::(16Sep2020:18:01:40):( ncverilog testfixture.v ../syn/DT_syn.v -v ../../CIC_2019_grad/sim/tsmc13_neg.v +define+SDF +define+MD4 )
+s4::(16Sep2020:18:02:00):( ncverilog testfixture.v ../syn/DT_syn.v -v ../../CIC_2019_grad/sim/tsmc13_neg.v +define+SDF )
+s5::(16Sep2020:18:02:23):( ncverilog testfixture.v ../syn/DT_syn.v -v ../../CIC_2019_grad/sim/tsmc13_neg.v +define+SDF +define+TB1 )
+s6::(16Sep2020:18:02:52):( ncverilog testfixture.v ../syn/DT_syn.v -v ../../CIC_2019_grad/sim/tsmc13_neg.v +define+SDF +define+TB1 )
+s7::(16Sep2020:18:03:01):( ncverilog testfixture.v ../syn/DT_syn.v -v ../../CIC_2019_grad/sim/tsmc13_neg.v +define+SDF +define+TB2 )
+s8::(16Sep2020:18:03:14):( ncverilog testfixture.v ../syn/DT_syn.v -v ../../CIC_2019_grad/sim/tsmc13_neg.v +define+SDF +define+TB1 )
+s9::(16Sep2020:18:03:24):( ncverilog testfixture.v ../syn/DT_syn.v -v ../../CIC_2019_grad/sim/tsmc13_neg.v +define+SDF +define+TB2 )

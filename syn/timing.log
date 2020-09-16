@@ -1,0 +1,32 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : DT
+Version: Q-2019.12
+Date   : Wed Sep 16 17:59:54 2020
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: res_addr_reg[0]
+              (rising edge-triggered flip-flop)
+  Endpoint: res_addr[0]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  res_addr_reg[0]/CK (DFFSX1)              0.00       0.00 r
+  res_addr_reg[0]/Q (DFFSX1)               0.56       0.56 f
+  res_addr[0] (out)                        0.00       0.56 f
+  data arrival time                                   0.56
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+1
