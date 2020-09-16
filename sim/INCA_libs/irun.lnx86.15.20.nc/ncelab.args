@@ -3,8 +3,11 @@
 // Do not modify this file
 //
 +define+SDF
-+define+TB2
++define+TB1
++access+r
 -noshowtop
+-ACCESS
++r
 -MESSAGES
 -XLMODE
 ./INCA_libs/irun.lnx86.15.20.nc

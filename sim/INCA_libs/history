@@ -11,3 +11,8 @@ s6::(16Sep2020:18:02:52):( ncverilog testfixture.v ../syn/DT_syn.v -v ../../CIC_
 s7::(16Sep2020:18:03:01):( ncverilog testfixture.v ../syn/DT_syn.v -v ../../CIC_2019_grad/sim/tsmc13_neg.v +define+SDF +define+TB2 )
 s8::(16Sep2020:18:03:14):( ncverilog testfixture.v ../syn/DT_syn.v -v ../../CIC_2019_grad/sim/tsmc13_neg.v +define+SDF +define+TB1 )
 s9::(16Sep2020:18:03:24):( ncverilog testfixture.v ../syn/DT_syn.v -v ../../CIC_2019_grad/sim/tsmc13_neg.v +define+SDF +define+TB2 )
+s10::(16Sep2020:18:05:28):( ncverilog testfixture.v ../syn/DT_syn.v -v ../../CIC_2019_grad/sim/tsmc13_neg.v +define+SDF +define+TB2 )
+s11::(16Sep2020:18:05:48):( ncverilog testfixture.v ../syn/DT_syn.v -v ../../CIC_2019_grad/sim/tsmc13_neg.v +define+SDF +define+TB2 +access+r )
+s12::(16Sep2020:18:06:16):( ncverilog testfixture.v ../syn/DT_syn.v -v tsmc13_neg.v +define+SDF +define+TB2 +access+r )
+s13::(16Sep2020:18:10:23):( ncverilog testfixture.v ../syn/DT_syn.v -v tsmc13_neg.v +define+SDF +define+TB2 +access+r )
+s14::(16Sep2020:18:10:35):( ncverilog testfixture.v ../syn/DT_syn.v -v tsmc13_neg.v +define+SDF +define+TB1 +access+r )

@@ -72,17 +72,18 @@ argv[0]=ncverilog
 argv[1]=testfixture.v
 argv[2]=../syn/DT_syn.v
 argv[3]=-v
-argv[4]=../../CIC_2019_grad/sim/tsmc13_neg.v
+argv[4]=tsmc13_neg.v
 argv[5]=+define+SDF
-argv[6]=+define+TB2
-77 profile - 100
-          CPU/Mem usage: 0.020 sys,  0.040 user,  59.97M sys,  0.00M vm
-78 VC callback profile - scalar:0 vector:0
-79 Wed Sep 16 18:03:29 2020
-80 pliAppInit
-81 FSDB_GATE is disabled.
-82 Enable Parallel Dumping.
-83 pliAppMiscSet: New Sim Round
-84 pliEntryInit
-85 LIBSSCORE=found /usr/cad/synopsys/verdi/cur/share/PLI/IUS/LINUX/libsscore_ius152.so through $LD_LIBRARY_PATH setting.
-86 Sim process exit
+argv[6]=+define+TB1
+argv[7]=+access+r
+78 profile - 100
+          CPU/Mem usage: 0.030 sys,  0.030 user,  60.36M sys,  0.00M vm
+79 VC callback profile - scalar:0 vector:0
+80 Wed Sep 16 18:10:40 2020
+81 pliAppInit
+82 FSDB_GATE is disabled.
+83 Enable Parallel Dumping.
+84 pliAppMiscSet: New Sim Round
+85 pliEntryInit
+86 LIBSSCORE=found /usr/cad/synopsys/verdi/cur/share/PLI/IUS/LINUX/libsscore_ius152.so through $LD_LIBRARY_PATH setting.
+87 Sim process exit

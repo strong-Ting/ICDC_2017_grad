@@ -1,6 +1,6 @@
 #@ # 
 #@ # Running dc_shell Version Q-2019.12 for linux64 -- Nov 26, 2019
-#@ # Date:   Wed Sep 16 17:59:38 2020
+#@ # Date:   Wed Sep 16 18:09:35 2020
 #@ # Run by: lin@DESKTOP-OFJ877F
 #@ 
 
@@ -6704,6 +6704,28 @@ source DC_syn.tcl
 #@ 
 #@ #Setting Clock Constraints
 #@ source -echo -verbose DT.sdc
+#@ # -- Starting source DT.sdc
+
+#@ # operating conditions and boundary conditions #
+#@ 
+#@ set cycle  10.0        ;#clock period defined by designer
+#@ 
+#@ create_clock -period $cycle [get_ports  clk]
+#@ set_dont_touch_network      [get_clocks clk]
+#@ set_clock_uncertainty  0.1  [get_clocks clk]
+#@ set_clock_latency      0.5  [get_clocks clk]
+#@ 
+#@ set_input_delay  5      -clock clk [remove_from_collection [all_inputs] [get_ports clk]]
+#@ set_output_delay 0.5    -clock clk [all_outputs] 
+#@ set_load         0.1     [all_outputs]
+#@ set_drive        1     [all_inputs]
+#@ 
+#@ set_operating_conditions  -max slow  -min fast
+#@ set_wire_load_model -name tsmc13_wl10 -library slow                        
+#@ 
+#@ set_max_fanout 20 [all_inputs]
+#@ # -- End source DT.sdc
+
 #@ 
 #@ #Synthesis all design
 #@ compile -map_effort high -area_effort high

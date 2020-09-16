@@ -5,6 +5,7 @@
 testfixture.v
 ../syn/DT_syn.v
 -v
-../../CIC_2019_grad/sim/tsmc13_neg.v
+tsmc13_neg.v
 +define+SDF
-+define+TB2
++define+TB1
++access+r
