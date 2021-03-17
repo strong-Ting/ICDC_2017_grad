@@ -621,3 +621,641 @@ wvSetPosition -win $_nWave1 {("G1" 8)}
 wvCut -win $_nWave1
 wvSetPosition -win $_nWave1 {("G2" 0)}
 wvSetPosition -win $_nWave1 {("G1" 7)}
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvGetSignalOpen -win $_nWave1
+wvSetPosition -win $_nWave1 {("G1" 8)}
+wvSetPosition -win $_nWave1 {("G1" 8)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/test/u_LEDDC/rst} \
+{/test/u_LEDDC/DCK} \
+{/test/u_LEDDC/DEN} \
+{/test/u_LEDDC/DAI} \
+{/test/u_LEDDC/cnt_pixel_index\[8:0\]} \
+{/test/u_LEDDC/cnt_pixel_serial\[3:0\]} \
+{/test/u_LEDDC/pixel_value\[15:0\]} \
+{/test/u_LEDDC/cnt_scanline\[4:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 8 )} 
+wvSetPosition -win $_nWave1 {("G1" 8)}
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvSelectSignal -win $_nWave1 {( "G1" 8 )} 
+wvSetRadix -win $_nWave1 -format UDec
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvGetSignalOpen -win $_nWave1
+wvSetPosition -win $_nWave1 {("G1" 9)}
+wvSetPosition -win $_nWave1 {("G1" 9)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/test/u_LEDDC/rst} \
+{/test/u_LEDDC/DCK} \
+{/test/u_LEDDC/DEN} \
+{/test/u_LEDDC/DAI} \
+{/test/u_LEDDC/cnt_pixel_index\[8:0\]} \
+{/test/u_LEDDC/cnt_pixel_serial\[3:0\]} \
+{/test/u_LEDDC/pixel_value\[15:0\]} \
+{/test/u_LEDDC/cnt_scanline\[4:0\]} \
+{/test/u_LEDDC/cnt_pwm\[15:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 9 )} 
+wvSetPosition -win $_nWave1 {("G1" 9)}
+wvSetPosition -win $_nWave1 {("G1" 9)}
+wvSetPosition -win $_nWave1 {("G1" 9)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/test/u_LEDDC/rst} \
+{/test/u_LEDDC/DCK} \
+{/test/u_LEDDC/DEN} \
+{/test/u_LEDDC/DAI} \
+{/test/u_LEDDC/cnt_pixel_index\[8:0\]} \
+{/test/u_LEDDC/cnt_pixel_serial\[3:0\]} \
+{/test/u_LEDDC/pixel_value\[15:0\]} \
+{/test/u_LEDDC/cnt_scanline\[4:0\]} \
+{/test/u_LEDDC/cnt_pwm\[15:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 9 )} 
+wvSetPosition -win $_nWave1 {("G1" 9)}
+wvGetSignalClose -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvSelectSignal -win $_nWave1 {( "G1" 9 )} 
+wvSetRadix -win $_nWave1 -format UDec
+wvSearchNext -win $_nWave1
+wvSearchPrev -win $_nWave1
+wvSearchPrev -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomIn -win $_nWave1
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/test"
+wvGetSignalSetScope -win $_nWave1 "/test/u_LEDDC"
+wvGetSignalSetScope -win $_nWave1 "/test/u_LEDDC"
+wvSetPosition -win $_nWave1 {("G1" 10)}
+wvSetPosition -win $_nWave1 {("G1" 10)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/test/u_LEDDC/rst} \
+{/test/u_LEDDC/DCK} \
+{/test/u_LEDDC/DEN} \
+{/test/u_LEDDC/DAI} \
+{/test/u_LEDDC/cnt_pixel_index\[8:0\]} \
+{/test/u_LEDDC/cnt_pixel_serial\[3:0\]} \
+{/test/u_LEDDC/pixel_value\[15:0\]} \
+{/test/u_LEDDC/cnt_scanline\[4:0\]} \
+{/test/u_LEDDC/cnt_pwm\[15:0\]} \
+{/test/u_LEDDC/Vsync} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 10 )} 
+wvSetPosition -win $_nWave1 {("G1" 10)}
+wvSetPosition -win $_nWave1 {("G1" 10)}
+wvSetPosition -win $_nWave1 {("G1" 10)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/test/u_LEDDC/rst} \
+{/test/u_LEDDC/DCK} \
+{/test/u_LEDDC/DEN} \
+{/test/u_LEDDC/DAI} \
+{/test/u_LEDDC/cnt_pixel_index\[8:0\]} \
+{/test/u_LEDDC/cnt_pixel_serial\[3:0\]} \
+{/test/u_LEDDC/pixel_value\[15:0\]} \
+{/test/u_LEDDC/cnt_scanline\[4:0\]} \
+{/test/u_LEDDC/cnt_pwm\[15:0\]} \
+{/test/u_LEDDC/Vsync} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 10 )} 
+wvSetPosition -win $_nWave1 {("G1" 10)}
+wvGetSignalClose -win $_nWave1
+wvSetCursor -win $_nWave1 41498972.409493 -snap {("G1" 10)}
+wvSearchNext -win $_nWave1
+wvSearchPrev -win $_nWave1
+wvSearchNext -win $_nWave1
+wvSearchPrev -win $_nWave1
+wvSearchNext -win $_nWave1
+wvSearchPrev -win $_nWave1
+wvSearchNext -win $_nWave1
+wvSetCursor -win $_nWave1 8598087.131122 -snap {("G1" 10)}
+wvSearchNext -win $_nWave1
+wvSelectSignal -win $_nWave1 {( "G1" 8 )} 
+wvSearchPrev -win $_nWave1
+wvOpenFile -win $_nWave1 \
+           {/home/DICS/M10912039/CIC/CIC_2017_grad/final/LEDDC_60fps.fsdb}
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomIn -win $_nWave1
+wvSelectSignal -win $_nWave1 {( "G1" 9 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 10 )} 
+wvSearchNext -win $_nWave1
+wvSearchPrev -win $_nWave1
+wvSearchPrev -win $_nWave1
+wvSearchNext -win $_nWave1
+wvSearchNext -win $_nWave1
+wvCloseFile -win $_nWave1 \
+           {/home/DICS/M10912039/CIC/CIC_2017_grad/final/LEDDC_30fps.fsdb}
+wvSetPosition -win $_nWave1 {("G1" 0)}
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/test"
+wvGetSignalSetScope -win $_nWave1 "/test/u_LEDDC"
+wvSetPosition -win $_nWave1 {("G1" 1)}
+wvSetPosition -win $_nWave1 {("G1" 1)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/test/u_LEDDC/Vsync} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 1 )} 
+wvSetPosition -win $_nWave1 {("G1" 1)}
+wvSetPosition -win $_nWave1 {("G1" 3)}
+wvSetPosition -win $_nWave1 {("G1" 3)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/test/u_LEDDC/Vsync} \
+{/test/u_LEDDC/cnt_pwm\[15:0\]} \
+{/test/u_LEDDC/cnt_scanline\[4:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 2 3 )} 
+wvSetPosition -win $_nWave1 {("G1" 3)}
+wvSelectSignal -win $_nWave1 {( "G1" 2 )} 
+wvSetPosition -win $_nWave1 {("G1" 2)}
+wvExpandBus -win $_nWave1 {("G1" 2)}
+wvSetPosition -win $_nWave1 {("G1" 19)}
+wvSelectSignal -win $_nWave1 {( "G1" 3 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 19 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 19 )} 
+wvSetRadix -win $_nWave1 -format UDec
+wvSelectSignal -win $_nWave1 {( "G1" 2 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 2 )} 
+wvSetRadix -win $_nWave1 -format UDec
+wvSelectSignal -win $_nWave1 {( "G1" 3 )} 
+wvSetCursor -win $_nWave1 1737.723973 -snap {("G1" 3)}
+wvSearchNext -win $_nWave1
+wvSearchNext -win $_nWave1
+wvSearchPrev -win $_nWave1
+wvSearchNext -win $_nWave1
+wvSearchPrev -win $_nWave1
+wvSearchNext -win $_nWave1
+wvSearchNext -win $_nWave1
+wvSearchNext -win $_nWave1
+wvSearchNext -win $_nWave1
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvSelectSignal -win $_nWave1 {( "G1" 2 )} 
+wvSetPosition -win $_nWave1 {("G1" 2)}
+wvCollapseBus -win $_nWave1 {("G1" 2)}
+wvSetPosition -win $_nWave1 {("G1" 2)}
+wvSetPosition -win $_nWave1 {("G1" 3)}
+wvSelectSignal -win $_nWave1 {( "G1" 2 )} 
+wvSearchNext -win $_nWave1
+wvSearchNext -win $_nWave1
+wvSearchNext -win $_nWave1
+wvSelectSignal -win $_nWave1 {( "G1" 1 )} 
+wvSearchNext -win $_nWave1
+wvSearchPrev -win $_nWave1
+wvSearchNext -win $_nWave1
+wvSelectSignal -win $_nWave1 {( "G1" 3 )} 
+wvSearchNext -win $_nWave1
+wvSearchNext -win $_nWave1
+wvSearchNext -win $_nWave1
+wvSearchNext -win $_nWave1
+wvSearchNext -win $_nWave1
+wvSearchNext -win $_nWave1
+wvSearchNext -win $_nWave1
+wvSearchNext -win $_nWave1
+wvSearchNext -win $_nWave1
+wvSearchNext -win $_nWave1
+wvSearchNext -win $_nWave1
+wvSearchNext -win $_nWave1
+wvSearchNext -win $_nWave1
+wvSearchNext -win $_nWave1
+wvSearchNext -win $_nWave1
+wvSearchNext -win $_nWave1
+wvSearchNext -win $_nWave1
+wvSelectSignal -win $_nWave1 {( "G1" 2 )} 
+wvSearchNext -win $_nWave1
+wvSearchPrev -win $_nWave1
+wvSelectSignal -win $_nWave1 {( "G1" 1 )} 
+wvSearchNext -win $_nWave1
+wvSearchNext -win $_nWave1
+wvSearchNext -win $_nWave1
+wvSearchNext -win $_nWave1
+wvSearchNext -win $_nWave1
+wvSearchNext -win $_nWave1
+wvSearchNext -win $_nWave1
+wvSearchNext -win $_nWave1
+wvSearchNext -win $_nWave1
+wvSearchNext -win $_nWave1
+wvSearchNext -win $_nWave1
+wvSearchNext -win $_nWave1
+wvSearchNext -win $_nWave1
+wvSearchNext -win $_nWave1
+wvSearchNext -win $_nWave1
+wvSearchNext -win $_nWave1
+wvSearchNext -win $_nWave1
+wvSearchNext -win $_nWave1
+wvSearchNext -win $_nWave1
+wvSearchNext -win $_nWave1
+wvSearchNext -win $_nWave1
+wvSearchNext -win $_nWave1
+wvSearchNext -win $_nWave1
+wvSearchNext -win $_nWave1
+wvSearchNext -win $_nWave1
+wvSearchNext -win $_nWave1
+wvSearchNext -win $_nWave1
+wvSearchNext -win $_nWave1
+wvSearchNext -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvSetCursor -win $_nWave1 473696364.545093 -snap {("G1" 3)}
+wvGetSignalOpen -win $_nWave1
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvGetSignalOpen -win $_nWave1
+wvSetPosition -win $_nWave1 {("G1" 4)}
+wvSetPosition -win $_nWave1 {("G1" 4)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/test/u_LEDDC/Vsync} \
+{/test/u_LEDDC/cnt_pwm\[15:0\]} \
+{/test/u_LEDDC/cnt_scanline\[4:0\]} \
+{/test/u_LEDDC/GCK} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 4 )} 
+wvSetPosition -win $_nWave1 {("G1" 4)}
+wvSetPosition -win $_nWave1 {("G1" 4)}
+wvSetPosition -win $_nWave1 {("G1" 4)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/test/u_LEDDC/Vsync} \
+{/test/u_LEDDC/cnt_pwm\[15:0\]} \
+{/test/u_LEDDC/cnt_scanline\[4:0\]} \
+{/test/u_LEDDC/GCK} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 4 )} 
+wvSetPosition -win $_nWave1 {("G1" 4)}
+wvGetSignalClose -win $_nWave1
+wvSetPosition -win $_nWave1 {("G1" 3)}
+wvSetPosition -win $_nWave1 {("G1" 2)}
+wvSetPosition -win $_nWave1 {("G1" 1)}
+wvSetPosition -win $_nWave1 {("G1" 0)}
+wvMoveSelected -win $_nWave1
+wvSetPosition -win $_nWave1 {("G1" 0)}
+wvSetPosition -win $_nWave1 {("G1" 1)}
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvSearchNext -win $_nWave1
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/test"
+wvGetSignalSetScope -win $_nWave1 "/test/u_LEDDC"
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/test"
+wvGetSignalSetScope -win $_nWave1 "/test/u_LEDDC"
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvSearchNext -win $_nWave1
+wvSearchPrev -win $_nWave1
+wvSearchNext -win $_nWave1
+wvSearchPrev -win $_nWave1
+wvGetSignalOpen -win $_nWave1
+wvSetPosition -win $_nWave1 {("G1" 2)}
+wvSetPosition -win $_nWave1 {("G1" 2)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/test/u_LEDDC/GCK} \
+{/test/u_LEDDC/OUT_buffer\[15:0\]} \
+{/test/u_LEDDC/Vsync} \
+{/test/u_LEDDC/cnt_pwm\[15:0\]} \
+{/test/u_LEDDC/cnt_scanline\[4:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 2 )} 
+wvSetPosition -win $_nWave1 {("G1" 2)}
+wvSetPosition -win $_nWave1 {("G1" 2)}
+wvSetPosition -win $_nWave1 {("G1" 2)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/test/u_LEDDC/GCK} \
+{/test/u_LEDDC/OUT_buffer\[15:0\]} \
+{/test/u_LEDDC/Vsync} \
+{/test/u_LEDDC/cnt_pwm\[15:0\]} \
+{/test/u_LEDDC/cnt_scanline\[4:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 2 )} 
+wvSetPosition -win $_nWave1 {("G1" 2)}
+wvGetSignalClose -win $_nWave1
+wvSetPosition -win $_nWave1 {("G1" 4)}
+wvSetPosition -win $_nWave1 {("G1" 5)}
+wvSetPosition -win $_nWave1 {("G2" 0)}
+wvSetPosition -win $_nWave1 {("G1" 5)}
+wvMoveSelected -win $_nWave1
+wvSetPosition -win $_nWave1 {("G1" 5)}
+wvSelectSignal -win $_nWave1 {( "G1" 1 )} 
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvSearchPrev -win $_nWave1
+wvSelectSignal -win $_nWave1 {( "G1" 5 )} 
+wvExpandBus -win $_nWave1 {("G1" 5)}
+wvSelectSignal -win $_nWave1 {( "G1" 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 \
+           21 )} 
+wvSetRadix -win $_nWave1 -format Bin
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvGetSignalOpen -win $_nWave1
+wvSetPosition -win $_nWave1 {("G2" 1)}
+wvSetPosition -win $_nWave1 {("G2" 1)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/test/u_LEDDC/GCK} \
+{/test/u_LEDDC/Vsync} \
+{/test/u_LEDDC/cnt_pwm\[15:0\]} \
+{/test/u_LEDDC/cnt_scanline\[4:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+{/test/u_LEDDC/OUT_buffer\[15:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G3" \
+}
+wvSelectSignal -win $_nWave1 {( "G2" 1 )} 
+wvSetPosition -win $_nWave1 {("G2" 1)}
+wvSetPosition -win $_nWave1 {("G2" 1)}
+wvSetPosition -win $_nWave1 {("G2" 1)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/test/u_LEDDC/GCK} \
+{/test/u_LEDDC/Vsync} \
+{/test/u_LEDDC/cnt_pwm\[15:0\]} \
+{/test/u_LEDDC/cnt_scanline\[4:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+{/test/u_LEDDC/OUT_buffer\[15:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G3" \
+}
+wvSelectSignal -win $_nWave1 {( "G2" 1 )} 
+wvSetPosition -win $_nWave1 {("G2" 1)}
+wvGetSignalClose -win $_nWave1
+wvSelectSignal -win $_nWave1 {( "G2" 1 )} 
+wvExpandBus -win $_nWave1 {("G2" 1)}
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/test"
+wvGetSignalSetScope -win $_nWave1 "/test/u_LEDDC"
+wvGetSignalSetScope -win $_nWave1 "/test/u_LEDDC"
+wvSetPosition -win $_nWave1 {("G2" 18)}
+wvSetPosition -win $_nWave1 {("G2" 18)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/test/u_LEDDC/GCK} \
+{/test/u_LEDDC/Vsync} \
+{/test/u_LEDDC/cnt_pwm\[15:0\]} \
+{/test/u_LEDDC/cnt_scanline\[4:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+{/test/u_LEDDC/OUT_buffer\[15:0\]} \
+{/test/u_LEDDC/OUT_buffer\[15\]\[15:0\]} \
+{/test/u_LEDDC/OUT_buffer\[14\]\[15:0\]} \
+{/test/u_LEDDC/OUT_buffer\[13\]\[15:0\]} \
+{/test/u_LEDDC/OUT_buffer\[12\]\[15:0\]} \
+{/test/u_LEDDC/OUT_buffer\[11\]\[15:0\]} \
+{/test/u_LEDDC/OUT_buffer\[10\]\[15:0\]} \
+{/test/u_LEDDC/OUT_buffer\[9\]\[15:0\]} \
+{/test/u_LEDDC/OUT_buffer\[8\]\[15:0\]} \
+{/test/u_LEDDC/OUT_buffer\[7\]\[15:0\]} \
+{/test/u_LEDDC/OUT_buffer\[6\]\[15:0\]} \
+{/test/u_LEDDC/OUT_buffer\[5\]\[15:0\]} \
+{/test/u_LEDDC/OUT_buffer\[4\]\[15:0\]} \
+{/test/u_LEDDC/OUT_buffer\[3\]\[15:0\]} \
+{/test/u_LEDDC/OUT_buffer\[2\]\[15:0\]} \
+{/test/u_LEDDC/OUT_buffer\[1\]\[15:0\]} \
+{/test/u_LEDDC/OUT_buffer\[0\]\[15:0\]} \
+{/test/u_LEDDC/OUT\[15:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G3" \
+}
+wvSelectSignal -win $_nWave1 {( "G2" 18 )} 
+wvSetPosition -win $_nWave1 {("G2" 18)}
+wvSetPosition -win $_nWave1 {("G2" 18)}
+wvSetPosition -win $_nWave1 {("G2" 18)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/test/u_LEDDC/GCK} \
+{/test/u_LEDDC/Vsync} \
+{/test/u_LEDDC/cnt_pwm\[15:0\]} \
+{/test/u_LEDDC/cnt_scanline\[4:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+{/test/u_LEDDC/OUT_buffer\[15:0\]} \
+{/test/u_LEDDC/OUT_buffer\[15\]\[15:0\]} \
+{/test/u_LEDDC/OUT_buffer\[14\]\[15:0\]} \
+{/test/u_LEDDC/OUT_buffer\[13\]\[15:0\]} \
+{/test/u_LEDDC/OUT_buffer\[12\]\[15:0\]} \
+{/test/u_LEDDC/OUT_buffer\[11\]\[15:0\]} \
+{/test/u_LEDDC/OUT_buffer\[10\]\[15:0\]} \
+{/test/u_LEDDC/OUT_buffer\[9\]\[15:0\]} \
+{/test/u_LEDDC/OUT_buffer\[8\]\[15:0\]} \
+{/test/u_LEDDC/OUT_buffer\[7\]\[15:0\]} \
+{/test/u_LEDDC/OUT_buffer\[6\]\[15:0\]} \
+{/test/u_LEDDC/OUT_buffer\[5\]\[15:0\]} \
+{/test/u_LEDDC/OUT_buffer\[4\]\[15:0\]} \
+{/test/u_LEDDC/OUT_buffer\[3\]\[15:0\]} \
+{/test/u_LEDDC/OUT_buffer\[2\]\[15:0\]} \
+{/test/u_LEDDC/OUT_buffer\[1\]\[15:0\]} \
+{/test/u_LEDDC/OUT_buffer\[0\]\[15:0\]} \
+{/test/u_LEDDC/OUT\[15:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G3" \
+}
+wvSelectSignal -win $_nWave1 {( "G2" 18 )} 
+wvSetPosition -win $_nWave1 {("G2" 18)}
+wvGetSignalClose -win $_nWave1
+wvSelectSignal -win $_nWave1 {( "G2" 18 )} 
+wvExpandBus -win $_nWave1 {("G2" 18)}
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvSelectGroup -win $_nWave1 {G3}
+wvSelectSignal -win $_nWave1 {( "G2" 33 )} 
+wvSelectSignal -win $_nWave1 {( "G2" 34 )} 
+wvSearchNext -win $_nWave1
+wvSearchNext -win $_nWave1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvSelectSignal -win $_nWave1 {( "G1" 3 )} 
+wvSetPosition -win $_nWave1 {("G1" 3)}
+wvExpandBus -win $_nWave1 {("G1" 3)}
+wvSetPosition -win $_nWave1 {("G2" 34)}
+wvSelectSignal -win $_nWave1 {( "G1" 3 )} 
+wvSetPosition -win $_nWave1 {("G1" 3)}
+wvCollapseBus -win $_nWave1 {("G1" 3)}
+wvSetPosition -win $_nWave1 {("G1" 3)}
+wvSetPosition -win $_nWave1 {("G2" 34)}
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvSelectSignal -win $_nWave1 {( "G1" 2 )} 
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0

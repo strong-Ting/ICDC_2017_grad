@@ -74,90 +74,90 @@ IMPERAS_PORT_FILE=.vsp_ovp_gdb_port
 TCL_LIBRARY=/usr/cad/cadence/INCISIV/cur/tools/inca/files/tcl/library
 Runtime command line arguments:
 argv[0]=ncverilog
-argv[1]=testfixture_30fps.v
+argv[1]=testfixture_60fps.v
 argv[2]=LEDDC.v
 argv[3]=+access+r
 79 profile - 100
-          CPU/Mem usage: 0.030 sys,  0.040 user,  59.85M sys,  0.00M vm
+          CPU/Mem usage: 0.030 sys,  0.040 user,  59.90M sys,  0.00M vm
 80 VC callback profile - scalar:0 vector:0
-81 Wed Mar 17 22:21:38 2021
+81 Wed Mar 17 23:51:46 2021
 82 pliAppInit
 83 FSDB_GATE is disabled.
 84 Enable Parallel Dumping.
 85 pliAppMiscSet: New Sim Round
 86 pliEntryInit
 87 LIBSSCORE=found /usr/cad/synopsys/verdi/cur/share/PLI/IUS/LINUX/libsscore_ius152.so through $LD_LIBRARY_PATH setting.
-88 argv[0]: LEDDC_30fps.fsdb
+88 argv[0]: LEDDC_60fps.fsdb
 89 FSDB Dumper for IUS, Release Verdi_O-2018.09, Linux, 08/30/2018
 90 (C) 1996 - 2018 by Synopsys, Inc.
-91 sps_call_fsdbDumpfile at 0 : /home/DICS/M10912039/CIC/CIC_2017_grad/final/testfixture_30fps.v(82)
-92 argv[0]: LEDDC_30fps.fsdb
+91 sps_call_fsdbDumpfile at 0 : /home/DICS/M10912039/CIC/CIC_2017_grad/final/testfixture_60fps.v(84)
+92 argv[0]: LEDDC_60fps.fsdb
 93 *Verdi* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
-94 *Verdi* : Create FSDB file 'LEDDC_30fps.fsdb'
-95 sps_call_fsdbDumpvars at 0 : /home/DICS/M10912039/CIC/CIC_2017_grad/final/testfixture_30fps.v(83)
+94 *Verdi* : Create FSDB file 'LEDDC_60fps.fsdb'
+95 sps_call_fsdbDumpvars at 0 : /home/DICS/M10912039/CIC/CIC_2017_grad/final/testfixture_60fps.v(85)
 96 *Verdi* : Begin traversing the scopes, layer (0).
 97 *Verdi* : End of traversing.
 98 fsdbDumpvars traverse var: profile - 
-          CPU/Mem usage: 0.040 sys,  0.050 user,  142.36M sys,  0.00M vm
-                   incr: 0.000 sys,  0.000 user,  3.67M sys,  0.00M vm
-                   accu: 0.000 sys,  0.000 user,  3.67M sys,  0.00M vm
-              accu incr: 0.000 sys,  0.000 user,  3.67M sys,  0.00M vm
+          CPU/Mem usage: 0.040 sys,  0.050 user,  142.40M sys,  0.00M vm
+                   incr: 0.000 sys,  0.010 user,  3.67M sys,  0.00M vm
+                   accu: 0.000 sys,  0.010 user,  3.67M sys,  0.00M vm
+              accu incr: 0.000 sys,  0.010 user,  3.67M sys,  0.00M vm
 
-          Count usage: 39 var,  39 idcode,  39 callback
-                 incr: 39 var,  39 idcode,  39 callback
-                 accu: 39 var,  39 idcode,  39 callback
-            accu incr: 39 var,  39 idcode,  39 callback
+          Count usage: 40 var,  40 idcode,  40 callback
+                 incr: 40 var,  40 idcode,  40 callback
+                 accu: 40 var,  40 idcode,  40 callback
+            accu incr: 40 var,  40 idcode,  40 callback
 99 VC callback profile - scalar:0 vector:0
-100 Wed Mar 17 22:21:38 2021
+100 Wed Mar 17 23:51:46 2021
 101 fsdbDumpvars: profile - 
-          CPU/Mem usage: 0.040 sys,  0.050 user,  143.41M sys,  0.00M vm
+          CPU/Mem usage: 0.040 sys,  0.050 user,  143.45M sys,  0.00M vm
                    incr: 0.000 sys,  0.000 user,  1.05M sys,  0.00M vm
-                   accu: 0.000 sys,  0.000 user,  4.72M sys,  0.00M vm
+                   accu: 0.000 sys,  0.010 user,  4.72M sys,  0.00M vm
               accu incr: 0.000 sys,  0.000 user,  1.05M sys,  0.00M vm
 
-          Count usage: 39 var,  39 idcode,  39 callback
+          Count usage: 40 var,  40 idcode,  40 callback
                  incr: 0 var,  0 idcode,  0 callback
-                 accu: 39 var,  39 idcode,  39 callback
+                 accu: 40 var,  40 idcode,  40 callback
             accu incr: 0 var,  0 idcode,  0 callback
-102 VC callback profile - scalar:19 vector:20
-103 Wed Mar 17 22:21:38 2021
-104 sps_call_fsdbDumpMDA at 0 : /home/DICS/M10912039/CIC/CIC_2017_grad/final/testfixture_30fps.v(84)
+102 VC callback profile - scalar:20 vector:20
+103 Wed Mar 17 23:51:46 2021
+104 sps_call_fsdbDumpMDA at 0 : /home/DICS/M10912039/CIC/CIC_2017_grad/final/testfixture_60fps.v(86)
 105 *Verdi* : Begin traversing the MDAs, layer (0).
 106 *Verdi* : Enable +mda and +packedmda dumping.
 107 *Verdi* : End of traversing the MDAs.
 108 fsdbDumpMDA traverse var: profile - 
-          CPU/Mem usage: 0.040 sys,  0.060 user,  143.68M sys,  0.00M vm
-                   incr: 0.000 sys,  0.010 user,  0.27M sys,  0.00M vm
-                   accu: 0.000 sys,  0.010 user,  0.27M sys,  0.00M vm
-              accu incr: 0.000 sys,  0.010 user,  0.27M sys,  0.00M vm
+          CPU/Mem usage: 0.040 sys,  0.060 user,  143.86M sys,  0.00M vm
+                   incr: 0.000 sys,  0.010 user,  0.41M sys,  0.00M vm
+                   accu: 0.000 sys,  0.010 user,  0.41M sys,  0.00M vm
+              accu incr: 0.000 sys,  0.010 user,  0.41M sys,  0.00M vm
 
-          Count usage: 2759 var,  2759 idcode,  2760 callback
-                 incr: 2720 var,  2720 idcode,  2721 callback
-                 accu: 2720 var,  2720 idcode,  2721 callback
-            accu incr: 2720 var,  2720 idcode,  2721 callback
-109 VC callback profile - scalar:19 vector:20
-110 Wed Mar 17 22:21:38 2021
+          Count usage: 3400 var,  3400 idcode,  3401 callback
+                 incr: 3360 var,  3360 idcode,  3361 callback
+                 accu: 3360 var,  3360 idcode,  3361 callback
+            accu incr: 3360 var,  3360 idcode,  3361 callback
+109 VC callback profile - scalar:20 vector:20
+110 Wed Mar 17 23:51:46 2021
 111 fsdbDumpMDA: profile - 
-          CPU/Mem usage: 0.040 sys,  0.070 user,  143.68M sys,  0.00M vm
-                   incr: 0.000 sys,  0.010 user,  0.00M sys,  0.00M vm
-                   accu: 0.000 sys,  0.020 user,  0.27M sys,  0.00M vm
-              accu incr: 0.000 sys,  0.010 user,  0.00M sys,  0.00M vm
+          CPU/Mem usage: 0.040 sys,  0.060 user,  143.86M sys,  0.00M vm
+                   incr: 0.000 sys,  0.000 user,  0.00M sys,  0.00M vm
+                   accu: 0.000 sys,  0.010 user,  0.41M sys,  0.00M vm
+              accu incr: 0.000 sys,  0.000 user,  0.00M sys,  0.00M vm
 
-          Count usage: 2759 var,  2759 idcode,  2760 callback
+          Count usage: 3400 var,  3400 idcode,  3401 callback
                  incr: 0 var,  0 idcode,  0 callback
-                 accu: 2720 var,  2720 idcode,  2721 callback
+                 accu: 3360 var,  3360 idcode,  3361 callback
             accu incr: 0 var,  0 idcode,  0 callback
-112 VC callback profile - scalar:19 vector:2740
-113 Wed Mar 17 22:21:38 2021
-114 End of simulation at 16666780100
-115 VC callback profile - scalar:42175281 vector:395413189
-116 Wed Mar 17 22:22:20 2021
+112 VC callback profile - scalar:20 vector:3380
+113 Wed Mar 17 23:51:46 2021
+114 End of simulation at 8333129000
+115 VC callback profile - scalar:42179068 vector:395440493
+116 Wed Mar 17 23:52:29 2021
 117 Begin FSDB profile info:
-118 FSDB Writer : bc1(42175281) bcn(395413189) mtf/stf(0/23)
-FSDB Writer elapsed time : flush(8.279263) io wait(0.000000) theadpool wait(0.000000) target functin(0.000000)
+118 FSDB Writer : bc1(42179068) bcn(395440493) mtf/stf(0/22)
+FSDB Writer elapsed time : flush(8.387736) io wait(0.000000) theadpool wait(0.000000) target functin(0.000000)
 FSDB Writer cpu time : MT Compression : 0
 119 End FSDB profile info
-120 Parallel profile    -  Flush:4 Expand:2 ProduceWait:20 ConsumerWait:0 BlockUsed:2702
-121                        ProduceTime:38.343605812 ConsumerTime:41.753943524 Buffer:128MB
+120 Parallel profile    -  Flush:4 Expand:2 ProduceWait:18 ConsumerWait:0 BlockUsed:2702
+121                        ProduceTime:38.305789588 ConsumerTime:42.237485230 Buffer:128MB
 122 SimExit
 123 Sim process exit

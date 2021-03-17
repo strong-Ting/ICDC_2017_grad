@@ -2,6 +2,6 @@
 // File created by:  ncverilog
 // Do not modify this file
 //
-testfixture_30fps.v
+testfixture_60fps.v
 LEDDC.v
 +access+r

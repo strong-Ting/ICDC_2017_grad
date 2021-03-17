@@ -24,7 +24,7 @@
 /usr/cad/synopsys/vcs/cur/linux/bin/vcs1
 /usr/cad/synopsys/verdi/cur//share/PLI/VCS/LINUX/verdi.tab
 LEDDC.v
-testfixture_30fps.v
+testfixture_60fps.v
 40
 sysc_uni_pwd=/home/DICS/M10912039/CIC/CIC_2017_grad/final
 XLOCALEDIR=/usr/cad/synopsys/icc2/cur/etc/locale
@@ -68,13 +68,13 @@ GIT_ASKPASS=/home/DICS/M10912039/.vscode-server/bin/fd6f3bce6709b121a895d042d343
 COLORTERM=truecolor
 0
 3
-1615988651 LEDDC.v
-1615987105 testfixture_30fps.v
+1615994600 LEDDC.v
+1615993914 testfixture_60fps.v
 1535631252 /usr/cad/synopsys/verdi/cur//share/PLI/VCS/LINUX/verdi.tab
 4
 1535686105 /usr/cad/synopsys/vcs/cur/linux/lib/libvirsim.so
 1535685624 /usr/cad/synopsys/vcs/cur/linux/lib/liberrorinf.so
 1535685580 /usr/cad/synopsys/vcs/cur/linux/lib/libsnpsmalloc.so
 1535685860 /usr/cad/synopsys/vcs/cur/linux/lib/libvfs.so
-1615988676 simv.daidir
+1615994633 simv.daidir
 -1 partitionlib
