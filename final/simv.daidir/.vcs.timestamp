@@ -1,0 +1,80 @@
+0 
+25
+-Mamsrun=
+-Masflags=--32
+-Mcc=gcc
+-Mcfl= -pipe -m32 -O -I/usr/cad/synopsys/vcs/cur/include
+-Mcplusplus=g++
+-Mcrt0=
+-Mcrtn=
+-Mcsrc=
+-Mexternalobj=
+-Mldflags= -m32 -m32 -rdynamic
+-Mobjects= /usr/cad/synopsys/vcs/cur/linux/lib/libvirsim.so /usr/cad/synopsys/vcs/cur/linux/lib/liberrorinf.so /usr/cad/synopsys/vcs/cur/linux/lib/libsnpsmalloc.so /usr/cad/synopsys/vcs/cur/linux/lib/libvfs.so
+-Mout=simv
+-Msaverestoreobj=/usr/cad/synopsys/vcs/cur/linux/lib/vcs_save_restore_new.o
+-Msyslibs=/usr/cad/synopsys/verdi/cur//share/PLI/VCS/LINUX/pli.a /usr/cad/synopsys/vcs/cur/linux/lib/ctype-stubs_32.a -ldl
+-Mvcsaceobjs=
+-Mxcflags= -pipe -m32 -I/usr/cad/synopsys/vcs/cur/include
+-P
+-Xvcs_run_simv=1
+-fsdb
+-gen_obj
+-picarchive
+/usr/cad/synopsys/vcs/cur/linux/bin/vcs1
+/usr/cad/synopsys/verdi/cur//share/PLI/VCS/LINUX/verdi.tab
+LEDDC.v
+testfixture_30fps.v
+40
+sysc_uni_pwd=/home/DICS/M10912039/CIC/CIC_2017_grad/final
+XLOCALEDIR=/usr/cad/synopsys/icc2/cur/etc/locale
+XDG_SESSION_ID=5
+XDG_RUNTIME_DIR=/run/user/1001
+XDG_DATA_DIRS=/home/DICS/M10912039//.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share
+VSCODE_IPC_HOOK_CLI=/run/user/1001/vscode-ipc-837bb3b7-990b-472b-83b0-63c0061c410f.sock
+VSCODE_GIT_IPC_HANDLE=/run/user/1001/vscode-git-c78b74fea3.sock
+VSCODE_GIT_ASKPASS_NODE=/home/DICS/M10912039/.vscode-server/bin/fd6f3bce6709b121a895d042d343d71f317d74e7/node
+VSCODE_GIT_ASKPASS_MAIN=/home/DICS/M10912039/.vscode-server/bin/fd6f3bce6709b121a895d042d343d71f317d74e7/extensions/git/dist/askpass-main.js
+VMR_MODE_FLAG=32
+VERDI_HOME=/usr/cad/synopsys/verdi/cur/
+VENDOR=unknown
+VCS_HOME=/usr/cad/synopsys/vcs/cur/
+VCS_DEPTH=0
+VCS_CC=gcc
+VCS_ARG_ADDED_FOR_TMP=1
+VCS_ARCH=linux
+VCS_AMD_PURE32=1
+UNAME=/bin/uname
+TOOL_HOME=/usr/cad/synopsys/vcs/cur/linux
+TERM_PROGRAM_VERSION=1.54.2
+TERM_PROGRAM=vscode
+SYN_MAN_DIR=/usr/cad/synopsys/synthesis/cur/doc/syn/man
+SYNTHESIS=/usr/cad/synopsys/synthesis/cur
+SYNOPSYS=/usr/cad/synopsys/icc/cur
+SSH_CONNECTION=140.125.44.75 63323 140.125.44.63 22
+SSH_CLIENT=140.125.44.75 63323 22
+SHLIB_PATH=/usr/cad/synopsys/verdi/cur/share/PLI/IUS/LINUX
+SG_HTML_BROWSER=/usr/bin/mozilla
+SCRNAME=vcs
+SCRIPT_NAME=vcs
+OVA_UUM=0
+OSTYPE=linux
+LESSOPEN=||/usr/bin/lesspipe.sh %s
+LC_ALL=C
+HOSTTYPE=x86_64-linux
+HISTCONTROL=ignoredups
+GROUP=M10912039
+GIT_ASKPASS=/home/DICS/M10912039/.vscode-server/bin/fd6f3bce6709b121a895d042d343d71f317d74e7/extensions/git/dist/askpass.sh
+COLORTERM=truecolor
+0
+3
+1615988651 LEDDC.v
+1615987105 testfixture_30fps.v
+1535631252 /usr/cad/synopsys/verdi/cur//share/PLI/VCS/LINUX/verdi.tab
+4
+1535686105 /usr/cad/synopsys/vcs/cur/linux/lib/libvirsim.so
+1535685624 /usr/cad/synopsys/vcs/cur/linux/lib/liberrorinf.so
+1535685580 /usr/cad/synopsys/vcs/cur/linux/lib/libsnpsmalloc.so
+1535685860 /usr/cad/synopsys/vcs/cur/linux/lib/libvfs.so
+1615988676 simv.daidir
+-1 partitionlib

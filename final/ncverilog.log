@@ -1,0 +1,439 @@
+ncverilog: 15.20-s039: (c) Copyright 1995-2017 Cadence Design Systems, Inc.
+TOOL:	ncverilog	15.20-s039: Started on Mar 17, 2021 at 22:21:33 CST
+ncverilog
+	testfixture_30fps.v
+	LEDDC.v
+	+access+r
+Recompiling... reason: file './LEDDC.v' is newer than expected.
+	expected: Wed Mar 17 22:20:24 2021
+	actual:   Wed Mar 17 22:21:32 2021
+file: LEDDC.v
+	module worklib.LEDDC:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.LEDDC:v <0x1094e2d9>
+			streams:  14, words: 12121
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                  Instances  Unique
+		Modules:                  2       2
+		Registers:               36      36
+		Scalar wires:             8       -
+		Vectored wires:           1       -
+		Always blocks:            7       7
+		Initial blocks:           8       8
+		Pseudo assignments:       2       2
+		Simulation timescale:  10ps
+	Writing initial simulation snapshot: worklib.test:v
+Loading snapshot worklib.test:v .................... Done
+*Verdi* Loading libsscore_ius152.so
+ncsim> source /usr/cad/cadence/INCISIV/cur/tools/inca/files/ncsimrc
+ncsim> run
+FSDB Dumper for IUS, Release Verdi_O-2018.09, Linux, 08/30/2018
+(C) 1996 - 2018 by Synopsys, Inc.
+*Verdi* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
+*Verdi* : Create FSDB file 'LEDDC_30fps.fsdb'
+*Verdi* : Begin traversing the scopes, layer (0).
+*Verdi* : End of traversing.
+*Verdi* : Begin traversing the MDAs, layer (0).
+*Verdi* : Enable +mda and +packedmda dumping.
+*Verdi* : End of traversing the MDAs.
+
+Pass @  frame_00   scanline_00 
+
+
+Pass @  frame_00   scanline_01 
+
+
+Pass @  frame_00   scanline_02 
+
+
+Pass @  frame_00   scanline_03 
+
+
+Pass @  frame_00   scanline_04 
+
+
+Pass @  frame_00   scanline_05 
+
+
+Pass @  frame_00   scanline_06 
+
+
+Pass @  frame_00   scanline_07 
+
+
+Pass @  frame_00   scanline_08 
+
+
+Pass @  frame_00   scanline_09 
+
+
+Pass @  frame_00   scanline_10 
+
+
+Pass @  frame_00   scanline_11 
+
+
+Pass @  frame_00   scanline_12 
+
+
+Pass @  frame_00   scanline_13 
+
+
+Pass @  frame_00   scanline_14 
+
+
+Pass @  frame_00   scanline_15 
+
+
+Pass @  frame_00   scanline_16 
+
+
+Pass @  frame_00   scanline_17 
+
+
+Pass @  frame_00   scanline_18 
+
+
+Pass @  frame_00   scanline_19 
+
+
+Pass @  frame_00   scanline_20 
+
+
+Pass @  frame_00   scanline_21 
+
+
+Pass @  frame_00   scanline_22 
+
+
+Pass @  frame_00   scanline_23 
+
+
+Pass @  frame_00   scanline_24 
+
+
+Pass @  frame_00   scanline_25 
+
+
+Pass @  frame_00   scanline_26 
+
+
+Pass @  frame_00   scanline_27 
+
+
+Pass @  frame_00   scanline_28 
+
+
+Pass @  frame_00   scanline_29 
+
+
+Pass @  frame_00   scanline_30 
+
+
+Pass @  frame_00   scanline_31 
+
+
+Pass @  frame_01   scanline_00 
+
+
+Pass @  frame_01   scanline_01 
+
+
+Pass @  frame_01   scanline_02 
+
+
+Pass @  frame_01   scanline_03 
+
+
+Pass @  frame_01   scanline_04 
+
+
+Pass @  frame_01   scanline_05 
+
+
+Pass @  frame_01   scanline_06 
+
+
+Pass @  frame_01   scanline_07 
+
+
+Pass @  frame_01   scanline_08 
+
+
+Pass @  frame_01   scanline_09 
+
+
+Pass @  frame_01   scanline_10 
+
+
+Pass @  frame_01   scanline_11 
+
+
+Pass @  frame_01   scanline_12 
+
+
+Pass @  frame_01   scanline_13 
+
+
+Pass @  frame_01   scanline_14 
+
+
+Pass @  frame_01   scanline_15 
+
+
+Pass @  frame_01   scanline_16 
+
+
+Pass @  frame_01   scanline_17 
+
+
+Pass @  frame_01   scanline_18 
+
+
+Pass @  frame_01   scanline_19 
+
+
+Pass @  frame_01   scanline_20 
+
+
+Pass @  frame_01   scanline_21 
+
+
+Pass @  frame_01   scanline_22 
+
+
+Pass @  frame_01   scanline_23 
+
+
+Pass @  frame_01   scanline_24 
+
+
+Pass @  frame_01   scanline_25 
+
+
+Pass @  frame_01   scanline_26 
+
+
+Pass @  frame_01   scanline_27 
+
+
+Pass @  frame_01   scanline_28 
+
+
+Pass @  frame_01   scanline_29 
+
+
+Pass @  frame_01   scanline_30 
+
+
+Pass @  frame_01   scanline_31 
+
+
+Pass @  frame_02   scanline_00 
+
+
+Pass @  frame_02   scanline_01 
+
+
+Pass @  frame_02   scanline_02 
+
+
+Pass @  frame_02   scanline_03 
+
+
+Pass @  frame_02   scanline_04 
+
+
+Pass @  frame_02   scanline_05 
+
+
+Pass @  frame_02   scanline_06 
+
+
+Pass @  frame_02   scanline_07 
+
+
+Pass @  frame_02   scanline_08 
+
+
+Pass @  frame_02   scanline_09 
+
+
+Pass @  frame_02   scanline_10 
+
+
+Pass @  frame_02   scanline_11 
+
+
+Pass @  frame_02   scanline_12 
+
+
+Pass @  frame_02   scanline_13 
+
+
+Pass @  frame_02   scanline_14 
+
+
+Pass @  frame_02   scanline_15 
+
+
+Pass @  frame_02   scanline_16 
+
+
+Pass @  frame_02   scanline_17 
+
+
+Pass @  frame_02   scanline_18 
+
+
+Pass @  frame_02   scanline_19 
+
+
+Pass @  frame_02   scanline_20 
+
+
+Pass @  frame_02   scanline_21 
+
+
+Pass @  frame_02   scanline_22 
+
+
+Pass @  frame_02   scanline_23 
+
+
+Pass @  frame_02   scanline_24 
+
+
+Pass @  frame_02   scanline_25 
+
+
+Pass @  frame_02   scanline_26 
+
+
+Pass @  frame_02   scanline_27 
+
+
+Pass @  frame_02   scanline_28 
+
+
+Pass @  frame_02   scanline_29 
+
+
+Pass @  frame_02   scanline_30 
+
+
+Pass @  frame_02   scanline_31 
+
+
+Pass @  frame_03   scanline_00 
+
+
+Pass @  frame_03   scanline_01 
+
+
+Pass @  frame_03   scanline_02 
+
+
+Pass @  frame_03   scanline_03 
+
+
+Pass @  frame_03   scanline_04 
+
+
+Pass @  frame_03   scanline_05 
+
+
+Pass @  frame_03   scanline_06 
+
+
+Pass @  frame_03   scanline_07 
+
+
+Pass @  frame_03   scanline_08 
+
+
+Pass @  frame_03   scanline_09 
+
+
+Pass @  frame_03   scanline_10 
+
+
+Pass @  frame_03   scanline_11 
+
+
+Pass @  frame_03   scanline_12 
+
+
+Pass @  frame_03   scanline_13 
+
+
+Pass @  frame_03   scanline_14 
+
+
+Pass @  frame_03   scanline_15 
+
+
+Pass @  frame_03   scanline_16 
+
+
+Pass @  frame_03   scanline_17 
+
+
+Pass @  frame_03   scanline_18 
+
+
+Pass @  frame_03   scanline_19 
+
+
+Pass @  frame_03   scanline_20 
+
+
+Pass @  frame_03   scanline_21 
+
+
+Pass @  frame_03   scanline_22 
+
+
+Pass @  frame_03   scanline_23 
+
+
+Pass @  frame_03   scanline_24 
+
+
+Pass @  frame_03   scanline_25 
+
+
+Pass @  frame_03   scanline_26 
+
+
+Pass @  frame_03   scanline_27 
+
+
+Pass @  frame_03   scanline_28 
+
+
+Pass @  frame_03   scanline_29 
+
+
+Pass @  frame_03   scanline_30 
+
+
+Pass @  frame_03   scanline_31 
+
+
+-----------------------------------------------------
+
+Congratulations! All data have been generated successfully!
+
+-------------------------PASS------------------------
+
+Simulation complete via $finish(1) at time 166667801 NS + 0
+./testfixture_30fps.v:290       $finish;
+ncsim> exit
+TOOL:	ncverilog	15.20-s039: Exiting on Mar 17, 2021 at 22:22:21 CST  (total: 00:00:48)
