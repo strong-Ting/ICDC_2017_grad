@@ -6,7 +6,6 @@
 `define GCK_Period  4.50                   //Don't Modify Period
 `define DEL         1.0
 
-
 module test;
 reg          DCK;
 reg          GCK;
@@ -85,6 +84,9 @@ $fsdbDumpMDA;
 end
 
 
+initial begin
+   //#4000000000 $finish;
+end
 
 initial begin  
 //reset cycle 

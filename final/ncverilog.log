@@ -1,12 +1,14 @@
 ncverilog: 15.20-s039: (c) Copyright 1995-2017 Cadence Design Systems, Inc.
-TOOL:	ncverilog	15.20-s039: Started on Mar 17, 2021 at 23:51:39 CST
+TOOL:	ncverilog	15.20-s039: Started on Mar 19, 2021 at 22:19:03 CST
 ncverilog
 	testfixture_60fps.v
 	LEDDC.v
+	./sram_512x16/sram_512x16.v
+	./sram_256x16/sram_256x16.v
 	+access+r
 Recompiling... reason: file './LEDDC.v' is newer than expected.
-	expected: Wed Mar 17 23:46:00 2021
-	actual:   Wed Mar 17 23:51:37 2021
+	expected: Fri Mar 19 22:17:35 2021
+	actual:   Fri Mar 19 22:19:02 2021
 file: LEDDC.v
 	module worklib.LEDDC:v
 		errors: 0, warnings: 0
@@ -14,20 +16,25 @@ file: LEDDC.v
 	Elaborating the design hierarchy:
 	Building instance overlay tables: .................... Done
 	Generating native compiled code:
-		worklib.LEDDC:v <0x3eb18cf6>
-			streams:  20, words: 24268
+		worklib.LEDDC:v <0x405af132>
+			streams:  29, words: 18906
 	Building instance specific data structures.
 	Loading native compiled code:     .................... Done
 	Design hierarchy summary:
-		                  Instances  Unique
-		Modules:                  2       2
-		Registers:               38      38
-		Scalar wires:             8       -
-		Vectored wires:           1       -
-		Always blocks:            7       7
-		Initial blocks:           8       8
-		Pseudo assignments:       2       2
-		Simulation timescale:  10ps
+		                 Instances  Unique
+		Modules:                 4       4
+		Primitives:            106       1
+		Timing outputs:         32       1
+		Registers:             287     287
+		Scalar wires:           59       -
+		Expanded wires:         98       8
+		Vectored wires:          1       -
+		Always blocks:          18      18
+		Initial blocks:          7       7
+		Cont. assignments:      14      17
+		Pseudo assignments:      4       4
+		Timing checks:         298      84
+		Simulation timescale:  1ps
 	Writing initial simulation snapshot: worklib.test:v
 Loading snapshot worklib.test:v .................... Done
 *Verdi* Loading libsscore_ius152.so
@@ -186,20 +193,25 @@ Pass @  frame_00   scanline_14 (round_01)
 
 Pass @  frame_00   scanline_15 (round_01) 
 
+ERROR @  frame_00   scanline_16: (round_01)
+Your Output: 2f2f_23a3_25a5_28a8_2b2b_3232_27a7_1b1b_2828_3232_1d9d_1818_2f2f_2323_25a5_2525
+Expect Output: 24a4_2222_22a2_2121_1d9d_1919_1595_27a7_3cbc_44c4_47c7_4949_4bcb_4ccc_47c7_3bbb
 
-Pass @  frame_00   scanline_16 (round_01) 
+ERROR @  frame_00   scanline_17: (round_01)
+Your Output: 2e2e_20a0_23a3_2929_2f2f_3131_1f9f_1b9b_2323_26a6_1010_3c3c_1c1c_2f2f_2020_2a2a
+Expect Output: 21a1_22a2_2121_2121_1b9b_1d9d_1c1c_2eae_3e3e_46c6_47c7_48c8_4aca_4bcb_4949_3cbc
 
+ERROR @  frame_00   scanline_18: (round_01)
+Your Output: 3030_2121_2424_29a9_2cac_3131_1d1d_1595_2626_1999_26a6_1e9e_1e9e_1e1e_1e9e_24a4
+Expect Output: 1f9f_2323_1f9f_2424_1d9d_1f1f_2424_3434_3fbf_45c5_4747_4848_4bcb_4ccc_4848_3dbd
 
-Pass @  frame_00   scanline_17 (round_01) 
+ERROR @  frame_00   scanline_19: (round_01)
+Your Output: 2eae_1f9f_2424_29a9_2cac_3d3d_24a4_1898_2121_2929_26a6_1515_2020_1d9d_2c2c_30b0
+Expect Output: 22a2_20a0_2222_21a1_1d9d_1a9a_24a4_34b4_3e3e_44c4_47c7_4848_4b4b_4d4d_49c9_3f3f
 
-
-Pass @  frame_00   scanline_18 (round_01) 
-
-
-Pass @  frame_00   scanline_19 (round_01) 
-
-
-Pass @  frame_00   scanline_20 (round_01) 
+ERROR @  frame_00   scanline_20: (round_01)
+Your Output: 2e2e_1e1e_2323_27a7_3aba_2d2d_2222_3737_4040_44c4_48c8_4747_4949_4dcd_49c9_4040
+Expect Output: 2121_1e1e_1d9d_2121_1c9c_1898_2626_3737_4040_44c4_48c8_4747_4949_4dcd_49c9_4040
 
 
 Pass @  frame_00   scanline_21 (round_01) 
@@ -378,20 +390,25 @@ Pass @  frame_01   scanline_14 (round_01)
 
 Pass @  frame_01   scanline_15 (round_01) 
 
+ERROR @  frame_01   scanline_16: (round_01)
+Your Output: 4dcd_1797_1818_1292_1898_1010_1595_1f9f_1393_3aba_1010_0f8f_1010_0d0d_4a4a_4ccc
+Expect Output: 2f2f_23a3_25a5_28a8_2b2b_3232_27a7_1b1b_2828_3232_1d9d_1818_2f2f_2323_25a5_2525
 
-Pass @  frame_01   scanline_16 (round_01) 
+ERROR @  frame_01   scanline_17: (round_01)
+Your Output: 32b2_1a1a_2828_0f0f_1494_32b2_1212_0d8d_2626_23a3_1595_1595_1313_2cac_41c1_4bcb
+Expect Output: 2e2e_20a0_23a3_2929_2f2f_3131_1f9f_1b9b_2323_26a6_1010_3c3c_1c1c_2f2f_2020_2a2a
 
+ERROR @  frame_01   scanline_18: (round_01)
+Your Output: 2d2d_3434_3bbb_0f8f_1212_4646_1797_0d8d_29a9_1e1e_2626_2cac_42c2_2aaa_2e2e_5a5a
+Expect Output: 3030_2121_2424_29a9_2cac_3131_1d1d_1595_2626_1999_26a6_1e9e_1e9e_1e1e_1e9e_24a4
 
-Pass @  frame_01   scanline_17 (round_01) 
+ERROR @  frame_01   scanline_19: (round_01)
+Your Output: 2cac_43c3_3fbf_2020_2121_2d2d_1717_21a1_1090_3737_38b8_4949_3dbd_26a6_4343_3131
+Expect Output: 2eae_1f9f_2424_29a9_2cac_3d3d_24a4_1898_2121_2929_26a6_1515_2020_1d9d_2c2c_30b0
 
-
-Pass @  frame_01   scanline_18 (round_01) 
-
-
-Pass @  frame_01   scanline_19 (round_01) 
-
-
-Pass @  frame_01   scanline_20 (round_01) 
+ERROR @  frame_01   scanline_20: (round_01)
+Your Output: 2121_2626_39b9_2c2c_3131_1e1e_1010_1999_3232_1494_1e1e_1999_21a1_23a3_26a6_2727
+Expect Output: 2e2e_1e1e_2323_27a7_3aba_2d2d_2222_1b1b_3232_1494_1e1e_1999_21a1_23a3_26a6_2727
 
 
 Pass @  frame_01   scanline_21 (round_01) 
@@ -570,20 +587,25 @@ Pass @  frame_02   scanline_14 (round_01)
 
 Pass @  frame_02   scanline_15 (round_01) 
 
+ERROR @  frame_02   scanline_16: (round_01)
+Your Output: 4ece_44c4_1010_0e8e_1414_1111_2f2f_22a2_29a9_3131_34b4_3636_3838_3bbb_3dbd_4040
+Expect Output: 4dcd_1797_1818_1292_1898_1010_1595_1f9f_1393_3aba_1010_0f8f_1010_0d0d_4a4a_4ccc
 
-Pass @  frame_02   scanline_16 (round_01) 
+ERROR @  frame_02   scanline_17: (round_01)
+Your Output: 4ece_0f8f_1212_1616_1414_1292_2faf_2121_2c2c_3030_3434_36b6_38b8_38b8_3d3d_3d3d
+Expect Output: 32b2_1a1a_2828_0f0f_1494_32b2_1212_0d8d_2626_23a3_1595_1595_1313_2cac_41c1_4bcb
 
+ERROR @  frame_02   scanline_18: (round_01)
+Your Output: 0f8f_0f8f_1595_1595_1393_1191_3333_2020_2d2d_3232_33b3_3737_35b5_38b8_3aba_3d3d
+Expect Output: 2d2d_3434_3bbb_0f8f_1212_4646_1797_0d8d_29a9_1e1e_2626_2cac_42c2_2aaa_2e2e_5a5a
 
-Pass @  frame_02   scanline_17 (round_01) 
+ERROR @  frame_02   scanline_19: (round_01)
+Your Output: 1696_1a9a_1818_1b1b_1313_1313_2f2f_24a4_2d2d_32b2_3737_35b5_37b7_3bbb_3cbc_3aba
+Expect Output: 2cac_43c3_3fbf_2020_2121_2d2d_1717_21a1_1090_3737_38b8_4949_3dbd_26a6_4343_3131
 
-
-Pass @  frame_02   scanline_18 (round_01) 
-
-
-Pass @  frame_02   scanline_19 (round_01) 
-
-
-Pass @  frame_02   scanline_20 (round_01) 
+ERROR @  frame_02   scanline_20: (round_01)
+Your Output: 1616_1313_1313_2020_1494_1090_31b1_1999_25a5_41c1_4848_51d1_2e2e_2626_4c4c_0f8f
+Expect Output: 2121_2626_39b9_2c2c_3131_1e1e_1010_1999_25a5_41c1_4848_51d1_2e2e_2626_4c4c_0f8f
 
 
 Pass @  frame_02   scanline_21 (round_01) 
@@ -813,11 +835,15 @@ Pass @  frame_03   scanline_31 (round_01)
 
 -----------------------------------------------------
 
-Congratulations! All data have been generated successfully!
+Final Simulation Result as below: 
 
--------------------------PASS------------------------
+-----------------------------------------------------
+
+Total number of scanline errors: 015 
+
+-----------------------------------------------------
 
 Simulation complete via $finish(1) at time 83331290 NS + 0
 ./testfixture_60fps.v:305       $finish;
 ncsim> exit
-TOOL:	ncverilog	15.20-s039: Exiting on Mar 17, 2021 at 23:52:29 CST  (total: 00:00:50)
+TOOL:	ncverilog	15.20-s039: Exiting on Mar 19, 2021 at 22:19:54 CST  (total: 00:00:51)

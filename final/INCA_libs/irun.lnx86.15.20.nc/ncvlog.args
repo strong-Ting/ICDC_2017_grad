@@ -7,6 +7,8 @@
 -RUNMODE
 testfixture_60fps.v
 LEDDC.v
+./sram_512x16/sram_512x16.v
+./sram_256x16/sram_256x16.v
 -CDSLIB
 ./INCA_libs/irun.lnx86.15.20.nc/cdsrun.lib
 -HDLVAR

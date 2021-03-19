@@ -1,3 +1,5 @@
-1615996297 /home/DICS/M10912039/CIC/CIC_2017_grad/final/LEDDC.v
-1615987105 /home/DICS/M10912039/CIC/CIC_2017_grad/final/testfixture_30fps.v
-1615993914 /home/DICS/M10912039/CIC/CIC_2017_grad/final/testfixture_60fps.v
+1616163542 /home/DICS/M10912039/CIC/CIC_2017_grad/final/LEDDC.v
+1490076934 /home/DICS/M10912039/CIC/CIC_2017_grad/final/sram_256x16/sram_256x16.v
+1616139607 /home/DICS/M10912039/CIC/CIC_2017_grad/final/testfixture_30fps.v
+1616127707 /home/DICS/M10912039/CIC/CIC_2017_grad/final/testfixture_60fps.v
+1490076934 /home/DICS/M10912039/CIC/CIC_2017_grad/final/sram_512x16/sram_512x16.v

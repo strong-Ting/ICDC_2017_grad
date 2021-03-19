@@ -61,7 +61,7 @@ VERDI_HOME=/usr/cad/synopsys/verdi/cur/
 VSCODE_GIT_ASKPASS_MAIN=/home/DICS/M10912039/.vscode-server/bin/fd6f3bce6709b121a895d042d343d71f317d74e7/extensions/git/dist/askpass-main.js
 VSCODE_GIT_ASKPASS_NODE=/home/DICS/M10912039/.vscode-server/bin/fd6f3bce6709b121a895d042d343d71f317d74e7/node
 VSCODE_GIT_IPC_HANDLE=/run/user/1001/vscode-git-c78b74fea3.sock
-VSCODE_IPC_HOOK_CLI=/run/user/1001/vscode-ipc-837bb3b7-990b-472b-83b0-63c0061c410f.sock
+VSCODE_IPC_HOOK_CLI=/run/user/1001/vscode-ipc-4ce7c5c7-f0a5-4583-ad0a-16f073061136.sock
 XDG_DATA_DIRS=/home/DICS/M10912039//.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share
 XDG_RUNTIME_DIR=/run/user/1001
 XDG_SESSION_ID=5
@@ -76,88 +76,92 @@ Runtime command line arguments:
 argv[0]=ncverilog
 argv[1]=testfixture_60fps.v
 argv[2]=LEDDC.v
-argv[3]=+access+r
-79 profile - 100
-          CPU/Mem usage: 0.030 sys,  0.040 user,  59.90M sys,  0.00M vm
-80 VC callback profile - scalar:0 vector:0
-81 Wed Mar 17 23:51:46 2021
-82 pliAppInit
-83 FSDB_GATE is disabled.
-84 Enable Parallel Dumping.
-85 pliAppMiscSet: New Sim Round
-86 pliEntryInit
-87 LIBSSCORE=found /usr/cad/synopsys/verdi/cur/share/PLI/IUS/LINUX/libsscore_ius152.so through $LD_LIBRARY_PATH setting.
-88 argv[0]: LEDDC_60fps.fsdb
-89 FSDB Dumper for IUS, Release Verdi_O-2018.09, Linux, 08/30/2018
-90 (C) 1996 - 2018 by Synopsys, Inc.
-91 sps_call_fsdbDumpfile at 0 : /home/DICS/M10912039/CIC/CIC_2017_grad/final/testfixture_60fps.v(84)
-92 argv[0]: LEDDC_60fps.fsdb
-93 *Verdi* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
-94 *Verdi* : Create FSDB file 'LEDDC_60fps.fsdb'
-95 sps_call_fsdbDumpvars at 0 : /home/DICS/M10912039/CIC/CIC_2017_grad/final/testfixture_60fps.v(85)
-96 *Verdi* : Begin traversing the scopes, layer (0).
-97 *Verdi* : End of traversing.
-98 fsdbDumpvars traverse var: profile - 
-          CPU/Mem usage: 0.040 sys,  0.050 user,  142.40M sys,  0.00M vm
-                   incr: 0.000 sys,  0.010 user,  3.67M sys,  0.00M vm
-                   accu: 0.000 sys,  0.010 user,  3.67M sys,  0.00M vm
-              accu incr: 0.000 sys,  0.010 user,  3.67M sys,  0.00M vm
+argv[3]=./sram_512x16/sram_512x16.v
+argv[4]=./sram_256x16/sram_256x16.v
+argv[5]=+access+r
+81 profile - 100
+          CPU/Mem usage: 0.040 sys,  0.030 user,  60.19M sys,  0.00M vm
+82 VC callback profile - scalar:0 vector:0
+83 Fri Mar 19 22:19:09 2021
+84 pliAppInit
+85 FSDB_GATE is disabled.
+86 Enable Parallel Dumping.
+87 pliAppMiscSet: New Sim Round
+88 pliEntryInit
+89 LIBSSCORE=found /usr/cad/synopsys/verdi/cur/share/PLI/IUS/LINUX/libsscore_ius152.so through $LD_LIBRARY_PATH setting.
+90 argv[0]: LEDDC_60fps.fsdb
+91 FSDB Dumper for IUS, Release Verdi_O-2018.09, Linux, 08/30/2018
+92 (C) 1996 - 2018 by Synopsys, Inc.
+93 sps_call_fsdbDumpfile at 0 : /home/DICS/M10912039/CIC/CIC_2017_grad/final/testfixture_60fps.v(84)
+94 argv[0]: LEDDC_60fps.fsdb
+95 *Verdi* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
+96 *Verdi* : Create FSDB file 'LEDDC_60fps.fsdb'
+97 sps_call_fsdbDumpvars at 0 : /home/DICS/M10912039/CIC/CIC_2017_grad/final/testfixture_60fps.v(85)
+98 *Verdi* : Begin traversing the scopes, layer (0).
+99 Cell instance `test.u_LEDDC.sram512'.
+100 *Verdi* : End of traversing.
+101 fsdbDumpvars traverse var: profile - 
+          CPU/Mem usage: 0.040 sys,  0.040 user,  142.76M sys,  0.00M vm
+                   incr: 0.000 sys,  0.000 user,  3.73M sys,  0.00M vm
+                   accu: 0.000 sys,  0.000 user,  3.73M sys,  0.00M vm
+              accu incr: 0.000 sys,  0.000 user,  3.73M sys,  0.00M vm
 
-          Count usage: 40 var,  40 idcode,  40 callback
-                 incr: 40 var,  40 idcode,  40 callback
-                 accu: 40 var,  40 idcode,  40 callback
-            accu incr: 40 var,  40 idcode,  40 callback
-99 VC callback profile - scalar:0 vector:0
-100 Wed Mar 17 23:51:46 2021
-101 fsdbDumpvars: profile - 
-          CPU/Mem usage: 0.040 sys,  0.050 user,  143.45M sys,  0.00M vm
-                   incr: 0.000 sys,  0.000 user,  1.05M sys,  0.00M vm
-                   accu: 0.000 sys,  0.010 user,  4.72M sys,  0.00M vm
-              accu incr: 0.000 sys,  0.000 user,  1.05M sys,  0.00M vm
+          Count usage: 464 var,  427 idcode,  427 callback
+                 incr: 464 var,  427 idcode,  427 callback
+                 accu: 464 var,  427 idcode,  427 callback
+            accu incr: 464 var,  427 idcode,  427 callback
+102 VC callback profile - scalar:0 vector:0
+103 Fri Mar 19 22:19:09 2021
+104 fsdbDumpvars: profile - 
+          CPU/Mem usage: 0.040 sys,  0.050 user,  143.81M sys,  0.00M vm
+                   incr: 0.000 sys,  0.010 user,  1.05M sys,  0.00M vm
+                   accu: 0.000 sys,  0.010 user,  4.78M sys,  0.00M vm
+              accu incr: 0.000 sys,  0.010 user,  1.05M sys,  0.00M vm
 
-          Count usage: 40 var,  40 idcode,  40 callback
+          Count usage: 464 var,  427 idcode,  427 callback
                  incr: 0 var,  0 idcode,  0 callback
-                 accu: 40 var,  40 idcode,  40 callback
+                 accu: 464 var,  427 idcode,  427 callback
             accu incr: 0 var,  0 idcode,  0 callback
-102 VC callback profile - scalar:20 vector:20
-103 Wed Mar 17 23:51:46 2021
-104 sps_call_fsdbDumpMDA at 0 : /home/DICS/M10912039/CIC/CIC_2017_grad/final/testfixture_60fps.v(86)
-105 *Verdi* : Begin traversing the MDAs, layer (0).
-106 *Verdi* : Enable +mda and +packedmda dumping.
-107 *Verdi* : End of traversing the MDAs.
-108 fsdbDumpMDA traverse var: profile - 
-          CPU/Mem usage: 0.040 sys,  0.060 user,  143.86M sys,  0.00M vm
-                   incr: 0.000 sys,  0.010 user,  0.41M sys,  0.00M vm
-                   accu: 0.000 sys,  0.010 user,  0.41M sys,  0.00M vm
-              accu incr: 0.000 sys,  0.010 user,  0.41M sys,  0.00M vm
+105 VC callback profile - scalar:367 vector:60
+106 Fri Mar 19 22:19:09 2021
+107 sps_call_fsdbDumpMDA at 0 : /home/DICS/M10912039/CIC/CIC_2017_grad/final/testfixture_60fps.v(86)
+108 *Verdi* : Begin traversing the MDAs, layer (0).
+109 *Verdi* : Enable +mda and +packedmda dumping.
+110 Cell instance `test.u_LEDDC.sram512'.
+111 *Verdi* : End of traversing the MDAs.
+112 fsdbDumpMDA traverse var: profile - 
+          CPU/Mem usage: 0.050 sys,  0.050 user,  144.22M sys,  0.00M vm
+                   incr: 0.010 sys,  0.000 user,  0.41M sys,  0.00M vm
+                   accu: 0.010 sys,  0.000 user,  0.41M sys,  0.00M vm
+              accu incr: 0.010 sys,  0.000 user,  0.41M sys,  0.00M vm
 
-          Count usage: 3400 var,  3400 idcode,  3401 callback
-                 incr: 3360 var,  3360 idcode,  3361 callback
-                 accu: 3360 var,  3360 idcode,  3361 callback
-            accu incr: 3360 var,  3360 idcode,  3361 callback
-109 VC callback profile - scalar:20 vector:20
-110 Wed Mar 17 23:51:46 2021
-111 fsdbDumpMDA: profile - 
-          CPU/Mem usage: 0.040 sys,  0.060 user,  143.86M sys,  0.00M vm
-                   incr: 0.000 sys,  0.000 user,  0.00M sys,  0.00M vm
-                   accu: 0.000 sys,  0.010 user,  0.41M sys,  0.00M vm
-              accu incr: 0.000 sys,  0.000 user,  0.00M sys,  0.00M vm
+          Count usage: 3568 var,  3531 idcode,  3532 callback
+                 incr: 3104 var,  3104 idcode,  3105 callback
+                 accu: 3104 var,  3104 idcode,  3105 callback
+            accu incr: 3104 var,  3104 idcode,  3105 callback
+113 VC callback profile - scalar:367 vector:60
+114 Fri Mar 19 22:19:09 2021
+115 fsdbDumpMDA: profile - 
+          CPU/Mem usage: 0.050 sys,  0.050 user,  144.36M sys,  0.00M vm
+                   incr: 0.000 sys,  0.000 user,  0.14M sys,  0.00M vm
+                   accu: 0.010 sys,  0.000 user,  0.54M sys,  0.00M vm
+              accu incr: 0.000 sys,  0.000 user,  0.14M sys,  0.00M vm
 
-          Count usage: 3400 var,  3400 idcode,  3401 callback
+          Count usage: 3568 var,  3531 idcode,  3532 callback
                  incr: 0 var,  0 idcode,  0 callback
-                 accu: 3360 var,  3360 idcode,  3361 callback
+                 accu: 3104 var,  3104 idcode,  3105 callback
             accu incr: 0 var,  0 idcode,  0 callback
-112 VC callback profile - scalar:20 vector:3380
-113 Wed Mar 17 23:51:46 2021
-114 End of simulation at 8333129000
-115 VC callback profile - scalar:42179068 vector:395440493
-116 Wed Mar 17 23:52:29 2021
-117 Begin FSDB profile info:
-118 FSDB Writer : bc1(42179068) bcn(395440493) mtf/stf(0/22)
-FSDB Writer elapsed time : flush(8.387736) io wait(0.000000) theadpool wait(0.000000) target functin(0.000000)
+116 VC callback profile - scalar:367 vector:3164
+117 Fri Mar 19 22:19:09 2021
+118 End of simulation at 83331290000
+119 VC callback profile - scalar:42595419 vector:395235720
+120 Fri Mar 19 22:19:53 2021
+121 Begin FSDB profile info:
+122 FSDB Writer : bc1(42595419) bcn(395235720) mtf/stf(0/25)
+FSDB Writer elapsed time : flush(8.843001) io wait(0.000000) theadpool wait(0.000000) target functin(0.000000)
 FSDB Writer cpu time : MT Compression : 0
-119 End FSDB profile info
-120 Parallel profile    -  Flush:4 Expand:2 ProduceWait:18 ConsumerWait:0 BlockUsed:2702
-121                        ProduceTime:38.305789588 ConsumerTime:42.237485230 Buffer:128MB
-122 SimExit
-123 Sim process exit
+123 End FSDB profile info
+124 Parallel profile    -  Flush:4 Expand:2 ProduceWait:19 ConsumerWait:92 BlockUsed:2702
+125                        ProduceTime:40.484958698 ConsumerTime:43.683398391 Buffer:128MB
+126 SimExit
+127 Sim process exit

@@ -50,3 +50,95 @@ s49(17Mar2021:23:44:35):  ncverilog testfixture_60fps.v LEDDC.v +access+r
 s50(17Mar2021:23:45:53):  ncverilog testfixture_60fps.v LEDDC.v +access+r 
 s51(17Mar2021:23:46:01):  ncverilog testfixture_60fps.v LEDDC.v +access+r 
 s52(17Mar2021:23:51:39):  ncverilog testfixture_60fps.v LEDDC.v +access+r 
+s53(18Mar2021:20:27:49):  ncverilog testfixture_60fps.v LEDDC.v +access+r 
+s54(18Mar2021:20:28:13):  ncverilog testfixture_30fps.v LEDDC.v +access+r 
+s55(18Mar2021:20:31:17):  ncverilog testfixture_30fps.v LEDDC.v +access+r 
+s56(18Mar2021:20:32:50):  ncverilog testfixture_30fps.v LEDDC.v +access+r 
+s57(18Mar2021:20:33:22):  ncverilog testfixture_30fps.v LEDDC.v +access+r +notimingchecks 
+s58(18Mar2021:20:36:27):  ncverilog testfixture_30fps.v LEDDC.v +access+r +notimingchecks 
+s59(18Mar2021:20:37:19):  ncverilog testfixture_30fps.v LEDDC.v +access+r 
+s60(18Mar2021:20:38:19):  ncverilog testfixture_30fps.v LEDDC.v +access+r 
+s61(18Mar2021:20:38:42):  ncverilog testfixture_30fps.v LEDDC.v +access+r 
+s62(19Mar2021:12:13:10):  ncverilog testfixture_30fps.v LEDDC.v +access+r 
+s63(19Mar2021:12:13:58):  ncverilog testfixture_30fps.v LEDDC.v +access+r 
+s64(19Mar2021:12:14:12):  ncverilog testfixture_30fps.v LEDDC.v +access+r 
+s65(19Mar2021:12:15:30):  ncverilog testfixture_30fps.v LEDDC.v +access+r 
+s66(19Mar2021:12:16:48):  ncverilog testfixture_30fps.v LEDDC.v +access+r 
+s67(19Mar2021:12:17:10):  ncverilog testfixture_30fps.v LEDDC.v +access+r 
+s68(19Mar2021:12:22:15):  ncverilog testfixture_30fps.v LEDDC.v ./sram_512x16/sram_512x16.v +access+r 
+s69(19Mar2021:12:37:39):  ncverilog testfixture_30fps.v LEDDC.v ./sram_512x16/sram_512x16.v +access+r 
+s70(19Mar2021:12:39:20):  ncverilog testfixture_30fps.v LEDDC.v ./sram_512x16/sram_512x16.v +access+r 
+s71(19Mar2021:12:39:30):  ncverilog testfixture_30fps.v LEDDC.v ./sram_512x16/sram_512x16.v +access+r 
+s72(19Mar2021:12:40:15):  ncverilog testfixture_30fps.v LEDDC.v ./sram_512x16/sram_512x16.v +access+r 
+s73(19Mar2021:12:45:41):  ncverilog testfixture_30fps.v LEDDC.v ./sram_512x16/sram_512x16.v +access+r 
+s74(19Mar2021:12:46:02):  ncverilog testfixture_30fps.v LEDDC.v ./sram_512x16/sram_512x16.v +access+r 
+s75(19Mar2021:12:46:47):  ncverilog testfixture_30fps.v LEDDC.v ./sram_512x16/sram_512x16.v +access+r 
+s76(19Mar2021:12:47:08):  ncverilog testfixture_30fps.v LEDDC.v ./sram_512x16/sram_512x16.v +access+r 
+s77(19Mar2021:12:47:35):  ncverilog testfixture_30fps.v LEDDC.v ./sram_512x16/sram_512x16.v +access+r 
+s78(19Mar2021:12:57:00):  ncverilog testfixture_30fps.v LEDDC.v ./sram_512x16/sram_512x16.v +access+r 
+s79(19Mar2021:12:57:13):  ncverilog testfixture_30fps.v LEDDC.v ./sram_512x16/sram_512x16.v +access+r 
+s80(19Mar2021:12:59:44):  ncverilog testfixture_30fps.v LEDDC.v ./sram_512x16/sram_512x16.v +access+r 
+s81(19Mar2021:13:02:32):  ncverilog testfixture_30fps.v LEDDC.v ./sram_512x16/sram_512x16.v +access+r 
+s82(19Mar2021:13:02:39):  ncverilog testfixture_30fps.v LEDDC.v ./sram_512x16/sram_512x16.v +access+r 
+s83(19Mar2021:15:14:17):  ncverilog testfixture_30fps.v LEDDC.v ./sram_512x16/sram_512x16.v +access+r 
+s84(19Mar2021:15:16:14):  ncverilog testfixture_30fps.v LEDDC.v ./sram_512x16/sram_512x16.v +access+r 
+s85(19Mar2021:15:16:27):  ncverilog testfixture_30fps.v LEDDC.v ./sram_512x16/sram_512x16.v +access+r 
+s86(19Mar2021:15:16:38):  ncverilog testfixture_30fps.v LEDDC.v ./sram_512x16/sram_512x16.v +access+r 
+s87(19Mar2021:15:16:53):  ncverilog testfixture_30fps.v LEDDC.v ./sram_512x16/sram_512x16.v +access+r 
+s88(19Mar2021:15:17:59):  ncverilog testfixture_30fps.v LEDDC.v ./sram_512x16/sram_512x16.v +access+r 
+s89(19Mar2021:15:20:22):  ncverilog testfixture_30fps.v LEDDC.v ./sram_512x16/sram_512x16.v +access+r 
+s90(19Mar2021:15:25:41):  ncverilog testfixture_30fps.v LEDDC.v ./sram_512x16/sram_512x16.v +access+r 
+s91(19Mar2021:15:28:32):  ncverilog testfixture_30fps.v LEDDC.v ./sram_512x16/sram_512x16.v +access+r 
+s92(19Mar2021:15:30:04):  ncverilog testfixture_30fps.v LEDDC.v ./sram_512x16/sram_512x16.v +access+r 
+s93(19Mar2021:15:32:33):  ncverilog testfixture_30fps.v LEDDC.v ./sram_512x16/sram_512x16.v +access+r 
+s94(19Mar2021:15:33:18):  ncverilog testfixture_30fps.v LEDDC.v ./sram_512x16/sram_512x16.v +access+r 
+s95(19Mar2021:15:33:57):  ncverilog testfixture_30fps.v LEDDC.v ./sram_512x16/sram_512x16.v +access+r 
+s96(19Mar2021:15:34:56):  ncverilog testfixture_30fps.v LEDDC.v ./sram_512x16/sram_512x16.v +access+r 
+s97(19Mar2021:15:39:14):  ncverilog testfixture_30fps.v LEDDC.v ./sram_512x16/sram_512x16.v +access+r 
+s98(19Mar2021:15:39:42):  ncverilog testfixture_30fps.v LEDDC.v ./sram_512x16/sram_512x16.v +access+r 
+s99(19Mar2021:15:39:59):  ncverilog testfixture_30fps.v LEDDC.v ./sram_512x16/sram_512x16.v +access+r 
+s100(19Mar2021:15:40:09):  ncverilog testfixture_30fps.v LEDDC.v ./sram_512x16/sram_512x16.v +access+r 
+s101(19Mar2021:15:43:47):  ncverilog testfixture_30fps.v LEDDC.v ./sram_512x16/sram_512x16.v +access+r 
+s102(19Mar2021:15:48:29):  ncverilog testfixture_30fps.v LEDDC.v ./sram_512x16/sram_512x16.v ./sram_256x16/sram_256x16.v +access+r 
+s103(19Mar2021:15:49:43):  ncverilog testfixture_60fps.v LEDDC.v ./sram_512x16/sram_512x16.v ./sram_256x16/sram_256x16.v +access+r 
+s104(19Mar2021:15:51:05):  ncverilog testfixture_60fps.v LEDDC.v ./sram_512x16/sram_512x16.v ./sram_256x16/sram_256x16.v +access+r 
+s105(19Mar2021:15:51:23):  ncverilog testfixture_60fps.v LEDDC.v ./sram_512x16/sram_512x16.v ./sram_256x16/sram_256x16.v +access+r 
+s106(19Mar2021:15:52:30):  ncverilog testfixture_30fps.v LEDDC.v ./sram_512x16/sram_512x16.v ./sram_256x16/sram_256x16.v +access+r 
+s107(19Mar2021:15:53:06):  ncverilog testfixture_30fps.v LEDDC.v ./sram_512x16/sram_512x16.v ./sram_256x16/sram_256x16.v +access+r 
+s108(19Mar2021:15:53:44):  ncverilog testfixture_30fps.v LEDDC.v ./sram_512x16/sram_512x16.v ./sram_256x16/sram_256x16.v +access+r 
+s109(19Mar2021:15:54:20):  ncverilog testfixture_30fps.v LEDDC.v ./sram_512x16/sram_512x16.v ./sram_256x16/sram_256x16.v +access+r 
+s110(19Mar2021:15:57:23):  ncverilog testfixture_30fps.v LEDDC.v ./sram_512x16/sram_512x16.v ./sram_256x16/sram_256x16.v +access+r 
+s111(19Mar2021:15:58:33):  ncverilog testfixture_60fps.v LEDDC.v ./sram_512x16/sram_512x16.v ./sram_256x16/sram_256x16.v +access+r 
+s112(19Mar2021:16:01:33):  ncverilog testfixture_30fps.v LEDDC.v ./sram_512x16/sram_512x16.v ./sram_256x16/sram_256x16.v +access+r 
+s113(19Mar2021:16:03:16):  ncverilog testfixture_30fps.v LEDDC.v ./sram_512x16/sram_512x16.v ./sram_256x16/sram_256x16.v +access+r 
+s114(19Mar2021:16:04:59):  ncverilog testfixture_60fps.v LEDDC.v ./sram_512x16/sram_512x16.v ./sram_256x16/sram_256x16.v +access+r 
+s115(19Mar2021:16:07:03):  ncverilog testfixture_60fps.v LEDDC.v ./sram_512x16/sram_512x16.v ./sram_256x16/sram_256x16.v +access+r 
+s116(19Mar2021:16:08:11):  ncverilog testfixture_30fps.v LEDDC.v ./sram_512x16/sram_512x16.v ./sram_256x16/sram_256x16.v +access+r 
+s117(19Mar2021:16:09:06):  ncverilog testfixture_30fps.v LEDDC.v ./sram_512x16/sram_512x16.v ./sram_256x16/sram_256x16.v +access+r 
+s118(19Mar2021:16:10:56):  ncverilog testfixture_30fps.v LEDDC.v ./sram_512x16/sram_512x16.v ./sram_256x16/sram_256x16.v +access+r 
+s119(19Mar2021:16:11:55):  ncverilog testfixture_60fps.v LEDDC.v ./sram_512x16/sram_512x16.v ./sram_256x16/sram_256x16.v +access+r 
+s120(19Mar2021:16:13:16):  ncverilog testfixture_60fps.v LEDDC.v ./sram_512x16/sram_512x16.v ./sram_256x16/sram_256x16.v +access+r 
+s121(19Mar2021:16:14:00):  ncverilog testfixture_60fps.v LEDDC.v ./sram_512x16/sram_512x16.v ./sram_256x16/sram_256x16.v +access+r 
+s122(19Mar2021:16:18:08):  ncverilog testfixture_60fps.v LEDDC.v ./sram_512x16/sram_512x16.v ./sram_256x16/sram_256x16.v +access+r 
+s123(19Mar2021:16:19:09):  ncverilog testfixture_60fps.v LEDDC.v ./sram_512x16/sram_512x16.v ./sram_256x16/sram_256x16.v +access+r 
+s124(19Mar2021:16:20:00):  ncverilog testfixture_60fps.v LEDDC.v ./sram_512x16/sram_512x16.v ./sram_256x16/sram_256x16.v +access+r 
+s125(19Mar2021:16:21:20):  ncverilog testfixture_60fps.v LEDDC.v ./sram_512x16/sram_512x16.v ./sram_256x16/sram_256x16.v +access+r 
+s126(19Mar2021:16:27:41):  ncverilog testfixture_60fps.v LEDDC.v ./sram_512x16/sram_512x16.v ./sram_256x16/sram_256x16.v +access+r 
+s127(19Mar2021:16:31:08):  ncverilog testfixture_60fps.v LEDDC.v ./sram_512x16/sram_512x16.v ./sram_256x16/sram_256x16.v +access+r 
+s128(19Mar2021:16:44:39):  ncverilog testfixture_60fps.v LEDDC.v ./sram_512x16/sram_512x16.v ./sram_256x16/sram_256x16.v +access+r 
+s129(19Mar2021:16:45:24):  ncverilog testfixture_60fps.v LEDDC.v ./sram_512x16/sram_512x16.v ./sram_256x16/sram_256x16.v +access+r 
+s130(19Mar2021:17:26:50):  ncverilog testfixture_60fps.v LEDDC.v ./sram_512x16/sram_512x16.v ./sram_256x16/sram_256x16.v +access+r 
+s131(19Mar2021:17:27:35):  ncverilog testfixture_60fps.v LEDDC.v ./sram_512x16/sram_512x16.v ./sram_256x16/sram_256x16.v +access+r 
+s132(19Mar2021:17:30:51):  ncverilog testfixture_60fps.v LEDDC.v ./sram_512x16/sram_512x16.v ./sram_256x16/sram_256x16.v +access+r 
+s133(19Mar2021:17:31:01):  ncverilog testfixture_60fps.v LEDDC.v ./sram_512x16/sram_512x16.v ./sram_256x16/sram_256x16.v +access+r 
+s134(19Mar2021:17:31:57):  ncverilog testfixture_60fps.v LEDDC.v ./sram_512x16/sram_512x16.v ./sram_256x16/sram_256x16.v +access+r 
+s135(19Mar2021:17:34:53):  ncverilog testfixture_60fps.v LEDDC.v ./sram_512x16/sram_512x16.v ./sram_256x16/sram_256x16.v +access+r 
+s136(19Mar2021:18:05:15):  ncverilog testfixture_60fps.v LEDDC.v ./sram_512x16/sram_512x16.v ./sram_256x16/sram_256x16.v +access+r 
+s137(19Mar2021:18:14:41):  ncverilog testfixture_60fps.v LEDDC.v ./sram_512x16/sram_512x16.v ./sram_256x16/sram_256x16.v +access+r 
+s138(19Mar2021:18:16:42):  ncverilog testfixture_60fps.v LEDDC.v ./sram_512x16/sram_512x16.v ./sram_256x16/sram_256x16.v +access+r 
+s139(19Mar2021:18:16:53):  ncverilog testfixture_60fps.v LEDDC.v ./sram_512x16/sram_512x16.v ./sram_256x16/sram_256x16.v +access+r 
+s140(19Mar2021:18:21:01):  ncverilog testfixture_60fps.v LEDDC.v ./sram_512x16/sram_512x16.v ./sram_256x16/sram_256x16.v +access+r 
+s141(19Mar2021:20:12:01):  ncverilog testfixture_60fps.v LEDDC.v ./sram_512x16/sram_512x16.v ./sram_256x16/sram_256x16.v +access+r 
+s142(19Mar2021:21:32:19):  ncverilog testfixture_60fps.v LEDDC.v ./sram_512x16/sram_512x16.v ./sram_256x16/sram_256x16.v +access+r 
+s143(19Mar2021:22:17:37):  ncverilog testfixture_60fps.v LEDDC.v ./sram_512x16/sram_512x16.v ./sram_256x16/sram_256x16.v +access+r 
+s144(19Mar2021:22:19:03):  ncverilog testfixture_60fps.v LEDDC.v ./sram_512x16/sram_512x16.v ./sram_256x16/sram_256x16.v +access+r 
