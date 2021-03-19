@@ -1,5 +1,5 @@
 ncverilog: 15.20-s039: (c) Copyright 1995-2017 Cadence Design Systems, Inc.
-TOOL:	ncverilog	15.20-s039: Started on Mar 19, 2021 at 22:19:03 CST
+TOOL:	ncverilog	15.20-s039: Started on Mar 20, 2021 at 00:13:10 CST
 ncverilog
 	testfixture_60fps.v
 	LEDDC.v
@@ -7,8 +7,8 @@ ncverilog
 	./sram_256x16/sram_256x16.v
 	+access+r
 Recompiling... reason: file './LEDDC.v' is newer than expected.
-	expected: Fri Mar 19 22:17:35 2021
-	actual:   Fri Mar 19 22:19:02 2021
+	expected: Sat Mar 20 00:11:15 2021
+	actual:   Sat Mar 20 00:13:08 2021
 file: LEDDC.v
 	module worklib.LEDDC:v
 		errors: 0, warnings: 0
@@ -16,8 +16,8 @@ file: LEDDC.v
 	Elaborating the design hierarchy:
 	Building instance overlay tables: .................... Done
 	Generating native compiled code:
-		worklib.LEDDC:v <0x405af132>
-			streams:  29, words: 18906
+		worklib.LEDDC:v <0x543124e0>
+			streams:  31, words: 21485
 	Building instance specific data structures.
 	Loading native compiled code:     .................... Done
 	Design hierarchy summary:
@@ -25,14 +25,14 @@ file: LEDDC.v
 		Modules:                 4       4
 		Primitives:            106       1
 		Timing outputs:         32       1
-		Registers:             287     287
+		Registers:             291     291
 		Scalar wires:           59       -
 		Expanded wires:         98       8
 		Vectored wires:          1       -
-		Always blocks:          18      18
+		Always blocks:          26      26
 		Initial blocks:          7       7
-		Cont. assignments:      14      17
-		Pseudo assignments:      4       4
+		Cont. assignments:      12      13
+		Pseudo assignments:      2       2
 		Timing checks:         298      84
 		Simulation timescale:  1ps
 	Writing initial simulation snapshot: worklib.test:v
@@ -846,4 +846,4 @@ Total number of scanline errors: 015
 Simulation complete via $finish(1) at time 83331290 NS + 0
 ./testfixture_60fps.v:305       $finish;
 ncsim> exit
-TOOL:	ncverilog	15.20-s039: Exiting on Mar 19, 2021 at 22:19:54 CST  (total: 00:00:51)
+TOOL:	ncverilog	15.20-s039: Exiting on Mar 20, 2021 at 00:14:02 CST  (total: 00:00:52)

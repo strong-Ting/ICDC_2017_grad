@@ -2834,3 +2834,6 @@ wvZoomOut -win $_nWave1
 wvZoomOut -win $_nWave1
 wvZoomOut -win $_nWave1
 wvZoomOut -win $_nWave1
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
