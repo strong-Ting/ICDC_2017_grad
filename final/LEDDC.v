@@ -97,9 +97,31 @@ always@(posedge GCK or posedge rst) begin
         end
         else begin
             if(sram512_addr_r < 9'd256) OUT_buffer[sram256_addr_r[3:0]] <= sram256_r;
+            else if(sram512_addr_r < 9'd336) OUT_buffer[sram256_addr_r[3:0]] <= sram256_r;
             else OUT_buffer[sram512_addr_r[3:0]] <= sram512_r;
         end
     end
+end
+
+//sram256 en write
+always@(posedge GCK or posedge rst) begin
+    if(rst) en256_w_n <= 1'd1;  
+    else if(mode == 1'd1 && Vsync == 1'd1) begin
+        if(cnt_pwm[15] == 1'd0 && cnt_pwm[14:0] < 15'd16) en256_w_n <= 1'd0;
+        else if(cnt_pwm[15] == 1'd1 && cnt_pwm[14:0] < 15'd97 && cnt_pwm[14:0] > 15'd16 && cnt_scanline == 5'd5) en256_w_n <= 1'd0;
+        else en256_w_n <= 1'd1; 
+    end
+    else en256_w_n <= 1'd1;
+end
+
+//sram256 clk write
+always@(*) begin
+    if(mode == 1'd1 && Vsync == 1'd1) begin
+        if(cnt_pwm[15] == 1'd0 && cnt_pwm[14:0] < 15'd16) #1 clk256_w = GCK;
+        else if(cnt_pwm[15] == 1'd1 && cnt_scanline == 5'd5 && cnt_pwm[14:0] < 15'd97 && cnt_pwm[14:0] > 15'd16) #1 clk256_w = GCK;
+        else #1 clk256_w = 1'd0;
+    end
+    else #1 clk256_w = 1'd0;
 end
 
 //sram256_w && addr_w
@@ -108,43 +130,30 @@ always@(posedge GCK or posedge rst) begin
         sram256_w <= 16'd0;
         sram256_addr_w <= 8'd0;
     end
-    else if(mode == 1'd1 && Vsync == 1'd1 && cnt_pwm[14:0] < 15'd17) begin
+    else if(mode == 1'd1 && Vsync == 1'd1 && cnt_pwm[14:0] < 15'd16) begin
         if(cnt_pwm[15] == 1'd0) begin
              if(sram512_addr_r < 9'd256) begin
                 sram256_w <= sram512_r;
                 sram256_addr_w <= sram512_addr_r[7:0];
             end
         end
-        else begin
-            
-        end
+    end
+    else if(mode == 1'd1 && Vsync == 1'd1 && cnt_pwm[14:0] < 15'd97 && cnt_pwm[14:0] > 15'd16
+                         && cnt_pwm[15] == 1'd1 && cnt_scanline == 5'd5) begin
+        sram256_w <= sram512_r;
+        sram256_addr_w <= cnt_pwm[7:0] - 8'd17;
     end
 end
-
 
 //sram512 clk read
 always@(*) begin
-    if(mode == 1'd0 && cnt_pwm < 16'd17 && Vsync == 1'd1) #1 clk512_r = GCK;
-    else if(mode == 1'd1 && cnt_pwm[14:0] < 15'd17 && Vsync == 1'd1) #1 clk512_r = GCK;
+    if(mode == 1'd0 && cnt_pwm < 16'd16 && Vsync == 1'd1) #1 clk512_r = GCK;
+    else if(mode == 1'd1 && cnt_pwm[14:0] < 15'd16 && Vsync == 1'd1) #1 clk512_r = GCK;
+    else if(mode == 1'd1 && Vsync == 1'd1 && cnt_pwm[15] == 1'd1 
+                         && cnt_scanline == 5'd5 && cnt_pwm[14:0] < 15'd96) begin
+        #1 clk512_r = GCK;
+    end
     else #1 clk512_r = 1'd0;
-end
-
-//sram256 clk read
-always@(*) begin
-    if(mode == 1'd1 && Vsync == 1'd1) begin
-        if(cnt_pwm[15] == 1'd1 && cnt_pwm[14:0] < 15'd17) #1 clk256_r = GCK;
-        else #1 clk256_r = 1'd0;
-    end
-    else #1 clk256_r = 1'd0;
-end
-
-//sram256 clk write
-always@(*) begin
-    if(mode == 1'd1 && Vsync == 1'd1) begin
-        if(cnt_pwm[15] == 1'd0 && cnt_pwm[14:0] < 15'd17) #1 clk256_w = GCK;
-        else #1 clk256_w = 1'd0;
-    end
-    else #1 clk256_w = 1'd0;
 end
 
 //sram512 en read
@@ -153,10 +162,32 @@ always@(posedge GCK or posedge rst) begin
     else if(mode == 1'd0 && Vsync == 1'd1 && cnt_pwm < 16'd16) begin
         en512_r_n <= 1'd0;
     end
-    else if(mode == 1'd1 && Vsync == 1'd1 && cnt_pwm[14:0] < 15'd16) begin
-        en512_r_n <= 1'd0;
+    else if(mode == 1'd1 && Vsync == 1'd1) begin
+        if(cnt_pwm[14:0] < 15'd16) en512_r_n <= 1'd0;
+        else if(cnt_pwm[15] == 1'd1 && cnt_scanline == 5'd5 && cnt_pwm[14:0] < 15'd96) begin
+            en512_r_n <= 1'd0;
+        end
+        else en512_r_n <= 1'd1;
     end
     else en512_r_n <= 1'd1;
+end
+
+//sram512 read address
+always@(posedge GCK or posedge rst) begin
+    if(rst) sram512_addr_r <= 9'd0;
+    else if(mode == 1'd0) begin
+        if(Vsync == 1'd1 && cnt_pwm < 16'd16 ) begin 
+            sram512_addr_r <= {cnt_scanline,cnt_pwm[3:0]};
+        end
+    end
+    else if(mode == 1'd1 && Vsync == 1'd1) begin
+        if(cnt_pwm[14:0] < 15'd16) begin 
+            sram512_addr_r <= {cnt_scanline,cnt_pwm[3:0]};
+        end
+        else if(cnt_pwm[15] == 1'd1 && cnt_scanline == 5'd5 && cnt_pwm[14:0] < 15'd96) begin
+            sram512_addr_r <= {cnt_pwm[8:0]+9'd240}; //cnt 16 to index 256
+        end
+    end
 end
 
 //sram256 en read
@@ -168,35 +199,23 @@ always@(posedge GCK or posedge rst) begin
     else en256_r_n <= 1'd1;
 end
 
-//sram256 en write
-always@(posedge GCK or posedge rst) begin
-    if(rst) en256_w_n <= 1'd1;  
-    else if(mode == 1'd1 && Vsync == 1'd1) begin
-        if(cnt_pwm[15] == 1'd0 && cnt_pwm[14:0] < 15'd16) en256_w_n <= 1'd0;
+//sram256 clk read
+always@(*) begin
+    if(mode == 1'd1 && Vsync == 1'd1) begin
+        if(cnt_pwm[15] == 1'd1 && cnt_pwm[14:0] < 15'd16) #1 clk256_r = GCK;
+        else #1 clk256_r = 1'd0;
     end
-    else en256_w_n <= 1'd1;
-end
-
-//sram512 read address
-always@(posedge GCK or posedge rst) begin
-    if(rst) sram512_addr_r <= 9'd0;
-    else if(mode == 1'd0) begin
-        if(Vsync == 1'd1 && cnt_pwm < 16'd16 ) begin 
-            sram512_addr_r <= {cnt_scanline,cnt_pwm[3:0]};
-        end
-    end
-    else if(mode == 1'd1) begin
-        if(Vsync == 1'd1 && cnt_pwm[14:0] < 15'd16 ) begin 
-            sram512_addr_r <= {cnt_scanline,cnt_pwm[3:0]};
-        end
-    end
+    else #1 clk256_r = 1'd0;
 end
 
 //sram256 read address
 always@(posedge GCK or posedge rst) begin
     if(rst) sram256_addr_r <= 8'd0;
     else if(mode == 1'd1 && Vsync == 1'd1 && cnt_pwm[14:0] < 15'd16) begin
-        sram256_addr_r <= {cnt_scanline,cnt_pwm[3:0]};
+        if({cnt_scanline,cnt_pwm[3:0]} > 9'd255) begin
+            sram256_addr_r <= {cnt_scanline,cnt_pwm[3:0]};
+        end
+        else sram256_addr_r <= {cnt_scanline,cnt_pwm[3:0]};
     end  
 end
 

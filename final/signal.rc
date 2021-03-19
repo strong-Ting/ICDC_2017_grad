@@ -1,0 +1,104 @@
+Magic 271485
+Revision Verdi_O-2018.09
+
+; Window Layout <x> <y> <width> <height> <signalwidth> <valuewidth>
+viewPort 1536 45 1344 777 192 65
+
+; File list:
+; openDirFile [-d delimiter] [-s time_offset] [-rf auto_bus_rule_file] path_name file_name
+openDirFile -d / "" "/home/DICS/M10912039/CIC/CIC_2017_grad/final/LEDDC_60fps.fsdb"
+
+; file time scale:
+; fileTimeScale ### s|ms|us|ns|ps
+
+; signal spacing:
+signalSpacing 5
+
+; windowTimeUnit is used for zoom, cursor & marker
+windowTimeUnit 1ps
+
+; waveform viewport range
+zoom 21390646037.976910 21390761378.864941 1p
+cursor 21390728005.010128
+marker 0.000000
+
+; user define markers
+; userMarker time_pos marker_name color linestyle
+userMarker 21390292820.821 M3 ID_GREEN5 long_dashed
+userMarker 16667766710.747 M2 ID_GREEN5 long_dashed
+userMarker 4724410440.209 M1 ID_GREEN5 long_dashed
+
+; visible top row signal index
+top 0
+; marker line index
+markerPos 10
+
+; event list
+; addEvent event_name event_expression
+; curEvent event_name
+
+
+
+COMPLEX_EVENT_BEGIN
+
+
+COMPLEX_EVENT_END
+
+
+
+; toolbar current search type
+; curSTATUS search_type
+curSTATUS ByValue
+
+
+addGroup "G1"
+activeDirFile "" "/home/DICS/M10912039/CIC/CIC_2017_grad/final/LEDDC_60fps.fsdb"
+addSignal -h 15 /test/u_LEDDC/GCK
+addSignal -h 15 -holdScope Vsync
+addSignal -expanded -h 15 -UNSIGNED -UDEC -holdScope cnt_pwm[15:0]
+addSignal -h 15 -holdScope cnt_pwm[15]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope cnt_scanline[4:0]
+addGroup "G2"
+addSignal -h 15 /test/u_LEDDC/OUT[15:0]
+addSignal -h 15 -holdScope DCK
+addSignal -h 15 -holdScope DEN
+addSignal -h 15 -holdScope en512_r_n
+addSignal -h 15 -holdScope clk512_r
+addSignal -h 15 -UNSIGNED -UDEC -holdScope sram512_addr_r[8:0]
+addSignal -h 15 -holdScope sram512_r[15:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope sram256_addr_w[7:0]
+addSignal -h 15 -holdScope sram256_w[15:0]
+addSignal -h 15 /test/u_LEDDC/sram256/mem[255:0]
+addSignal -h 15 /test/u_LEDDC/cnt_pixel_index[8:0]
+addSignal -h 15 -holdScope clk256_r
+addSignal -h 15 -holdScope clk256_w
+addSignal -h 15 -holdScope en256_r_n
+addSignal -h 15 -holdScope en256_w_n
+addSignal -h 15 -holdScope OUT_buffer[15:0]
+addSignal -h 15 -holdScope pixel_value[15:0]
+addSignal -h 15 /test/u_LEDDC/sram512/mem[511:0]
+addSignal -h 15 /test/u_LEDDC/sram512_addr_w[8:0]
+addGroup "G3"
+
+; getSignalForm Scope Hierarchy Status
+; active file of getSignalForm
+activeDirFile "" "/home/DICS/M10912039/CIC/CIC_2017_grad/final/LEDDC_60fps.fsdb"
+
+GETSIGNALFORM_SCOPE_HIERARCHY_BEGIN
+getSignalForm close
+
+"/test"
+"/test/u_LEDDC"
+"/test/u_LEDDC/sram256"
+"/test/u_LEDDC/sram512"
+
+SCOPE_LIST_BEGIN
+"/test"
+"/test/u_LEDDC"
+"/test/u_LEDDC/sram256"
+"/test/u_LEDDC/sram512"
+SCOPE_LIST_END
+
+GETSIGNALFORM_SCOPE_HIERARCHY_END
+
+

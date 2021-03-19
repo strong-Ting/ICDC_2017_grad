@@ -80,9 +80,9 @@ argv[3]=./sram_512x16/sram_512x16.v
 argv[4]=./sram_256x16/sram_256x16.v
 argv[5]=+access+r
 81 profile - 100
-          CPU/Mem usage: 0.030 sys,  0.030 user,  60.21M sys,  0.00M vm
+          CPU/Mem usage: 0.030 sys,  0.040 user,  60.22M sys,  0.00M vm
 82 VC callback profile - scalar:0 vector:0
-83 Sat Mar 20 00:13:17 2021
+83 Sat Mar 20 01:29:41 2021
 84 pliAppInit
 85 FSDB_GATE is disabled.
 86 Enable Parallel Dumping.
@@ -101,21 +101,21 @@ argv[5]=+access+r
 99 Cell instance `test.u_LEDDC.sram512'.
 100 *Verdi* : End of traversing.
 101 fsdbDumpvars traverse var: profile - 
-          CPU/Mem usage: 0.040 sys,  0.050 user,  142.77M sys,  0.00M vm
-                   incr: 0.000 sys,  0.010 user,  3.73M sys,  0.00M vm
-                   accu: 0.000 sys,  0.010 user,  3.73M sys,  0.00M vm
-              accu incr: 0.000 sys,  0.010 user,  3.73M sys,  0.00M vm
+          CPU/Mem usage: 0.040 sys,  0.050 user,  142.78M sys,  0.00M vm
+                   incr: 0.010 sys,  0.000 user,  3.73M sys,  0.00M vm
+                   accu: 0.010 sys,  0.000 user,  3.73M sys,  0.00M vm
+              accu incr: 0.010 sys,  0.000 user,  3.73M sys,  0.00M vm
 
           Count usage: 464 var,  431 idcode,  431 callback
                  incr: 464 var,  431 idcode,  431 callback
                  accu: 464 var,  431 idcode,  431 callback
             accu incr: 464 var,  431 idcode,  431 callback
 102 VC callback profile - scalar:0 vector:0
-103 Sat Mar 20 00:13:17 2021
+103 Sat Mar 20 01:29:41 2021
 104 fsdbDumpvars: profile - 
-          CPU/Mem usage: 0.040 sys,  0.050 user,  143.83M sys,  0.00M vm
+          CPU/Mem usage: 0.040 sys,  0.050 user,  143.84M sys,  0.00M vm
                    incr: 0.000 sys,  0.000 user,  1.05M sys,  0.00M vm
-                   accu: 0.000 sys,  0.010 user,  4.78M sys,  0.00M vm
+                   accu: 0.010 sys,  0.000 user,  4.78M sys,  0.00M vm
               accu incr: 0.000 sys,  0.000 user,  1.05M sys,  0.00M vm
 
           Count usage: 464 var,  431 idcode,  431 callback
@@ -123,14 +123,14 @@ argv[5]=+access+r
                  accu: 464 var,  431 idcode,  431 callback
             accu incr: 0 var,  0 idcode,  0 callback
 105 VC callback profile - scalar:371 vector:60
-106 Sat Mar 20 00:13:17 2021
+106 Sat Mar 20 01:29:41 2021
 107 sps_call_fsdbDumpMDA at 0 : /home/DICS/M10912039/CIC/CIC_2017_grad/final/testfixture_60fps.v(86)
 108 *Verdi* : Begin traversing the MDAs, layer (0).
 109 *Verdi* : Enable +mda and +packedmda dumping.
 110 Cell instance `test.u_LEDDC.sram512'.
 111 *Verdi* : End of traversing the MDAs.
 112 fsdbDumpMDA traverse var: profile - 
-          CPU/Mem usage: 0.040 sys,  0.060 user,  144.23M sys,  0.00M vm
+          CPU/Mem usage: 0.040 sys,  0.060 user,  144.24M sys,  0.00M vm
                    incr: 0.000 sys,  0.010 user,  0.41M sys,  0.00M vm
                    accu: 0.000 sys,  0.010 user,  0.41M sys,  0.00M vm
               accu incr: 0.000 sys,  0.010 user,  0.41M sys,  0.00M vm
@@ -140,28 +140,28 @@ argv[5]=+access+r
                  accu: 3104 var,  3104 idcode,  3105 callback
             accu incr: 3104 var,  3104 idcode,  3105 callback
 113 VC callback profile - scalar:371 vector:60
-114 Sat Mar 20 00:13:17 2021
+114 Sat Mar 20 01:29:41 2021
 115 fsdbDumpMDA: profile - 
-          CPU/Mem usage: 0.040 sys,  0.060 user,  144.37M sys,  0.00M vm
-                   incr: 0.000 sys,  0.000 user,  0.14M sys,  0.00M vm
-                   accu: 0.000 sys,  0.010 user,  0.54M sys,  0.00M vm
-              accu incr: 0.000 sys,  0.000 user,  0.14M sys,  0.00M vm
+          CPU/Mem usage: 0.040 sys,  0.070 user,  144.38M sys,  0.00M vm
+                   incr: 0.000 sys,  0.010 user,  0.14M sys,  0.00M vm
+                   accu: 0.000 sys,  0.020 user,  0.54M sys,  0.00M vm
+              accu incr: 0.000 sys,  0.010 user,  0.14M sys,  0.00M vm
 
           Count usage: 3568 var,  3535 idcode,  3536 callback
                  incr: 0 var,  0 idcode,  0 callback
                  accu: 3104 var,  3104 idcode,  3105 callback
             accu incr: 0 var,  0 idcode,  0 callback
 116 VC callback profile - scalar:371 vector:3164
-117 Sat Mar 20 00:13:17 2021
+117 Sat Mar 20 01:29:41 2021
 118 End of simulation at 83331290000
-119 VC callback profile - scalar:42608114 vector:395235728
-120 Sat Mar 20 00:14:02 2021
+119 VC callback profile - scalar:42620259 vector:395409462
+120 Sat Mar 20 01:30:24 2021
 121 Begin FSDB profile info:
-122 FSDB Writer : bc1(42608114) bcn(395235728) mtf/stf(0/25)
-FSDB Writer elapsed time : flush(8.787792) io wait(0.000000) theadpool wait(0.000000) target functin(0.000000)
+122 FSDB Writer : bc1(42620259) bcn(395409462) mtf/stf(0/25)
+FSDB Writer elapsed time : flush(8.881772) io wait(0.000000) theadpool wait(0.000000) target functin(0.000000)
 FSDB Writer cpu time : MT Compression : 0
 123 End FSDB profile info
-124 Parallel profile    -  Flush:4 Expand:2 ProduceWait:18 ConsumerWait:168 BlockUsed:2702
-125                        ProduceTime:41.259784525 ConsumerTime:43.692091725 Buffer:128MB
+124 Parallel profile    -  Flush:4 Expand:2 ProduceWait:17 ConsumerWait:125 BlockUsed:2704
+125                        ProduceTime:41.196684998 ConsumerTime:43.456688832 Buffer:128MB
 126 SimExit
 127 Sim process exit

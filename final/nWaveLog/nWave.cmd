@@ -2837,3 +2837,95 @@ wvZoomOut -win $_nWave1
 wvDisplayGridCount -win $_nWave1 -off
 wvGetSignalClose -win $_nWave1
 wvReloadFile -win $_nWave1
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvSelectSignal -win $_nWave1 {( "G1" 4 )} 
+wvSetCursor -win $_nWave1 16687568452.918219
+wvSetCursor -win $_nWave1 16717847121.025194
+wvSetCursor -win $_nWave1 16732095906.016710
+wvSetCursor -win $_nWave1 16808683125.346117
+wvSetCursor -win $_nWave1 16853210578.444609
+wvSetCursor -win $_nWave1 16673319667.926701
+wvSetCursor -win $_nWave1 16689349551.042158
+wvSetCursor -win $_nWave1 16698255041.661858
+wvSearchNext -win $_nWave1
+wvSetCursor -win $_nWave1 16655508686.687305 -snap {("G1" 4)}
+wvZoomIn -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvSelectSignal -win $_nWave1 {( "G2" 4 )} 
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvSelectSignal -win $_nWave1 {( "G2" 5 )} 
+wvSelectSignal -win $_nWave1 {( "G2" 4 )} 
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/test/u_LEDDC"
+wvSelectSignal -win $_nWave1 {( "G1" 6 )} 
+wvSetPosition -win $_nWave1 {("G1" 6)}
+wvSetPosition -win $_nWave1 {("G2" 0)}
+wvSetPosition -win $_nWave1 {("G2" 1)}
+wvSetPosition -win $_nWave1 {("G2" 2)}
+wvSetPosition -win $_nWave1 {("G2" 3)}
+wvMoveSelected -win $_nWave1
+wvSetPosition -win $_nWave1 {("G2" 4)}
+wvSelectSignal -win $_nWave1 {( "G1" 5 )} 
+wvSetPosition -win $_nWave1 {("G1" 5)}
+wvSetPosition -win $_nWave1 {("G2" 0)}
+wvSetPosition -win $_nWave1 {("G2" 1)}
+wvSetPosition -win $_nWave1 {("G2" 2)}
+wvSetPosition -win $_nWave1 {("G2" 3)}
+wvMoveSelected -win $_nWave1
+wvSetPosition -win $_nWave1 {("G2" 4)}
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvSetCursor -win $_nWave1 21390728005.010128
+wvSaveSignal -win $_nWave1 \
+           "/home/DICS/M10912039/CIC/CIC_2017_grad/final/signal.rc"
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvSelectSignal -win $_nWave1 {( "G1" 5 )} 
+wvSetSearchMode -win $_nWave1 -anyChange
+wvSearchNext -win $_nWave1
+wvSearchNext -win $_nWave1
+wvSearchNext -win $_nWave1
+wvSearchNext -win $_nWave1
+wvSearchNext -win $_nWave1
+wvSetMarker -win $_nWave1 -keepViewRange -name "M4" 22128239410.713356
+wvSetMarker -win $_nWave1 -keepViewRange -name "M4" 22128239410.713356
+wvSetCursor -win $_nWave1 22128257347.797733
+wvSelectSignal -win $_nWave1 {( "G2" 12 )} 
+wvSelectSignal -win $_nWave1 {( "G2" 13 )} 
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvSetCursor -win $_nWave1 22128243215.549435 -snap {("G1" 1)}
+wvSetCursor -win $_nWave1 22128243650.387844 -snap {("G1" 1)}
+wvSetCursor -win $_nWave1 22128243750.000000
+wvSetCursor -win $_nWave1 22128240497.809380 -snap {("G2" 5)}
+wvSetCursor -win $_nWave1 22128239193.294151 -snap {("G1" 1)}
+wvSetCursor -win $_nWave1 22128243867.807049 -snap {("G1" 1)}
+wvSetCursor -win $_nWave1 22128244628.774265 -snap {("G2" 5)}
+wvSetCursor -win $_nWave1 22128240171.680573 -snap {("G1" 1)}
+wvSetCursor -win $_nWave1 22128243106.839832 -snap {("G1" 1)}
+wvSetCursor -win $_nWave1 22128240606.518982 -snap {("G2" 5)}
+wvSetCursor -win $_nWave1 22128244193.935856 -snap {("G2" 5)}
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
