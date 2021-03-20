@@ -1,4 +1,5 @@
 `timescale 1ns/10ps
+`define delay 1
 module LEDDC( DCK, DAI, DEN, GCK, Vsync, mode, rst, OUT);
 input           DCK;
 input           DAI;
@@ -22,20 +23,19 @@ reg [15:0] sram512_w; //sram512 write
 wire [15:0] sram512_r;
 reg [8:0] sram512_addr_r,sram512_addr_w;
 wire clk512_w;
-reg clk512_r;
+wire clk512_r;
 reg  en512_r_n;
 reg en512_w_n;
 
 reg [15:0] sram256_w; //sram512 write
 wire [15:0] sram256_r;
 reg [7:0] sram256_addr_r,sram256_addr_w;
-reg clk256_w;
-reg clk256_r;
+wire clk256_w;
+wire clk256_r;
 reg  en256_r_n;
 reg en256_w_n;
 
 
-assign #1 clk512_w = (DEN == 1'd0) ?  DCK : 1'd0;
 
 
 integer i;
@@ -80,6 +80,20 @@ always@(posedge GCK or posedge rst) begin
         if(cnt_pwm[14:0] == 15'd32767 && cnt_scanline == 5'd31) cnt_pwm[15] <= ~cnt_pwm[15];
     end
 end
+reg [3:0] buffer_index;
+always@(posedge GCK or posedge rst) begin
+    if(rst) buffer_index <= 4'd0;
+    else if(mode == 1'd0 && Vsync == 1'd1 && cnt_pwm < 16'd17) begin
+        buffer_index <= sram512_addr_r[3:0];
+    end
+    else if(mode == 1'd1 && Vsync == 1'd1 && cnt_pwm[14:0] < 15'd17) begin
+        if(cnt_pwm[15] == 1'd1) buffer_index <= sram512_addr_r[3:0];
+        else begin
+            if(sram512_addr_r < 9'd336) buffer_index <= sram256_addr_r[3:0];
+            else buffer_index <= sram512_addr_r[3:0];
+        end
+    end
+end
 
 //OUT_buffer
 always@(posedge GCK or posedge rst) begin
@@ -88,17 +102,17 @@ always@(posedge GCK or posedge rst) begin
             OUT_buffer[i] <= 16'd0;
         end
     end
-    else if(mode == 1'd0 && Vsync == 1'd1 && cnt_pwm < 16'd17) begin
-        OUT_buffer[sram512_addr_r[3:0]] <= sram512_r;
+    else if(mode == 1'd0 && Vsync == 1'd1 && cnt_pwm < 16'd18) begin
+        OUT_buffer[buffer_index] <= sram512_r;
     end
-    else if(mode == 1'd1 && Vsync == 1'd1 && cnt_pwm[14:0] < 15'd17) begin
+    else if(mode == 1'd1 && Vsync == 1'd1 && cnt_pwm[14:0] < 15'd18 && sram256_addr_r != 8'd0) begin
         if(cnt_pwm[15] == 1'd0) begin
-            OUT_buffer[sram512_addr_r[3:0]] <= sram512_r;
+            OUT_buffer[buffer_index] <= sram512_r;
         end
         else begin
-            if(sram512_addr_r < 9'd256) OUT_buffer[sram256_addr_r[3:0]] <= sram256_r;
-            else if(sram512_addr_r < 9'd336) OUT_buffer[sram256_addr_r[3:0]] <= sram256_r;
-            else OUT_buffer[sram512_addr_r[3:0]] <= sram512_r;
+            if(sram512_addr_r < 9'd256) OUT_buffer[buffer_index] <= sram256_r;
+            else if(sram512_addr_r < 9'd336) OUT_buffer[buffer_index] <= sram256_r;
+            else OUT_buffer[buffer_index] <= sram512_r;
         end
     end
 end
@@ -107,53 +121,33 @@ end
 always@(posedge GCK or posedge rst) begin
     if(rst) en256_w_n <= 1'd1;  
     else if(mode == 1'd1 && Vsync == 1'd1) begin
-        if(cnt_pwm[15] == 1'd0 && cnt_pwm[14:0] < 15'd16) en256_w_n <= 1'd0;
-        else if(cnt_pwm[15] == 1'd1 && cnt_pwm[14:0] < 15'd97 && cnt_pwm[14:0] > 15'd16 && cnt_scanline == 5'd5) en256_w_n <= 1'd0;
+        if(cnt_pwm[15] == 1'd0 && cnt_pwm[14:0] < 15'd18 && cnt_pwm[4:0] > 5'd1) en256_w_n <= 1'd0;
+        else if(cnt_pwm[15] == 1'd1 && cnt_pwm[14:0] < 15'd99 && cnt_pwm[14:0] > 15'd17 && cnt_scanline == 5'd5) en256_w_n <= 1'd0;
         else en256_w_n <= 1'd1; 
     end
     else en256_w_n <= 1'd1;
 end
 
-//sram256 clk write
-always@(*) begin
-    if(mode == 1'd1 && Vsync == 1'd1) begin
-        if(cnt_pwm[15] == 1'd0 && cnt_pwm[14:0] < 15'd16) #1 clk256_w = GCK;
-        else if(cnt_pwm[15] == 1'd1 && cnt_scanline == 5'd5 && cnt_pwm[14:0] < 15'd97 && cnt_pwm[14:0] > 15'd16) #1 clk256_w = GCK;
-        else #1 clk256_w = 1'd0;
-    end
-    else #1 clk256_w = 1'd0;
-end
-
+reg [7:0] sram256_addr_w_delay;
 //sram256_w && addr_w
 always@(posedge GCK or posedge rst) begin
     if(rst) begin
         sram256_w <= 16'd0;
         sram256_addr_w <= 8'd0;
+        sram256_addr_w_delay <= 8'd0;
     end
-    else if(mode == 1'd1 && Vsync == 1'd1 && cnt_pwm[14:0] < 15'd16) begin
-        if(cnt_pwm[15] == 1'd0) begin
-             if(sram512_addr_r < 9'd256) begin
-                sram256_w <= sram512_r;
-                sram256_addr_w <= sram512_addr_r[7:0];
-            end
+    else if(mode == 1'd1 && Vsync == 1'd1 && cnt_pwm[14:0] < 15'd18 && cnt_pwm[15] == 1'd0) begin
+        if(sram512_addr_r < 9'd256) begin
+            sram256_w <= sram512_r;
+            sram256_addr_w_delay <= sram512_addr_r[7:0];
+            sram256_addr_w <= sram256_addr_w_delay;
         end
     end
-    else if(mode == 1'd1 && Vsync == 1'd1 && cnt_pwm[14:0] < 15'd97 && cnt_pwm[14:0] > 15'd16
+    else if(mode == 1'd1 && Vsync == 1'd1 && cnt_pwm[14:0] < 15'd99 && cnt_pwm[14:0] > 15'd17
                          && cnt_pwm[15] == 1'd1 && cnt_scanline == 5'd5) begin
         sram256_w <= sram512_r;
-        sram256_addr_w <= cnt_pwm[7:0] - 8'd17;
+        sram256_addr_w <= cnt_pwm[7:0] - 8'd18;
     end
-end
-
-//sram512 clk read
-always@(*) begin
-    if(mode == 1'd0 && cnt_pwm < 16'd16 && Vsync == 1'd1) #1 clk512_r = GCK;
-    else if(mode == 1'd1 && cnt_pwm[14:0] < 15'd16 && Vsync == 1'd1) #1 clk512_r = GCK;
-    else if(mode == 1'd1 && Vsync == 1'd1 && cnt_pwm[15] == 1'd1 
-                         && cnt_scanline == 5'd5 && cnt_pwm[14:0] < 15'd96) begin
-        #1 clk512_r = GCK;
-    end
-    else #1 clk512_r = 1'd0;
 end
 
 //sram512 en read
@@ -199,15 +193,6 @@ always@(posedge GCK or posedge rst) begin
     else en256_r_n <= 1'd1;
 end
 
-//sram256 clk read
-always@(*) begin
-    if(mode == 1'd1 && Vsync == 1'd1) begin
-        if(cnt_pwm[15] == 1'd1 && cnt_pwm[14:0] < 15'd16) #1 clk256_r = GCK;
-        else #1 clk256_r = 1'd0;
-    end
-    else #1 clk256_r = 1'd0;
-end
-
 //sram256 read address
 always@(posedge GCK or posedge rst) begin
     if(rst) sram256_addr_r <= 8'd0;
@@ -222,7 +207,7 @@ end
 //PWM OUT
 always@(*) begin
     if(mode == 1'd0) begin
-        if(cnt_pwm < 16'd17) begin
+        if(cnt_pwm < 16'd18) begin
             for(i=0;i<16;i=i+1) begin
                 OUT[i] = 1'd1;
             end
@@ -234,7 +219,7 @@ always@(*) begin
         end
     end
     else begin
-        if(cnt_pwm[14:0] < 15'd17) begin
+        if(cnt_pwm[14:0] < 15'd18) begin
             for(i=0;i<16;i=i+1) begin
                 OUT[i] = 1'd1;
             end
@@ -254,6 +239,11 @@ always@(*) begin
     end
 end
 
+assign #`delay clk512_w = DCK;
+assign #`delay clk512_r = GCK;
+
+assign #`delay clk256_w = GCK;
+assign #`delay clk256_r = GCK;
 
 sram_512x16 sram512(
    .QA(sram512_r),

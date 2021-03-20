@@ -1,42 +1,37 @@
 {
-    "SIMBData": {
-        "out": "amcQwB.o",
-        "bytes": 65664,
-        "archive": "archive.7/_69085_archive_1.a",
-        "text": 0
-    },
-    "cpu_cycles_pass2_start": 186708696236698,
-    "cycles_program_begin": 186688133582168,
-    "MlibObjs": {},
+    "cycles_program_begin": 1068818539869580,
+    "CompileProcesses": [
+        "cgproc.14966.json"
+    ],
     "perf": [
         {
             "stat": [
                 "main",
                 "entry",
-                0.017086073406971991,
-                0.038420999999999997,
-                0.026287999999999999,
-                178244,
-                178244,
+                0.016455078730359674,
+                0.036910999999999999,
+                0.021947000000000001,
+                178152,
+                178152,
                 0.0,
                 0.0,
-                1615994607.912046,
-                186688133942540
+                1616227237.5904491,
+                1068818540168836
             ],
             "sub": [
                 {
                     "stat": [
                         "doParsingAndDesignResolution",
                         "entry",
-                        5.3327890733489767,
-                        0.051885000000000001,
-                        0.031537999999999997,
-                        178684,
-                        179484,
+                        10.243442078703083,
+                        0.044001999999999999,
+                        0.029000999999999999,
+                        178692,
+                        179492,
                         0.0,
                         0.0,
-                        1615994613.2277491,
-                        186708291234832
+                        1616227247.817436,
+                        1068857321038864
                     ],
                     "sub": []
                 },
@@ -44,15 +39,15 @@
                     "stat": [
                         "doParsingAndDesignResolution",
                         "exit",
-                        5.3449310733703896,
-                        0.059912,
-                        0.035541000000000003,
-                        179788,
-                        180436,
+                        10.364287078729831,
+                        0.15809699999999999,
+                        0.034021000000000003,
+                        185332,
+                        186304,
                         0.0,
                         0.0,
-                        1615994613.2398911,
-                        186708337310442
+                        1616227247.9382811,
+                        1068857779099276
                     ],
                     "sub": []
                 },
@@ -60,30 +55,30 @@
                     "stat": [
                         "doPostDesignResolutionToVir2Vcs",
                         "entry",
-                        5.3454620733391494,
-                        0.060245,
-                        0.035737999999999999,
-                        179788,
-                        180436,
+                        10.364645078778267,
+                        0.15845600000000001,
+                        0.034021000000000003,
+                        185332,
+                        186304,
                         0.0,
                         0.0,
-                        1615994613.240422,
-                        186708339232334
+                        1616227247.9386389,
+                        1068857780383144
                     ],
                     "sub": [
                         {
                             "stat": [
                                 "doUptoVir2VcsNoSepCleanup",
                                 "entry",
-                                5.3530590734444559,
-                                0.065159999999999996,
-                                0.038404000000000001,
-                                180704,
-                                180708,
+                                10.428849078714848,
+                                0.22156899999999999,
+                                0.034958999999999997,
+                                187204,
+                                187208,
                                 0.0,
                                 0.0,
-                                1615994613.248019,
-                                186708367935818
+                                1616227248.0028429,
+                                1068858023880546
                             ],
                             "sub": []
                         },
@@ -91,15 +86,15 @@
                             "stat": [
                                 "doUptoVir2VcsNoSepCleanup",
                                 "exit",
-                                5.434784073382616,
-                                0.096325999999999995,
-                                0.049166000000000001,
-                                181344,
-                                195048,
-                                0.010819,
-                                0.028108999999999999,
-                                1615994613.3297441,
-                                186708677857644
+                                11.028350078733638,
+                                0.740537,
+                                0.059720000000000002,
+                                217892,
+                                230248,
+                                0.007685,
+                                0.022823,
+                                1616227248.602344,
+                                1068860297204854
                             ],
                             "sub": []
                         },
@@ -107,15 +102,15 @@
                             "stat": [
                                 "doRadify_vir2vcsAll",
                                 "entry",
-                                5.4348840734455734,
-                                0.096393000000000006,
-                                0.049200000000000001,
-                                181344,
-                                195048,
-                                0.010819,
-                                0.028108999999999999,
-                                1615994613.329844,
-                                186708678114284
+                                11.028422078699805,
+                                0.74060499999999996,
+                                0.059726000000000001,
+                                217892,
+                                230248,
+                                0.007685,
+                                0.022823,
+                                1616227248.602416,
+                                1068860297384826
                             ],
                             "sub": []
                         },
@@ -123,15 +118,15 @@
                             "stat": [
                                 "doRadify_vir2vcsAll",
                                 "exit",
-                                5.4380910734180361,
-                                0.097506999999999996,
-                                0.051265999999999999,
-                                181344,
-                                195048,
-                                0.010819,
-                                0.028108999999999999,
-                                1615994613.333051,
-                                186708690374956
+                                11.058721078676172,
+                                0.77083100000000004,
+                                0.059726000000000001,
+                                218260,
+                                230248,
+                                0.007685,
+                                0.022823,
+                                1616227248.632715,
+                                1068860412376772
                             ],
                             "sub": []
                         }
@@ -141,15 +136,15 @@
                     "stat": [
                         "doPostDesignResolutionToVir2Vcs",
                         "exit",
-                        5.4381570733385161,
-                        0.097550999999999999,
-                        0.051289000000000001,
-                        181344,
-                        195048,
-                        0.010819,
-                        0.028108999999999999,
-                        1615994613.333117,
-                        186708690519588
+                        11.058774078730494,
+                        0.77088599999999996,
+                        0.059726000000000001,
+                        218260,
+                        230248,
+                        0.007685,
+                        0.022823,
+                        1616227248.6327679,
+                        1068860412474582
                     ],
                     "sub": []
                 },
@@ -157,30 +152,30 @@
                     "stat": [
                         "doGAToPass2",
                         "entry",
-                        5.4381930733798072,
-                        0.097573999999999994,
-                        0.051302,
-                        181344,
-                        195048,
-                        0.010819,
-                        0.028108999999999999,
-                        1615994613.333153,
-                        186708690659064
+                        11.058797078672796,
+                        0.77090800000000004,
+                        0.059726000000000001,
+                        218260,
+                        230248,
+                        0.007685,
+                        0.022823,
+                        1616227248.632791,
+                        1068860412553612
                     ],
                     "sub": [
                         {
                             "stat": [
                                 "DoPass2",
                                 "entry",
-                                5.4396550734527409,
-                                0.097573999999999994,
-                                0.052745,
-                                179864,
-                                195048,
-                                0.010819,
-                                0.028108999999999999,
-                                1615994613.334615,
-                                186708696228234
+                                11.064395078690723,
+                                0.77449900000000005,
+                                0.061720999999999998,
+                                215244,
+                                230248,
+                                0.007685,
+                                0.022823,
+                                1616227248.6383891,
+                                1068860433855620
                             ],
                             "sub": []
                         },
@@ -188,15 +183,15 @@
                             "stat": [
                                 "DoPass2",
                                 "exit",
-                                5.4837670733686537,
-                                0.12671399999999999,
-                                0.060858000000000002,
-                                187000,
-                                195048,
-                                0.010819,
-                                0.034344,
-                                1615994613.378727,
-                                186708863734896
+                                12.533123078756034,
+                                2.0476960000000002,
+                                0.23991000000000001,
+                                220228,
+                                230248,
+                                0.0098379999999999995,
+                                0.027130000000000001,
+                                1616227250.1071169,
+                                1068866003279392
                             ],
                             "sub": []
                         }
@@ -206,15 +201,15 @@
                     "stat": [
                         "doGAToPass2",
                         "exit",
-                        5.4913320733467117,
-                        0.13276199999999999,
-                        0.062357999999999997,
-                        187000,
-                        195048,
-                        0.010819,
-                        0.034344,
-                        1615994613.386292,
-                        186708892396974
+                        12.536159078706987,
+                        2.0497260000000002,
+                        0.24091000000000001,
+                        220228,
+                        230248,
+                        0.0098379999999999995,
+                        0.027130000000000001,
+                        1616227250.110153,
+                        1068866014763196
                     ],
                     "sub": []
                 }
@@ -224,138 +219,3469 @@
             "stat": [
                 "main",
                 "exit",
-                5.4919160733697936,
-                0.13289000000000001,
-                0.062813999999999995,
-                186992,
-                195048,
-                0.010819,
-                0.034344,
-                1615994613.3868761,
-                186708894539406
+                12.543419078690931,
+                2.0559159999999999,
+                0.24193100000000001,
+                220220,
+                230248,
+                0.0098379999999999995,
+                0.027130000000000001,
+                1616227250.117413,
+                1068866042290382
             ],
             "sub": []
         }
     ],
+    "CurCompileModules": [
+        "...MASTER...",
+        "...MASTER...",
+        "test",
+        "test",
+        "LEDDC_DW01_inc_16",
+        "LEDDC_DW01_inc_16",
+        "LEDDC_DW01_inc_17",
+        "LEDDC_DW01_inc_17",
+        "LEDDC_DW01_inc_18",
+        "LEDDC_DW01_inc_18",
+        "LEDDC_DW01_inc_20",
+        "LEDDC_DW01_inc_20",
+        "LEDDC_DW01_inc_21",
+        "LEDDC_DW01_inc_21",
+        "LEDDC_DW01_inc_22",
+        "LEDDC_DW01_inc_22",
+        "LEDDC_DW01_inc_23",
+        "LEDDC_DW01_inc_23",
+        "LEDDC_DW01_inc_24",
+        "LEDDC_DW01_inc_24",
+        "LEDDC_DW01_inc_25",
+        "LEDDC_DW01_inc_25",
+        "LEDDC_DW01_inc_26",
+        "LEDDC_DW01_inc_26",
+        "LEDDC_DW01_inc_27",
+        "LEDDC_DW01_inc_27",
+        "LEDDC_DW01_inc_28",
+        "LEDDC_DW01_inc_28",
+        "LEDDC_DW01_inc_29",
+        "LEDDC_DW01_inc_29",
+        "LEDDC_DW01_inc_30",
+        "LEDDC_DW01_inc_30",
+        "LEDDC_DW01_inc_31",
+        "LEDDC_DW01_inc_31",
+        "LEDDC_DW01_inc_32",
+        "LEDDC_DW01_inc_32",
+        "LEDDC_DW01_inc_33",
+        "LEDDC_DW01_inc_33",
+        "LEDDC_DW01_inc_34",
+        "LEDDC_DW01_inc_34",
+        "LEDDC_DW01_inc_35",
+        "LEDDC_DW01_inc_35",
+        "LEDDC",
+        "LEDDC",
+        "sram_512x16",
+        "sram_512x16",
+        "sram_256x16",
+        "sram_256x16",
+        "INVXL",
+        "INVXL",
+        "TBUFXL",
+        "TBUFXL",
+        "TBUFX1",
+        "TBUFX1",
+        "TBUFX2",
+        "TBUFX2",
+        "TBUFX3",
+        "TBUFX3",
+        "TBUFX4",
+        "TBUFX4",
+        "TBUFX6",
+        "TBUFX6",
+        "TBUFX8",
+        "TBUFX8",
+        "TBUFX12",
+        "TBUFX12",
+        "TBUFX16",
+        "TBUFX16",
+        "TBUFX20",
+        "TBUFX20",
+        "HOLDX1",
+        "HOLDX1",
+        "AND2X8",
+        "AND2X8",
+        "AND3XL",
+        "AND3XL",
+        "AND3X6",
+        "AND3X6",
+        "AND3X8",
+        "AND3X8",
+        "AND4XL",
+        "AND4XL",
+        "AND4X8",
+        "AND4X8",
+        "AOI21XL",
+        "AOI21XL",
+        "AOI21X2",
+        "AOI21X2",
+        "AOI21X4",
+        "AOI21X4",
+        "AOI211XL",
+        "AOI211XL",
+        "AOI211X1",
+        "AOI211X1",
+        "AOI211X2",
+        "AOI211X2",
+        "AOI211X4",
+        "AOI211X4",
+        "AOI22XL",
+        "AOI22XL",
+        "AOI221XL",
+        "AOI221XL",
+        "AOI221X4",
+        "AOI221X4",
+        "AOI222XL",
+        "AOI222XL",
+        "AOI31XL",
+        "AOI31XL",
+        "AOI31X1",
+        "AOI31X1",
+        "AOI31X2",
+        "AOI31X2",
+        "AOI31X4",
+        "AOI31X4",
+        "AOI32XL",
+        "AOI32XL",
+        "AOI32X2",
+        "AOI32X2",
+        "AOI32X4",
+        "AOI32X4",
+        "AOI33XL",
+        "AOI33XL",
+        "AOI33X1",
+        "AOI33X1",
+        "AOI33X2",
+        "AOI33X2",
+        "AOI33X4",
+        "AOI33X4",
+        "AOI2BB1XL",
+        "AOI2BB1XL",
+        "AOI2BB2XL",
+        "AOI2BB2XL",
+        "AOI2BB2X4",
+        "AOI2BB2X4",
+        "AO21XL",
+        "AO21XL",
+        "AO22XL",
+        "AO22XL",
+        "MX2XL",
+        "MX2XL",
+        "MX2X1",
+        "MX2X1",
+        "MX2X2",
+        "MX2X2",
+        "MX2X4",
+        "MX2X4",
+        "MX2X6",
+        "MX2X6",
+        "MX2X8",
+        "MX2X8",
+        "MX4XL",
+        "MX4XL",
+        "MX4X1",
+        "MX4X1",
+        "MX4X2",
+        "MX4X2",
+        "MX4X4",
+        "MX4X4",
+        "MXI2XL",
+        "MXI2XL",
+        "MXI2X6",
+        "MXI2X6",
+        "MXI2X8",
+        "MXI2X8",
+        "MXI4XL",
+        "MXI4XL",
+        "MXI4X1",
+        "MXI4X1",
+        "MXI4X2",
+        "MXI4X2",
+        "MXI4X4",
+        "MXI4X4",
+        "MX3XL",
+        "MX3XL",
+        "MX3X1",
+        "MX3X1",
+        "MX3X2",
+        "MX3X2",
+        "MX3X4",
+        "MX3X4",
+        "MXI3XL",
+        "MXI3XL",
+        "MXI3X1",
+        "MXI3X1",
+        "MXI3X2",
+        "MXI3X2",
+        "MXI3X4",
+        "MXI3X4",
+        "NAND2XL",
+        "NAND2XL",
+        "NAND3XL",
+        "NAND3XL",
+        "NAND4XL",
+        "NAND4XL",
+        "NAND4X4",
+        "NAND4X4",
+        "NAND4X6",
+        "NAND4X6",
+        "NAND4X8",
+        "NAND4X8",
+        "NAND2BXL",
+        "NAND2BXL",
+        "NAND3BXL",
+        "NAND3BXL",
+        "NAND3BX1",
+        "NAND3BX1",
+        "NAND3BX2",
+        "NAND3BX2",
+        "NAND3BX4",
+        "NAND3BX4",
+        "NAND4BXL",
+        "NAND4BXL",
+        "NAND4BX1",
+        "NAND4BX1",
+        "NAND4BX2",
+        "NAND4BX2",
+        "NAND4BX4",
+        "NAND4BX4",
+        "NAND4BBXL",
+        "NAND4BBXL",
+        "NAND4BBX1",
+        "NAND4BBX1",
+        "NAND4BBX2",
+        "NAND4BBX2",
+        "NAND4BBX4",
+        "NAND4BBX4",
+        "NOR2XL",
+        "NOR2XL",
+        "NOR3XL",
+        "NOR3XL",
+        "NOR3X2",
+        "NOR3X2",
+        "NOR3X8",
+        "NOR3X8",
+        "NOR4XL",
+        "NOR4XL",
+        "NOR4X2",
+        "NOR4X2",
+        "NOR4X4",
+        "NOR4X4",
+        "NOR4X6",
+        "NOR4X6",
+        "NOR4X8",
+        "NOR4X8",
+        "NOR2BXL",
+        "NOR2BXL",
+        "NOR3BXL",
+        "NOR3BXL",
+        "NOR3BX1",
+        "NOR3BX1",
+        "NOR3BX2",
+        "NOR3BX2",
+        "NOR3BX4",
+        "NOR3BX4",
+        "NOR4BXL",
+        "NOR4BXL",
+        "NOR4BX1",
+        "NOR4BX1",
+        "NOR4BX2",
+        "NOR4BX2",
+        "NOR4BX4",
+        "NOR4BX4",
+        "NOR4BBXL",
+        "NOR4BBXL",
+        "NOR4BBX1",
+        "NOR4BBX1",
+        "NOR4BBX2",
+        "NOR4BBX2",
+        "NOR4BBX4",
+        "NOR4BBX4",
+        "OR2XL",
+        "OR2XL",
+        "OR3XL",
+        "OR3XL",
+        "OR3X1",
+        "OR3X1",
+        "OR3X4",
+        "OR3X4",
+        "OR3X6",
+        "OR3X6",
+        "OR3X8",
+        "OR3X8",
+        "OR4XL",
+        "OR4XL",
+        "OR4X1",
+        "OR4X1",
+        "OR4X2",
+        "OR4X2",
+        "OR4X4",
+        "OR4X4",
+        "OR4X6",
+        "OR4X6",
+        "OR4X8",
+        "OR4X8",
+        "OAI21XL",
+        "OAI21XL",
+        "OAI211XL",
+        "OAI211XL",
+        "OAI22XL",
+        "OAI22XL",
+        "OAI22X4",
+        "OAI22X4",
+        "OAI221XL",
+        "OAI221XL",
+        "OAI222XL",
+        "OAI222XL",
+        "OAI31XL",
+        "OAI31XL",
+        "OAI31X1",
+        "OAI31X1",
+        "OAI32XL",
+        "OAI32XL",
+        "OAI32X1",
+        "OAI32X1",
+        "OAI32X4",
+        "OAI32X4",
+        "OAI33XL",
+        "OAI33XL",
+        "OAI33X1",
+        "OAI33X1",
+        "OAI33X2",
+        "OAI33X2",
+        "OAI33X4",
+        "OAI33X4",
+        "OAI2BB1XL",
+        "OAI2BB1XL",
+        "OAI2BB1X4",
+        "OAI2BB1X4",
+        "OAI2BB2XL",
+        "OAI2BB2XL",
+        "OAI2BB2X4",
+        "OAI2BB2X4",
+        "OA21XL",
+        "OA21XL",
+        "OA21X1",
+        "OA21X1",
+        "OA22XL",
+        "OA22XL",
+        "CLKXOR2X1",
+        "CLKXOR2X1",
+        "CLKXOR2X4",
+        "CLKXOR2X4",
+        "CLKXOR2X8",
+        "CLKXOR2X8",
+        "XOR2XL",
+        "XOR2XL",
+        "XOR3XL",
+        "XOR3XL",
+        "XOR3X1",
+        "XOR3X1",
+        "XOR3X2",
+        "XOR3X2",
+        "XOR3X4",
+        "XOR3X4",
+        "XNOR2XL",
+        "XNOR2XL",
+        "XNOR3XL",
+        "XNOR3XL",
+        "XNOR3X1",
+        "XNOR3X1",
+        "XNOR3X2",
+        "XNOR3X2",
+        "XNOR3X4",
+        "XNOR3X4",
+        "CLKBUFX8",
+        "CLKBUFX8",
+        "CLKBUFX12",
+        "CLKBUFX12",
+        "CLKBUFX16",
+        "CLKBUFX16",
+        "CLKINVX6",
+        "CLKINVX6",
+        "CLKINVX16",
+        "CLKINVX16",
+        "CLKAND2X4",
+        "CLKAND2X4",
+        "CLKAND2X6",
+        "CLKAND2X6",
+        "CLKAND2X8",
+        "CLKAND2X8",
+        "CLKMX2X3",
+        "CLKMX2X3",
+        "CLKMX2X4",
+        "CLKMX2X4",
+        "CLKMX2X6",
+        "CLKMX2X6",
+        "CLKMX2X8",
+        "CLKMX2X8",
+        "CLKMX2X12",
+        "CLKMX2X12",
+        "TLATNCAX2",
+        "TLATNCAX2",
+        "TLATNCAX3",
+        "TLATNCAX3",
+        "TLATNCAX4",
+        "TLATNCAX4",
+        "TLATNCAX6",
+        "TLATNCAX6",
+        "TLATNCAX8",
+        "TLATNCAX8",
+        "TLATNCAX12",
+        "TLATNCAX12",
+        "TLATNCAX16",
+        "TLATNCAX16",
+        "TLATNCAX20",
+        "TLATNCAX20",
+        "TLATNTSCAX2",
+        "TLATNTSCAX2",
+        "TLATNTSCAX3",
+        "TLATNTSCAX3",
+        "TLATNTSCAX4",
+        "TLATNTSCAX4",
+        "TLATNTSCAX6",
+        "TLATNTSCAX6",
+        "TLATNTSCAX8",
+        "TLATNTSCAX8",
+        "TLATNTSCAX12",
+        "TLATNTSCAX12",
+        "TLATNTSCAX16",
+        "TLATNTSCAX16",
+        "TLATNTSCAX20",
+        "TLATNTSCAX20",
+        "ADDFXL",
+        "ADDFXL",
+        "ADDFX1",
+        "ADDFX1",
+        "ADDFX2",
+        "ADDFX2",
+        "ADDFX4",
+        "ADDFX4",
+        "ADDFHXL",
+        "ADDFHXL",
+        "ADDFHX1",
+        "ADDFHX1",
+        "ADDFHX2",
+        "ADDFHX2",
+        "ADDFHX4",
+        "ADDFHX4",
+        "BENCX1",
+        "BENCX1",
+        "BENCX2",
+        "BENCX2",
+        "BENCX4",
+        "BENCX4",
+        "BMXX2",
+        "BMXX2",
+        "BMXX4",
+        "BMXX4",
+        "BMXIX2",
+        "BMXIX2",
+        "BMXIX4",
+        "BMXIX4",
+        "CMPR22X2",
+        "CMPR22X2",
+        "CMPR22X4",
+        "CMPR22X4",
+        "CMPR32X2",
+        "CMPR32X2",
+        "CMPR32X4",
+        "CMPR32X4",
+        "AFHCINX2",
+        "AFHCINX2",
+        "AFHCINX4",
+        "AFHCINX4",
+        "AFHCONX2",
+        "AFHCONX2",
+        "AFHCONX4",
+        "AFHCONX4",
+        "ACHCINX2",
+        "ACHCINX2",
+        "ACHCINX4",
+        "ACHCINX4",
+        "ACHCONX2",
+        "ACHCONX2",
+        "ACHCONX4",
+        "ACHCONX4",
+        "AHHCINX2",
+        "AHHCINX2",
+        "AHHCINX4",
+        "AHHCINX4",
+        "AHHCONX2",
+        "AHHCONX2",
+        "AHHCONX4",
+        "AHHCONX4",
+        "AFCSHCINX2",
+        "AFCSHCINX2",
+        "AFCSHCINX4",
+        "AFCSHCINX4",
+        "AFCSHCONX2",
+        "AFCSHCONX2",
+        "AFCSHCONX4",
+        "AFCSHCONX4",
+        "AFCSIHCONX2",
+        "AFCSIHCONX2",
+        "AFCSIHCONX4",
+        "AFCSIHCONX4",
+        "ACCSHCINX2",
+        "ACCSHCINX2",
+        "ACCSHCINX4",
+        "ACCSHCINX4",
+        "ACCSHCONX2",
+        "ACCSHCONX2",
+        "ACCSHCONX4",
+        "ACCSHCONX4",
+        "ACCSIHCONX2",
+        "ACCSIHCONX2",
+        "ACCSIHCONX4",
+        "ACCSIHCONX4",
+        "AHCSHCINX2",
+        "AHCSHCINX2",
+        "AHCSHCINX4",
+        "AHCSHCINX4",
+        "AHCSHCONX2",
+        "AHCSHCONX2",
+        "AHCSHCONX4",
+        "AHCSHCONX4",
+        "CMPR42X1",
+        "CMPR42X1",
+        "CMPR42X2",
+        "CMPR42X2",
+        "CMPR42X4",
+        "CMPR42X4",
+        "DFFXL",
+        "DFFXL",
+        "DFFX1",
+        "DFFX1",
+        "DFFX2",
+        "DFFX2",
+        "DFFX4",
+        "DFFX4",
+        "DFFQX1",
+        "DFFQX1",
+        "DFFQX2",
+        "DFFQX2",
+        "DFFQX4",
+        "DFFQX4",
+        "DFFQXL",
+        "DFFQXL",
+        "DFFRXL",
+        "DFFRXL",
+        "DFFSXL",
+        "DFFSXL",
+        "DFFSX1",
+        "DFFSX1",
+        "DFFSX2",
+        "DFFSX2",
+        "DFFSX4",
+        "DFFSX4",
+        "DFFSRXL",
+        "DFFSRXL",
+        "DFFSRX1",
+        "DFFSRX1",
+        "DFFSRX2",
+        "DFFSRX2",
+        "DFFSRX4",
+        "DFFSRX4",
+        "DFFNSRXL",
+        "DFFNSRXL",
+        "DFFNSRX1",
+        "DFFNSRX1",
+        "DFFNSRX2",
+        "DFFNSRX2",
+        "DFFNSRX4",
+        "DFFNSRX4",
+        "DFFTRXL",
+        "DFFTRXL",
+        "DFFTRX1",
+        "DFFTRX1",
+        "DFFTRX2",
+        "DFFTRX2",
+        "DFFTRX4",
+        "DFFTRX4",
+        "EDFFXL",
+        "EDFFXL",
+        "EDFFX1",
+        "EDFFX1",
+        "EDFFX2",
+        "EDFFX2",
+        "EDFFX4",
+        "EDFFX4",
+        "EDFFTRXL",
+        "EDFFTRXL",
+        "EDFFTRX1",
+        "EDFFTRX1",
+        "EDFFTRX2",
+        "EDFFTRX2",
+        "EDFFTRX4",
+        "EDFFTRX4",
+        "SDFFXL",
+        "SDFFXL",
+        "SDFFX1",
+        "SDFFX1",
+        "SDFFX2",
+        "SDFFX2",
+        "SDFFX4",
+        "SDFFX4",
+        "SDFFQX1",
+        "SDFFQX1",
+        "SDFFQX2",
+        "SDFFQX2",
+        "SDFFQX4",
+        "SDFFQX4",
+        "SDFFQXL",
+        "SDFFQXL",
+        "SDFFRXL",
+        "SDFFRXL",
+        "SDFFRX1",
+        "SDFFRX1",
+        "SDFFRX2",
+        "SDFFRX2",
+        "SDFFRX4",
+        "SDFFRX4",
+        "SDFFSXL",
+        "SDFFSXL",
+        "SDFFSX1",
+        "SDFFSX1",
+        "SDFFSX2",
+        "SDFFSX2",
+        "SDFFSX4",
+        "SDFFSX4",
+        "SDFFSRXL",
+        "SDFFSRXL",
+        "SDFFSRX1",
+        "SDFFSRX1",
+        "SDFFSRX2",
+        "SDFFSRX2",
+        "SDFFSRX4",
+        "SDFFSRX4",
+        "SDFFNSRXL",
+        "SDFFNSRXL",
+        "SDFFNSRX1",
+        "SDFFNSRX1",
+        "SDFFNSRX2",
+        "SDFFNSRX2",
+        "SDFFNSRX4",
+        "SDFFNSRX4",
+        "SDFFTRXL",
+        "SDFFTRXL",
+        "SDFFTRX1",
+        "SDFFTRX1",
+        "SDFFTRX2",
+        "SDFFTRX2",
+        "SDFFTRX4",
+        "SDFFTRX4",
+        "SEDFFXL",
+        "SEDFFXL",
+        "SEDFFX1",
+        "SEDFFX1",
+        "SEDFFX2",
+        "SEDFFX2",
+        "SEDFFX4",
+        "SEDFFX4",
+        "SEDFFTRXL",
+        "SEDFFTRXL",
+        "SEDFFTRX1",
+        "SEDFFTRX1",
+        "SEDFFTRX2",
+        "SEDFFTRX2",
+        "SEDFFTRX4",
+        "SEDFFTRX4",
+        "DFFHQX1",
+        "DFFHQX1",
+        "DFFHQX2",
+        "DFFHQX2",
+        "DFFHQX4",
+        "DFFHQX4",
+        "DFFHQX8",
+        "DFFHQX8",
+        "DFFRHQX1",
+        "DFFRHQX1",
+        "DFFRHQX8",
+        "DFFRHQX8",
+        "DFFSHQX1",
+        "DFFSHQX1",
+        "DFFSHQX2",
+        "DFFSHQX2",
+        "DFFSHQX4",
+        "DFFSHQX4",
+        "DFFSHQX8",
+        "DFFSHQX8",
+        "DFFSRHQX1",
+        "DFFSRHQX1",
+        "DFFSRHQX2",
+        "DFFSRHQX2",
+        "DFFSRHQX4",
+        "DFFSRHQX4",
+        "DFFSRHQX8",
+        "DFFSRHQX8",
+        "EDFFHQX1",
+        "EDFFHQX1",
+        "EDFFHQX2",
+        "EDFFHQX2",
+        "EDFFHQX4",
+        "EDFFHQX4",
+        "EDFFHQX8",
+        "EDFFHQX8",
+        "MDFFHQX1",
+        "MDFFHQX1",
+        "MDFFHQX2",
+        "MDFFHQX2",
+        "MDFFHQX4",
+        "MDFFHQX4",
+        "MDFFHQX8",
+        "MDFFHQX8",
+        "SDFFHQX1",
+        "SDFFHQX1",
+        "SDFFHQX2",
+        "SDFFHQX2",
+        "SDFFHQX4",
+        "SDFFHQX4",
+        "SDFFHQX8",
+        "SDFFHQX8",
+        "SDFFRHQX1",
+        "SDFFRHQX1",
+        "SDFFRHQX2",
+        "SDFFRHQX2",
+        "SDFFRHQX4",
+        "SDFFRHQX4",
+        "SDFFRHQX8",
+        "SDFFRHQX8",
+        "SDFFSHQX1",
+        "SDFFSHQX1",
+        "SDFFSHQX2",
+        "SDFFSHQX2",
+        "SDFFSHQX4",
+        "SDFFSHQX4",
+        "SDFFSHQX8",
+        "SDFFSHQX8",
+        "SDFFSRHQX1",
+        "SDFFSRHQX1",
+        "SDFFSRHQX2",
+        "SDFFSRHQX2",
+        "SDFFSRHQX4",
+        "SDFFSRHQX4",
+        "SDFFSRHQX8",
+        "SDFFSRHQX8",
+        "SEDFFHQX1",
+        "SEDFFHQX1",
+        "SEDFFHQX2",
+        "SEDFFHQX2",
+        "SEDFFHQX4",
+        "SEDFFHQX4",
+        "SEDFFHQX8",
+        "SEDFFHQX8",
+        "SMDFFHQX1",
+        "SMDFFHQX1",
+        "SMDFFHQX2",
+        "SMDFFHQX2",
+        "SMDFFHQX4",
+        "SMDFFHQX4",
+        "SMDFFHQX8",
+        "SMDFFHQX8",
+        "TLATXL",
+        "TLATXL",
+        "TLATX1",
+        "TLATX1",
+        "TLATX2",
+        "TLATX2",
+        "TLATX4",
+        "TLATX4",
+        "TLATSRXL",
+        "TLATSRXL",
+        "TLATSRX1",
+        "TLATSRX1",
+        "TLATSRX2",
+        "TLATSRX2",
+        "TLATSRX4",
+        "TLATSRX4",
+        "TLATNXL",
+        "TLATNXL",
+        "TLATNX1",
+        "TLATNX1",
+        "TLATNX2",
+        "TLATNX2",
+        "TLATNX4",
+        "TLATNX4",
+        "TLATNSRXL",
+        "TLATNSRXL",
+        "TLATNSRX1",
+        "TLATNSRX1",
+        "TLATNSRX2",
+        "TLATNSRX2",
+        "TLATNSRX4",
+        "TLATNSRX4",
+        "RF1R1WX1",
+        "RF1R1WX1",
+        "RF2R1WX1",
+        "RF2R1WX1",
+        "RFRDX1",
+        "RFRDX1",
+        "RFRDX2",
+        "RFRDX2",
+        "RFRDX4",
+        "RFRDX4",
+        "DLY1X1",
+        "DLY1X1",
+        "DLY2X1",
+        "DLY2X1",
+        "DLY3X1",
+        "DLY3X1",
+        "DLY4X1",
+        "DLY4X1",
+        "DLY1X4",
+        "DLY1X4",
+        "DLY2X4",
+        "DLY2X4",
+        "DLY3X4",
+        "DLY3X4",
+        "DLY4X4",
+        "DLY4X4",
+        "TIEHI",
+        "TIEHI",
+        "TIELO",
+        "TIELO"
+    ],
+    "MlibObjs": {},
+    "stat": {
+        "nQuads": 90601,
+        "ru_self_cgstart": {
+            "ru_utime_sec": 0.77460899999999999,
+            "ru_maxrss_kb": 97008,
+            "ru_stime_sec": 0.061728999999999999,
+            "ru_minflt": 33713,
+            "ru_nivcsw": 1297,
+            "ru_majflt": 1,
+            "ru_nvcsw": 90
+        },
+        "realTime": 12.543753078673035,
+        "quadSpeed": 70574.663040861953,
+        "ru_childs_cgstart": {
+            "ru_utime_sec": 0.007685,
+            "ru_maxrss_kb": 50580,
+            "ru_stime_sec": 0.022823,
+            "ru_minflt": 4814,
+            "ru_nivcsw": 18,
+            "ru_majflt": 0,
+            "ru_nvcsw": 8
+        },
+        "nMops": 189383,
+        "cpu_cycles_cgstart": 1068860434173608,
+        "totalObjSize": 3973522,
+        "ru_childs_end": {
+            "ru_utime_sec": 0.0098379999999999995,
+            "ru_maxrss_kb": 50580,
+            "ru_stime_sec": 0.027130000000000001,
+            "ru_minflt": 5398,
+            "ru_nivcsw": 20,
+            "ru_majflt": 0,
+            "ru_nvcsw": 9
+        },
+        "ru_self_end": {
+            "ru_utime_sec": 2.0562170000000002,
+            "ru_maxrss_kb": 105016,
+            "ru_stime_sec": 0.24193100000000001,
+            "ru_minflt": 71780,
+            "ru_nivcsw": 2161,
+            "ru_majflt": 3,
+            "ru_nvcsw": 93
+        },
+        "peak_mem_kb": 230248,
+        "cpu_cycles_end": 1068866043326162,
+        "cpu_cycles_total": 47503456582,
+        "CodeGen(%)": 62.135857951506622,
+        "mopSpeed": 147522.00760110331,
+        "mop/quad": 2.0902970165892207,
+        "Frontend(%)": 37.864142048493385,
+        "outputSizePerQuad": 43.857374642663991
+    },
     "PrevCompiledModules": {
         "test": {
             "x9Hvb_d": {
-                "bytes": 30656,
+                "bytes": 38284,
                 "mod": "test",
-                "checksum": 0,
                 "out": "x9Hvb_d.o",
+                "checksum": 0,
                 "mode": 4,
-                "archive": "archive.7/_69085_archive_1.a"
+                "archive": "archive.8/_14966_archive_1.a"
             }
         },
         "...MASTER...": {
             "amcQw_d": {
                 "bytes": 4696,
                 "mod": "...MASTER...",
+                "checksum": 0,
                 "mode": 4,
-                "out": "objs/amcQw_d.o",
-                "checksum": 0
+                "out": "objs/amcQw_d.o"
             }
         }
     },
-    "PEModules": [],
     "NameTable": {
-        "...MASTER...": [
-            "SIM",
-            "amcQw",
+        "TLATNSRX4": [
+            "TLATNSRX4",
+            "TyYG3",
             "module",
-            2
+            392
+        ],
+        "BENCX2": [
+            "BENCX2",
+            "xq36w",
+            "module",
+            221
+        ],
+        "LEDDC_DW01_inc_16": [
+            "LEDDC_DW01_inc_16",
+            "YW2vG",
+            "module",
+            3
+        ],
+        "MX2X6": [
+            "MX2X6",
+            "CQL3z",
+            "module",
+            74
+        ],
+        "LEDDC_DW01_inc_29": [
+            "LEDDC_DW01_inc_29",
+            "PU7u5",
+            "module",
+            15
+        ],
+        "AOI211XL": [
+            "AOI211XL",
+            "Wk0jI",
+            "module",
+            46
+        ],
+        "AHCSHCONX2": [
+            "AHCSHCONX2",
+            "vUh8D",
+            "module",
+            257
+        ],
+        "MX3X1": [
+            "MX3X1",
+            "yWLSs",
+            "module",
+            88
+        ],
+        "TBUFX20": [
+            "TBUFX20",
+            "FwKdC",
+            "module",
+            35
+        ],
+        "AOI22XL": [
+            "AOI22XL",
+            "Kx8dR",
+            "module",
+            50
+        ],
+        "NOR3BX4": [
+            "NOR3BX4",
+            "PH7K1",
+            "module",
+            127
         ],
         "test": [
             "test",
             "x9Hvb",
             "module",
             1
+        ],
+        "ACCSIHCONX4": [
+            "ACCSIHCONX4",
+            "IrBRz",
+            "module",
+            254
+        ],
+        "LEDDC_DW01_inc_17": [
+            "LEDDC_DW01_inc_17",
+            "TvTxj",
+            "module",
+            4
+        ],
+        "OR3X6": [
+            "OR3X6",
+            "Jeumg",
+            "module",
+            140
+        ],
+        "NAND4BBX2": [
+            "NAND4BBX2",
+            "p84RS",
+            "module",
+            112
+        ],
+        "LEDDC_DW01_inc_30": [
+            "LEDDC_DW01_inc_30",
+            "HwcCa",
+            "module",
+            16
+        ],
+        "MX4X4": [
+            "MX4X4",
+            "Uv0A0",
+            "module",
+            79
+        ],
+        "TLATNCAX6": [
+            "TLATNCAX6",
+            "Fk6bB",
+            "module",
+            199
+        ],
+        "SEDFFHQX4": [
+            "SEDFFHQX4",
+            "jx2mU",
+            "module",
+            371
+        ],
+        "LEDDC_DW01_inc_23": [
+            "LEDDC_DW01_inc_23",
+            "zPhCS",
+            "module",
+            9
+        ],
+        "XOR3XL": [
+            "XOR3XL",
+            "Nnn6h",
+            "module",
+            174
+        ],
+        "CLKINVX6": [
+            "CLKINVX6",
+            "MIJKL",
+            "module",
+            186
+        ],
+        "TBUFX3": [
+            "TBUFX3",
+            "hj1VI",
+            "module",
+            29
+        ],
+        "udp_sedfft": [
+            "udp_sedfft",
+            "IEZrF",
+            "udp",
+            411
+        ],
+        "sram_256x16": [
+            "sram_256x16",
+            "wNdmG",
+            "module",
+            24
+        ],
+        "TLATNCAX4": [
+            "TLATNCAX4",
+            "HkLJ5",
+            "module",
+            198
+        ],
+        "AFHCONX2": [
+            "AFHCONX2",
+            "aDwfU",
+            "module",
+            233
+        ],
+        "AOI33XL": [
+            "AOI33XL",
+            "g42DP",
+            "module",
+            61
+        ],
+        "NOR3BX2": [
+            "NOR3BX2",
+            "u0ssG",
+            "module",
+            126
+        ],
+        "SDFFSX1": [
+            "SDFFSX1",
+            "cJx4d",
+            "module",
+            308
+        ],
+        "LEDDC_DW01_inc_18": [
+            "LEDDC_DW01_inc_18",
+            "MAPu4",
+            "module",
+            5
+        ],
+        "TBUFX16": [
+            "TBUFX16",
+            "kgCy9",
+            "module",
+            34
+        ],
+        "LEDDC_DW01_inc_20": [
+            "LEDDC_DW01_inc_20",
+            "WtZhs",
+            "module",
+            6
+        ],
+        "LEDDC_DW01_inc_21": [
+            "LEDDC_DW01_inc_21",
+            "yArd8",
+            "module",
+            7
+        ],
+        "LEDDC_DW01_inc_22": [
+            "LEDDC_DW01_inc_22",
+            "MFzir",
+            "module",
+            8
+        ],
+        "MXI4X2": [
+            "MXI4X2",
+            "Sy4dz",
+            "module",
+            85
+        ],
+        "CLKMX2X4": [
+            "CLKMX2X4",
+            "vNCA6",
+            "module",
+            192
+        ],
+        "TBUFX6": [
+            "TBUFX6",
+            "t54at",
+            "module",
+            31
+        ],
+        "NAND3BXL": [
+            "NAND3BXL",
+            "YFzvB",
+            "module",
+            102
+        ],
+        "LEDDC_DW01_inc_24": [
+            "LEDDC_DW01_inc_24",
+            "u2U5v",
+            "module",
+            10
+        ],
+        "SDFFSHQX8": [
+            "SDFFSHQX8",
+            "a8ZZ5",
+            "module",
+            364
+        ],
+        "AOI21X4": [
+            "AOI21X4",
+            "Ja9uD",
+            "module",
+            45
+        ],
+        "TLATNTSCAX2": [
+            "TLATNTSCAX2",
+            "RMYVZ",
+            "module",
+            204
+        ],
+        "LEDDC_DW01_inc_26": [
+            "LEDDC_DW01_inc_26",
+            "ShJbC",
+            "module",
+            12
+        ],
+        "CLKMX2X8": [
+            "CLKMX2X8",
+            "BPLkH",
+            "module",
+            194
+        ],
+        "MXI3X4": [
+            "MXI3X4",
+            "cSHUG",
+            "module",
+            94
+        ],
+        "MX2X1": [
+            "MX2X1",
+            "w073b",
+            "module",
+            71
+        ],
+        "ADDFHXL": [
+            "ADDFHXL",
+            "TDkbw",
+            "module",
+            216
+        ],
+        "AOI211X1": [
+            "AOI211X1",
+            "uwCBB",
+            "module",
+            47
+        ],
+        "SEDFFXL": [
+            "SEDFFXL",
+            "kdUmK",
+            "module",
+            323
+        ],
+        "NAND4BX1": [
+            "NAND4BX1",
+            "JrS2A",
+            "module",
+            107
+        ],
+        "AFCSIHCONX2": [
+            "AFCSIHCONX2",
+            "hk8hd",
+            "module",
+            247
+        ],
+        "MXI4X1": [
+            "MXI4X1",
+            "hUtW7",
+            "module",
+            84
+        ],
+        "TBUFX12": [
+            "TBUFX12",
+            "BBypp",
+            "module",
+            33
+        ],
+        "MX3XL": [
+            "MX3XL",
+            "bkb4a",
+            "module",
+            87
+        ],
+        "AOI33X1": [
+            "AOI33X1",
+            "AWIHa",
+            "module",
+            62
+        ],
+        "RFRDX4": [
+            "RFRDX4",
+            "Nb3Mr",
+            "module",
+            397
+        ],
+        "DFFQX4": [
+            "DFFQX4",
+            "MPeBq",
+            "module",
+            268
+        ],
+        "NAND2XL": [
+            "NAND2XL",
+            "C4bJV",
+            "module",
+            95
+        ],
+        "SDFFNSRXL": [
+            "SDFFNSRXL",
+            "w4ZHB",
+            "module",
+            315
+        ],
+        "DFFSX2": [
+            "DFFSX2",
+            "e6ZPz",
+            "module",
+            273
+        ],
+        "LEDDC_DW01_inc_25": [
+            "LEDDC_DW01_inc_25",
+            "GDp0w",
+            "module",
+            11
+        ],
+        "LEDDC_DW01_inc_27": [
+            "LEDDC_DW01_inc_27",
+            "hEdGU",
+            "module",
+            13
+        ],
+        "SMDFFHQX1": [
+            "SMDFFHQX1",
+            "kiDen",
+            "module",
+            373
+        ],
+        "OR3X1": [
+            "OR3X1",
+            "LacGK",
+            "module",
+            138
+        ],
+        "NAND3BX2": [
+            "NAND3BX2",
+            "Dn8AH",
+            "module",
+            104
+        ],
+        "AND3X8": [
+            "AND3X8",
+            "JThpV",
+            "module",
+            40
+        ],
+        "udp_mux": [
+            "udp_mux",
+            "vCfas",
+            "udp",
+            410
+        ],
+        "MXI3X2": [
+            "MXI3X2",
+            "etJ63",
+            "module",
+            93
+        ],
+        "LEDDC_DW01_inc_28": [
+            "LEDDC_DW01_inc_28",
+            "bSgHC",
+            "module",
+            14
+        ],
+        "AHHCINX4": [
+            "AHHCINX4",
+            "fR6kx",
+            "module",
+            240
+        ],
+        "LEDDC_DW01_inc_31": [
+            "LEDDC_DW01_inc_31",
+            "U3wtt",
+            "module",
+            17
+        ],
+        "LEDDC": [
+            "LEDDC",
+            "KE7hJ",
+            "module",
+            22
+        ],
+        "AHCSHCINX2": [
+            "AHCSHCINX2",
+            "v6867",
+            "module",
+            255
+        ],
+        "TBUFX2": [
+            "TBUFX2",
+            "n9zvr",
+            "module",
+            28
+        ],
+        "OAI31XL": [
+            "OAI31XL",
+            "jIuBP",
+            "module",
+            154
+        ],
+        "TLATNTSCAX4": [
+            "TLATNTSCAX4",
+            "VF4A2",
+            "module",
+            206
+        ],
+        "LEDDC_DW01_inc_34": [
+            "LEDDC_DW01_inc_34",
+            "iWNNq",
+            "module",
+            20
+        ],
+        "NAND4BBX1": [
+            "NAND4BBX1",
+            "mJvIu",
+            "module",
+            111
+        ],
+        "ACCSHCINX2": [
+            "ACCSHCINX2",
+            "f6mLg",
+            "module",
+            249
+        ],
+        "SDFFRHQX1": [
+            "SDFFRHQX1",
+            "GshMM",
+            "module",
+            357
+        ],
+        "TLATNCAX2": [
+            "TLATNCAX2",
+            "vaLbD",
+            "module",
+            196
+        ],
+        "LEDDC_DW01_inc_32": [
+            "LEDDC_DW01_inc_32",
+            "jzStv",
+            "module",
+            18
+        ],
+        "LEDDC_DW01_inc_33": [
+            "LEDDC_DW01_inc_33",
+            "VSniv",
+            "module",
+            19
+        ],
+        "AND2X8": [
+            "AND2X8",
+            "Uieqv",
+            "module",
+            37
+        ],
+        "ADDFX4": [
+            "ADDFX4",
+            "WnDdd",
+            "module",
+            215
+        ],
+        "AFCSHCINX4": [
+            "AFCSHCINX4",
+            "phVPs",
+            "module",
+            244
+        ],
+        "TLATNTSCAX20": [
+            "TLATNTSCAX20",
+            "gqds0",
+            "module",
+            211
+        ],
+        "TIELO": [
+            "TIELO",
+            "RU1Dg",
+            "module",
+            407
+        ],
+        "LEDDC_DW01_inc_35": [
+            "LEDDC_DW01_inc_35",
+            "IbRwT",
+            "module",
+            21
+        ],
+        "NOR3XL": [
+            "NOR3XL",
+            "qsiak",
+            "module",
+            115
+        ],
+        "RF1R1WX1": [
+            "RF1R1WX1",
+            "Kr67Z",
+            "module",
+            393
+        ],
+        "AOI31X2": [
+            "AOI31X2",
+            "rh2u7",
+            "module",
+            56
+        ],
+        "ADDFHX2": [
+            "ADDFHX2",
+            "mp94G",
+            "module",
+            218
+        ],
+        "TLATNTSCAX6": [
+            "TLATNTSCAX6",
+            "uKBtq",
+            "module",
+            207
+        ],
+        "INVXL": [
+            "INVXL",
+            "FsUsG",
+            "module",
+            25
+        ],
+        "AND4X8": [
+            "AND4X8",
+            "I0Ba9",
+            "module",
+            42
+        ],
+        "OAI2BB1X4": [
+            "OAI2BB1X4",
+            "siijQ",
+            "module",
+            164
+        ],
+        "AHHCONX2": [
+            "AHHCONX2",
+            "t8Ybn",
+            "module",
+            241
+        ],
+        "TLATX1": [
+            "TLATX1",
+            "xfmxY",
+            "module",
+            378
+        ],
+        "SEDFFTRXL": [
+            "SEDFFTRXL",
+            "Um0TU",
+            "module",
+            327
+        ],
+        "AND4XL": [
+            "AND4XL",
+            "F2LF2",
+            "module",
+            41
+        ],
+        "DFFNSRXL": [
+            "DFFNSRXL",
+            "guc0t",
+            "module",
+            279
+        ],
+        "CLKBUFX12": [
+            "CLKBUFX12",
+            "qtimW",
+            "module",
+            184
+        ],
+        "AOI2BB1XL": [
+            "AOI2BB1XL",
+            "uZF5n",
+            "module",
+            65
+        ],
+        "SEDFFHQX2": [
+            "SEDFFHQX2",
+            "nFzDw",
+            "module",
+            370
+        ],
+        "sram_512x16": [
+            "sram_512x16",
+            "gEdvU",
+            "module",
+            23
+        ],
+        "OR4X1": [
+            "OR4X1",
+            "jjJiI",
+            "module",
+            143
+        ],
+        "TLATNTSCAX8": [
+            "TLATNTSCAX8",
+            "KSshx",
+            "module",
+            208
+        ],
+        "ACCSIHCONX2": [
+            "ACCSIHCONX2",
+            "dvEmZ",
+            "module",
+            253
+        ],
+        "TBUFXL": [
+            "TBUFXL",
+            "NdNCz",
+            "module",
+            26
+        ],
+        "TBUFX1": [
+            "TBUFX1",
+            "eWUeT",
+            "module",
+            27
+        ],
+        "TLATSRXL": [
+            "TLATSRXL",
+            "xFAHK",
+            "module",
+            381
+        ],
+        "HOLDX1": [
+            "HOLDX1",
+            "rNA1T",
+            "module",
+            36
+        ],
+        "NOR4BX4": [
+            "NOR4BX4",
+            "E2Mpe",
+            "module",
+            131
+        ],
+        "AOI221X4": [
+            "AOI221X4",
+            "GbISc",
+            "module",
+            52
+        ],
+        "SDFFSRHQX1": [
+            "SDFFSRHQX1",
+            "YQZeH",
+            "module",
+            365
+        ],
+        "TBUFX4": [
+            "TBUFX4",
+            "AWb1y",
+            "module",
+            30
+        ],
+        "TBUFX8": [
+            "TBUFX8",
+            "J7q2Y",
+            "module",
+            32
+        ],
+        "OAI222XL": [
+            "OAI222XL",
+            "yKCjh",
+            "module",
+            153
+        ],
+        "NAND4BBXL": [
+            "NAND4BBXL",
+            "j9Ied",
+            "module",
+            110
+        ],
+        "MX3X4": [
+            "MX3X4",
+            "wrrwb",
+            "module",
+            90
+        ],
+        "MX2X4": [
+            "MX2X4",
+            "jLss4",
+            "module",
+            73
+        ],
+        "AOI21X2": [
+            "AOI21X2",
+            "KAFb1",
+            "module",
+            44
+        ],
+        "DFFHQX2": [
+            "DFFHQX2",
+            "y7qqg",
+            "module",
+            332
+        ],
+        "CLKMX2X3": [
+            "CLKMX2X3",
+            "rmbkc",
+            "module",
+            191
+        ],
+        "TLATNSRX1": [
+            "TLATNSRX1",
+            "wbfaD",
+            "module",
+            390
+        ],
+        "AND3XL": [
+            "AND3XL",
+            "FW8wG",
+            "module",
+            38
+        ],
+        "AND3X6": [
+            "AND3X6",
+            "QQRBc",
+            "module",
+            39
+        ],
+        "BENCX1": [
+            "BENCX1",
+            "ZD6iu",
+            "module",
+            220
+        ],
+        "AOI21XL": [
+            "AOI21XL",
+            "t8sfL",
+            "module",
+            43
+        ],
+        "OAI33X1": [
+            "OAI33X1",
+            "xSMA4",
+            "module",
+            160
+        ],
+        "OA22XL": [
+            "OA22XL",
+            "QRvrF",
+            "module",
+            169
+        ],
+        "AOI221XL": [
+            "AOI221XL",
+            "BUsfE",
+            "module",
+            51
+        ],
+        "CLKXOR2X1": [
+            "CLKXOR2X1",
+            "aHLPd",
+            "module",
+            170
+        ],
+        "NOR4BX1": [
+            "NOR4BX1",
+            "TPqu4",
+            "module",
+            129
+        ],
+        "AOI211X2": [
+            "AOI211X2",
+            "iF13i",
+            "module",
+            48
+        ],
+        "AHHCONX4": [
+            "AHHCONX4",
+            "xiy88",
+            "module",
+            242
+        ],
+        "ACHCONX4": [
+            "ACHCONX4",
+            "Is4KS",
+            "module",
+            238
+        ],
+        "DFFSRHQX8": [
+            "DFFSRHQX8",
+            "gRLAF",
+            "module",
+            344
+        ],
+        "DFFNSRX1": [
+            "DFFNSRX1",
+            "DFbV2",
+            "module",
+            280
+        ],
+        "CMPR22X4": [
+            "CMPR22X4",
+            "ewTjU",
+            "module",
+            228
+        ],
+        "AOI33X4": [
+            "AOI33X4",
+            "dZvLv",
+            "module",
+            64
+        ],
+        "AOI211X4": [
+            "AOI211X4",
+            "QameL",
+            "module",
+            49
+        ],
+        "MXI4X4": [
+            "MXI4X4",
+            "J25y9",
+            "module",
+            86
+        ],
+        "AOI222XL": [
+            "AOI222XL",
+            "G6ems",
+            "module",
+            53
+        ],
+        "MXI2X6": [
+            "MXI2X6",
+            "BMd98",
+            "module",
+            81
+        ],
+        "SDFFTRX2": [
+            "SDFFTRX2",
+            "LImcI",
+            "module",
+            321
+        ],
+        "AOI32XL": [
+            "AOI32XL",
+            "RctLc",
+            "module",
+            58
+        ],
+        "AOI31XL": [
+            "AOI31XL",
+            "y5jFc",
+            "module",
+            54
+        ],
+        "AOI31X1": [
+            "AOI31X1",
+            "ywNeR",
+            "module",
+            55
+        ],
+        "AOI33X2": [
+            "AOI33X2",
+            "xpm8x",
+            "module",
+            63
+        ],
+        "AFCSHCONX4": [
+            "AFCSHCONX4",
+            "eqZLn",
+            "module",
+            246
+        ],
+        "SDFFSX2": [
+            "SDFFSX2",
+            "ymd1R",
+            "module",
+            309
+        ],
+        "AOI31X4": [
+            "AOI31X4",
+            "vKWsA",
+            "module",
+            57
+        ],
+        "AOI32X2": [
+            "AOI32X2",
+            "HC97P",
+            "module",
+            59
+        ],
+        "AOI32X4": [
+            "AOI32X4",
+            "bUBSR",
+            "module",
+            60
+        ],
+        "TLATX2": [
+            "TLATX2",
+            "Uxery",
+            "module",
+            379
+        ],
+        "AOI2BB2XL": [
+            "AOI2BB2XL",
+            "m7gfL",
+            "module",
+            66
+        ],
+        "SDFFHQX8": [
+            "SDFFHQX8",
+            "s10KV",
+            "module",
+            356
+        ],
+        "AOI2BB2X4": [
+            "AOI2BB2X4",
+            "bJwC8",
+            "module",
+            67
+        ],
+        "CLKBUFX16": [
+            "CLKBUFX16",
+            "HjNiP",
+            "module",
+            185
+        ],
+        "NAND2BXL": [
+            "NAND2BXL",
+            "B7bZD",
+            "module",
+            101
+        ],
+        "AO21XL": [
+            "AO21XL",
+            "LYkvL",
+            "module",
+            68
+        ],
+        "NOR2BXL": [
+            "NOR2BXL",
+            "kQMYW",
+            "module",
+            123
+        ],
+        "AO22XL": [
+            "AO22XL",
+            "t0Hd0",
+            "module",
+            69
+        ],
+        "NAND4BX4": [
+            "NAND4BX4",
+            "UkWii",
+            "module",
+            109
+        ],
+        "NAND4BXL": [
+            "NAND4BXL",
+            "APaqQ",
+            "module",
+            106
+        ],
+        "SDFFTRX1": [
+            "SDFFTRX1",
+            "zrVa3",
+            "module",
+            320
+        ],
+        "MX2XL": [
+            "MX2XL",
+            "Vacbq",
+            "module",
+            70
+        ],
+        "XOR3X2": [
+            "XOR3X2",
+            "wxYax",
+            "module",
+            176
+        ],
+        "SDFFQX2": [
+            "SDFFQX2",
+            "uupVb",
+            "module",
+            300
+        ],
+        "CMPR42X4": [
+            "CMPR42X4",
+            "xJHIn",
+            "module",
+            261
+        ],
+        "OAI211XL": [
+            "OAI211XL",
+            "i85VS",
+            "module",
+            149
+        ],
+        "MXI2X8": [
+            "MXI2X8",
+            "PNk6W",
+            "module",
+            82
+        ],
+        "TLATNTSCAX12": [
+            "TLATNTSCAX12",
+            "Nj9qy",
+            "module",
+            209
+        ],
+        "BENCX4": [
+            "BENCX4",
+            "xxjNQ",
+            "module",
+            222
+        ],
+        "MX2X2": [
+            "MX2X2",
+            "iDn9T",
+            "module",
+            72
+        ],
+        "SDFFSRX1": [
+            "SDFFSRX1",
+            "xtB9L",
+            "module",
+            312
+        ],
+        "DFFX1": [
+            "DFFX1",
+            "nJRZa",
+            "module",
+            263
+        ],
+        "NAND4X4": [
+            "NAND4X4",
+            "uuMff",
+            "module",
+            98
+        ],
+        "MX2X8": [
+            "MX2X8",
+            "bG71P",
+            "module",
+            75
+        ],
+        "XNOR3XL": [
+            "XNOR3XL",
+            "qLwx0",
+            "module",
+            179
+        ],
+        "NAND3BX4": [
+            "NAND3BX4",
+            "SM0pU",
+            "module",
+            105
+        ],
+        "MX4XL": [
+            "MX4XL",
+            "FHVWb",
+            "module",
+            76
+        ],
+        "MX4X1": [
+            "MX4X1",
+            "zQNVe",
+            "module",
+            77
+        ],
+        "MX4X2": [
+            "MX4X2",
+            "Sc6UH",
+            "module",
+            78
+        ],
+        "MX3X2": [
+            "MX3X2",
+            "BCb72",
+            "module",
+            89
+        ],
+        "MXI2XL": [
+            "MXI2XL",
+            "Jacfd",
+            "module",
+            80
+        ],
+        "OR4X8": [
+            "OR4X8",
+            "Nk7Tz",
+            "module",
+            147
+        ],
+        "NOR4X8": [
+            "NOR4X8",
+            "I8tqw",
+            "module",
+            122
+        ],
+        "EDFFXL": [
+            "EDFFXL",
+            "xmQb8",
+            "module",
+            287
+        ],
+        "NOR4BX2": [
+            "NOR4BX2",
+            "KJZhu",
+            "module",
+            130
+        ],
+        "MXI4XL": [
+            "MXI4XL",
+            "kW9en",
+            "module",
+            83
+        ],
+        "MXI3XL": [
+            "MXI3XL",
+            "HB6aW",
+            "module",
+            91
+        ],
+        "SDFFHQX1": [
+            "SDFFHQX1",
+            "p709h",
+            "module",
+            353
+        ],
+        "MXI3X1": [
+            "MXI3X1",
+            "bgRGq",
+            "module",
+            92
+        ],
+        "NAND3XL": [
+            "NAND3XL",
+            "zJkFY",
+            "module",
+            96
+        ],
+        "NAND4XL": [
+            "NAND4XL",
+            "RaaAR",
+            "module",
+            97
+        ],
+        "NAND4X6": [
+            "NAND4X6",
+            "nBViL",
+            "module",
+            99
+        ],
+        "CLKAND2X6": [
+            "CLKAND2X6",
+            "hpGZN",
+            "module",
+            189
+        ],
+        "OAI32XL": [
+            "OAI32XL",
+            "A3I3t",
+            "module",
+            156
+        ],
+        "NAND4X8": [
+            "NAND4X8",
+            "uLeiI",
+            "module",
+            100
+        ],
+        "NOR3X8": [
+            "NOR3X8",
+            "NDAZg",
+            "module",
+            117
+        ],
+        "NAND3BX1": [
+            "NAND3BX1",
+            "Nx9nH",
+            "module",
+            103
+        ],
+        "NAND4BX2": [
+            "NAND4BX2",
+            "CpHJ4",
+            "module",
+            108
+        ],
+        "SDFFSRHQX2": [
+            "SDFFSRHQX2",
+            "Q0fGH",
+            "module",
+            366
+        ],
+        "NAND4BBX4": [
+            "NAND4BBX4",
+            "n4EuM",
+            "module",
+            113
+        ],
+        "NOR2XL": [
+            "NOR2XL",
+            "UiF6Q",
+            "module",
+            114
+        ],
+        "NOR3X2": [
+            "NOR3X2",
+            "IEb7g",
+            "module",
+            116
+        ],
+        "NOR4XL": [
+            "NOR4XL",
+            "Bxps4",
+            "module",
+            118
+        ],
+        "NOR4X2": [
+            "NOR4X2",
+            "iDC9a",
+            "module",
+            119
+        ],
+        "ADDFXL": [
+            "ADDFXL",
+            "D1wVr",
+            "module",
+            212
+        ],
+        "CLKINVX16": [
+            "CLKINVX16",
+            "YW2NG",
+            "module",
+            187
+        ],
+        "NOR4X4": [
+            "NOR4X4",
+            "GTzBp",
+            "module",
+            120
+        ],
+        "NOR4X6": [
+            "NOR4X6",
+            "j6yyb",
+            "module",
+            121
+        ],
+        "NOR3BXL": [
+            "NOR3BXL",
+            "yEYNK",
+            "module",
+            124
+        ],
+        "OAI33X4": [
+            "OAI33X4",
+            "s1gd1",
+            "module",
+            162
+        ],
+        "NOR3BX1": [
+            "NOR3BX1",
+            "YjQnK",
+            "module",
+            125
+        ],
+        "BMXX4": [
+            "BMXX4",
+            "U7mhG",
+            "module",
+            224
+        ],
+        "NOR4BXL": [
+            "NOR4BXL",
+            "xzdvi",
+            "module",
+            128
+        ],
+        "NOR4BBXL": [
+            "NOR4BBXL",
+            "VDc6F",
+            "module",
+            132
+        ],
+        "OA21XL": [
+            "OA21XL",
+            "nYeNM",
+            "module",
+            167
+        ],
+        "OA21X1": [
+            "OA21X1",
+            "cWpZZ",
+            "module",
+            168
+        ],
+        "OAI31X1": [
+            "OAI31X1",
+            "ZGPmN",
+            "module",
+            155
+        ],
+        "NOR4BBX1": [
+            "NOR4BBX1",
+            "JPAav",
+            "module",
+            133
+        ],
+        "NOR4BBX2": [
+            "NOR4BBX2",
+            "QHyAn",
+            "module",
+            134
+        ],
+        "NOR4BBX4": [
+            "NOR4BBX4",
+            "tVrNZ",
+            "module",
+            135
+        ],
+        "OR2XL": [
+            "OR2XL",
+            "Ljmab",
+            "module",
+            136
+        ],
+        "OAI2BB2XL": [
+            "OAI2BB2XL",
+            "eKshN",
+            "module",
+            165
+        ],
+        "OR3XL": [
+            "OR3XL",
+            "DF2I0",
+            "module",
+            137
+        ],
+        "SMDFFHQX2": [
+            "SMDFFHQX2",
+            "igULR",
+            "module",
+            374
+        ],
+        "SDFFNSRX1": [
+            "SDFFNSRX1",
+            "Ypn01",
+            "module",
+            316
+        ],
+        "OR3X4": [
+            "OR3X4",
+            "AkPz9",
+            "module",
+            139
+        ],
+        "OAI21XL": [
+            "OAI21XL",
+            "nqk2t",
+            "module",
+            148
+        ],
+        "CMPR32X2": [
+            "CMPR32X2",
+            "W7Pdv",
+            "module",
+            229
+        ],
+        "OR3X8": [
+            "OR3X8",
+            "SAi3B",
+            "module",
+            141
+        ],
+        "DFFTRX2": [
+            "DFFTRX2",
+            "YM4w1",
+            "module",
+            285
+        ],
+        "OR4XL": [
+            "OR4XL",
+            "kHJ20",
+            "module",
+            142
+        ],
+        "OR4X2": [
+            "OR4X2",
+            "We06i",
+            "module",
+            144
+        ],
+        "DFFSHQX4": [
+            "DFFSHQX4",
+            "dWtQM",
+            "module",
+            339
+        ],
+        "CLKMX2X6": [
+            "CLKMX2X6",
+            "eMzjE",
+            "module",
+            193
+        ],
+        "OR4X4": [
+            "OR4X4",
+            "CYPwy",
+            "module",
+            145
+        ],
+        "OR4X6": [
+            "OR4X6",
+            "YSSIb",
+            "module",
+            146
+        ],
+        "OAI22XL": [
+            "OAI22XL",
+            "z4Vhc",
+            "module",
+            150
+        ],
+        "CLKAND2X8": [
+            "CLKAND2X8",
+            "uLUmV",
+            "module",
+            190
+        ],
+        "DFFXL": [
+            "DFFXL",
+            "n3gAq",
+            "module",
+            262
+        ],
+        "OAI22X4": [
+            "OAI22X4",
+            "tHQ67",
+            "module",
+            151
+        ],
+        "OAI221XL": [
+            "OAI221XL",
+            "GYQvg",
+            "module",
+            152
+        ],
+        "SEDFFHQX1": [
+            "SEDFFHQX1",
+            "yF0Gh",
+            "module",
+            369
+        ],
+        "MDFFHQX8": [
+            "MDFFHQX8",
+            "qZsZa",
+            "module",
+            352
+        ],
+        "OAI32X1": [
+            "OAI32X1",
+            "RzCvR",
+            "module",
+            157
+        ],
+        "SDFFNSRX2": [
+            "SDFFNSRX2",
+            "ahHV2",
+            "module",
+            317
+        ],
+        "OAI32X4": [
+            "OAI32X4",
+            "sKQIr",
+            "module",
+            158
+        ],
+        "OAI33XL": [
+            "OAI33XL",
+            "tCIx7",
+            "module",
+            159
+        ],
+        "OAI33X2": [
+            "OAI33X2",
+            "RQdcA",
+            "module",
+            161
+        ],
+        "OAI2BB1XL": [
+            "OAI2BB1XL",
+            "Hevxk",
+            "module",
+            163
+        ],
+        "ADDFX2": [
+            "ADDFX2",
+            "jfLNU",
+            "module",
+            214
+        ],
+        "XNOR3X2": [
+            "XNOR3X2",
+            "dEEHT",
+            "module",
+            181
+        ],
+        "OAI2BB2X4": [
+            "OAI2BB2X4",
+            "nzH1g",
+            "module",
+            166
+        ],
+        "CLKXOR2X4": [
+            "CLKXOR2X4",
+            "xtnQ0",
+            "module",
+            171
+        ],
+        "ADDFHX1": [
+            "ADDFHX1",
+            "TyC4S",
+            "module",
+            217
+        ],
+        "AFCSIHCONX4": [
+            "AFCSIHCONX4",
+            "czyQZ",
+            "module",
+            248
+        ],
+        "CLKXOR2X8": [
+            "CLKXOR2X8",
+            "K0mhr",
+            "module",
+            172
+        ],
+        "XOR2XL": [
+            "XOR2XL",
+            "QZEIi",
+            "module",
+            173
+        ],
+        "XOR3X1": [
+            "XOR3X1",
+            "uvSRa",
+            "module",
+            175
+        ],
+        "XOR3X4": [
+            "XOR3X4",
+            "heLq3",
+            "module",
+            177
+        ],
+        "TLATNX4": [
+            "TLATNX4",
+            "Q1AW0",
+            "module",
+            388
+        ],
+        "XNOR2XL": [
+            "XNOR2XL",
+            "rpKsx",
+            "module",
+            178
+        ],
+        "ACCSHCONX4": [
+            "ACCSHCONX4",
+            "htDWZ",
+            "module",
+            252
+        ],
+        "XNOR3X1": [
+            "XNOR3X1",
+            "fmv9c",
+            "module",
+            180
+        ],
+        "XNOR3X4": [
+            "XNOR3X4",
+            "DuBDb",
+            "module",
+            182
+        ],
+        "SDFFTRX4": [
+            "SDFFTRX4",
+            "p4u8F",
+            "module",
+            322
+        ],
+        "CLKBUFX8": [
+            "CLKBUFX8",
+            "I1q3L",
+            "module",
+            183
+        ],
+        "CMPR22X2": [
+            "CMPR22X2",
+            "EcMep",
+            "module",
+            227
+        ],
+        "RFRDX1": [
+            "RFRDX1",
+            "eeDRi",
+            "module",
+            395
+        ],
+        "SDFFSRX2": [
+            "SDFFSRX2",
+            "NdP2V",
+            "module",
+            313
+        ],
+        "CLKAND2X4": [
+            "CLKAND2X4",
+            "aEJK1",
+            "module",
+            188
+        ],
+        "MDFFHQX4": [
+            "MDFFHQX4",
+            "kWet5",
+            "module",
+            351
+        ],
+        "CLKMX2X12": [
+            "CLKMX2X12",
+            "c0ikP",
+            "module",
+            195
+        ],
+        "TLATNCAX3": [
+            "TLATNCAX3",
+            "apCuf",
+            "module",
+            197
+        ],
+        "TLATNCAX8": [
+            "TLATNCAX8",
+            "wk8a6",
+            "module",
+            200
+        ],
+        "udp_tlat": [
+            "udp_tlat",
+            "gSqMj",
+            "udp",
+            417
+        ],
+        "TLATNCAX12": [
+            "TLATNCAX12",
+            "x8mxm",
+            "module",
+            201
+        ],
+        "TLATNCAX16": [
+            "TLATNCAX16",
+            "upT0z",
+            "module",
+            202
+        ],
+        "TLATNCAX20": [
+            "TLATNCAX20",
+            "Sw666",
+            "module",
+            203
+        ],
+        "TLATNTSCAX3": [
+            "TLATNTSCAX3",
+            "K4N6K",
+            "module",
+            205
+        ],
+        "TLATNTSCAX16": [
+            "TLATNTSCAX16",
+            "t64ZW",
+            "module",
+            210
+        ],
+        "ADDFX1": [
+            "ADDFX1",
+            "N0EII",
+            "module",
+            213
+        ],
+        "ADDFHX4": [
+            "ADDFHX4",
+            "AjPZh",
+            "module",
+            219
+        ],
+        "AHCSHCINX4": [
+            "AHCSHCINX4",
+            "GcIPK",
+            "module",
+            256
+        ],
+        "BMXX2": [
+            "BMXX2",
+            "qJMYh",
+            "module",
+            223
+        ],
+        "AFCSHCONX2": [
+            "AFCSHCONX2",
+            "yrsHn",
+            "module",
+            245
+        ],
+        "BMXIX2": [
+            "BMXIX2",
+            "gdaRd",
+            "module",
+            225
+        ],
+        "BMXIX4": [
+            "BMXIX4",
+            "kiMgr",
+            "module",
+            226
+        ],
+        "CMPR32X4": [
+            "CMPR32X4",
+            "dtIZ3",
+            "module",
+            230
+        ],
+        "AFHCINX2": [
+            "AFHCINX2",
+            "iguC8",
+            "module",
+            231
+        ],
+        "AFHCINX4": [
+            "AFHCINX4",
+            "ZNzsR",
+            "module",
+            232
+        ],
+        "AFHCONX4": [
+            "AFHCONX4",
+            "cAznV",
+            "module",
+            234
+        ],
+        "DLY3X1": [
+            "DLY3X1",
+            "VTang",
+            "module",
+            400
+        ],
+        "DFFQX1": [
+            "DFFQX1",
+            "fRbeV",
+            "module",
+            266
+        ],
+        "ACHCINX2": [
+            "ACHCINX2",
+            "n7DEY",
+            "module",
+            235
+        ],
+        "ACHCINX4": [
+            "ACHCINX4",
+            "LG9tq",
+            "module",
+            236
+        ],
+        "SDFFRX4": [
+            "SDFFRX4",
+            "kxP4e",
+            "module",
+            306
+        ],
+        "ACHCONX2": [
+            "ACHCONX2",
+            "IKIeM",
+            "module",
+            237
+        ],
+        "AHHCINX2": [
+            "AHHCINX2",
+            "Gm0k2",
+            "module",
+            239
+        ],
+        "AFCSHCINX2": [
+            "AFCSHCINX2",
+            "vCTR7",
+            "module",
+            243
+        ],
+        "ACCSHCINX4": [
+            "ACCSHCINX4",
+            "AHfvR",
+            "module",
+            250
+        ],
+        "ACCSHCONX2": [
+            "ACCSHCONX2",
+            "qwsBV",
+            "module",
+            251
+        ],
+        "AHCSHCONX4": [
+            "AHCSHCONX4",
+            "QhkGd",
+            "module",
+            258
+        ],
+        "SDFFHQX4": [
+            "SDFFHQX4",
+            "ra6c1",
+            "module",
+            355
+        ],
+        "CMPR42X1": [
+            "CMPR42X1",
+            "f8nqa",
+            "module",
+            259
+        ],
+        "CMPR42X2": [
+            "CMPR42X2",
+            "A5hUU",
+            "module",
+            260
+        ],
+        "DFFX2": [
+            "DFFX2",
+            "Lxcs6",
+            "module",
+            264
+        ],
+        "DFFX4": [
+            "DFFX4",
+            "VDQ4z",
+            "module",
+            265
+        ],
+        "udp_edff": [
+            "udp_edff",
+            "Cpxa2",
+            "udp",
+            418
+        ],
+        "DFFQX2": [
+            "DFFQX2",
+            "eLHpD",
+            "module",
+            267
+        ],
+        "DFFQXL": [
+            "DFFQXL",
+            "hN0wx",
+            "module",
+            269
+        ],
+        "SDFFRHQX8": [
+            "SDFFRHQX8",
+            "kxiPr",
+            "module",
+            360
+        ],
+        "DFFRXL": [
+            "DFFRXL",
+            "D0Gi6",
+            "module",
+            270
+        ],
+        "DFFSXL": [
+            "DFFSXL",
+            "JJ4Yn",
+            "module",
+            271
+        ],
+        "DFFSX1": [
+            "DFFSX1",
+            "tZ0A6",
+            "module",
+            272
+        ],
+        "DFFSX4": [
+            "DFFSX4",
+            "sAAR2",
+            "module",
+            274
+        ],
+        "SEDFFTRX2": [
+            "SEDFFTRX2",
+            "ATAgS",
+            "module",
+            329
+        ],
+        "DFFSRXL": [
+            "DFFSRXL",
+            "pCvbK",
+            "module",
+            275
+        ],
+        "EDFFHQX2": [
+            "EDFFHQX2",
+            "B7PDz",
+            "module",
+            346
+        ],
+        "DFFSRX1": [
+            "DFFSRX1",
+            "RzQVQ",
+            "module",
+            276
+        ],
+        "DFFSRX2": [
+            "DFFSRX2",
+            "TmU7S",
+            "module",
+            277
+        ],
+        "DFFSRX4": [
+            "DFFSRX4",
+            "sItha",
+            "module",
+            278
+        ],
+        "DFFNSRX2": [
+            "DFFNSRX2",
+            "d7CxB",
+            "module",
+            281
+        ],
+        "SDFFSRHQX4": [
+            "SDFFSRHQX4",
+            "DrmNg",
+            "module",
+            367
+        ],
+        "DFFNSRX4": [
+            "DFFNSRX4",
+            "IKV9A",
+            "module",
+            282
+        ],
+        "DFFTRXL": [
+            "DFFTRXL",
+            "Jc6AN",
+            "module",
+            283
+        ],
+        "SDFFRX1": [
+            "SDFFRX1",
+            "NyN1W",
+            "module",
+            304
+        ],
+        "DFFTRX1": [
+            "DFFTRX1",
+            "aiaL6",
+            "module",
+            284
+        ],
+        "DFFTRX4": [
+            "DFFTRX4",
+            "CfFu2",
+            "module",
+            286
+        ],
+        "EDFFX1": [
+            "EDFFX1",
+            "rFwsN",
+            "module",
+            288
+        ],
+        "EDFFX2": [
+            "EDFFX2",
+            "NPpfb",
+            "module",
+            289
+        ],
+        "EDFFX4": [
+            "EDFFX4",
+            "N7a4I",
+            "module",
+            290
+        ],
+        "EDFFTRXL": [
+            "EDFFTRXL",
+            "qQP7F",
+            "module",
+            291
+        ],
+        "EDFFTRX1": [
+            "EDFFTRX1",
+            "krpR8",
+            "module",
+            292
+        ],
+        "SDFFRX2": [
+            "SDFFRX2",
+            "ztDVM",
+            "module",
+            305
+        ],
+        "EDFFTRX2": [
+            "EDFFTRX2",
+            "GT0hb",
+            "module",
+            293
+        ],
+        "SEDFFTRX1": [
+            "SEDFFTRX1",
+            "h8ZNn",
+            "module",
+            328
+        ],
+        "EDFFTRX4": [
+            "EDFFTRX4",
+            "TmDuY",
+            "module",
+            294
+        ],
+        "SDFFXL": [
+            "SDFFXL",
+            "kIpCQ",
+            "module",
+            295
+        ],
+        "SDFFX1": [
+            "SDFFX1",
+            "eE1bG",
+            "module",
+            296
+        ],
+        "SDFFX2": [
+            "SDFFX2",
+            "N9uer",
+            "module",
+            297
+        ],
+        "SDFFX4": [
+            "SDFFX4",
+            "RKZdZ",
+            "module",
+            298
+        ],
+        "SDFFQX1": [
+            "SDFFQX1",
+            "cM9rD",
+            "module",
+            299
+        ],
+        "SMDFFHQX4": [
+            "SMDFFHQX4",
+            "vDeqY",
+            "module",
+            375
+        ],
+        "SDFFQX4": [
+            "SDFFQX4",
+            "fD8ak",
+            "module",
+            301
+        ],
+        "SDFFQXL": [
+            "SDFFQXL",
+            "nsDva",
+            "module",
+            302
+        ],
+        "SDFFRXL": [
+            "SDFFRXL",
+            "VvnzK",
+            "module",
+            303
+        ],
+        "SDFFSXL": [
+            "SDFFSXL",
+            "gfhmx",
+            "module",
+            307
+        ],
+        "SDFFSX4": [
+            "SDFFSX4",
+            "mZUg8",
+            "module",
+            310
+        ],
+        "SDFFSRXL": [
+            "SDFFSRXL",
+            "iQs8Z",
+            "module",
+            311
+        ],
+        "SDFFSRX4": [
+            "SDFFSRX4",
+            "CVfBR",
+            "module",
+            314
+        ],
+        "RFRDX2": [
+            "RFRDX2",
+            "buR43",
+            "module",
+            396
+        ],
+        "DFFHQX4": [
+            "DFFHQX4",
+            "yEUia",
+            "module",
+            333
+        ],
+        "SDFFNSRX4": [
+            "SDFFNSRX4",
+            "ebRjx",
+            "module",
+            318
+        ],
+        "SDFFTRXL": [
+            "SDFFTRXL",
+            "Jww3g",
+            "module",
+            319
+        ],
+        "SEDFFX1": [
+            "SEDFFX1",
+            "Kz4KG",
+            "module",
+            324
+        ],
+        "udp_bmx": [
+            "udp_bmx",
+            "AubIW",
+            "udp",
+            419
+        ],
+        "SEDFFX2": [
+            "SEDFFX2",
+            "TWFaq",
+            "module",
+            325
+        ],
+        "SEDFFX4": [
+            "SEDFFX4",
+            "DCw3J",
+            "module",
+            326
+        ],
+        "SEDFFTRX4": [
+            "SEDFFTRX4",
+            "GaSyg",
+            "module",
+            330
+        ],
+        "DFFHQX1": [
+            "DFFHQX1",
+            "STLxQ",
+            "module",
+            331
+        ],
+        "SDFFSHQX4": [
+            "SDFFSHQX4",
+            "bIxdg",
+            "module",
+            363
+        ],
+        "DFFHQX8": [
+            "DFFHQX8",
+            "ThQDq",
+            "module",
+            334
+        ],
+        "DFFRHQX1": [
+            "DFFRHQX1",
+            "H8MaT",
+            "module",
+            335
+        ],
+        "DFFRHQX8": [
+            "DFFRHQX8",
+            "Ikat3",
+            "module",
+            336
+        ],
+        "DFFSHQX1": [
+            "DFFSHQX1",
+            "t5g6J",
+            "module",
+            337
+        ],
+        "DFFSHQX2": [
+            "DFFSHQX2",
+            "uZ4y8",
+            "module",
+            338
+        ],
+        "DFFSHQX8": [
+            "DFFSHQX8",
+            "Dcyas",
+            "module",
+            340
+        ],
+        "DFFSRHQX1": [
+            "DFFSRHQX1",
+            "Lzbnu",
+            "module",
+            341
+        ],
+        "DFFSRHQX2": [
+            "DFFSRHQX2",
+            "SPMdR",
+            "module",
+            342
+        ],
+        "DFFSRHQX4": [
+            "DFFSRHQX4",
+            "ZY6j2",
+            "module",
+            343
+        ],
+        "EDFFHQX1": [
+            "EDFFHQX1",
+            "kuxkz",
+            "module",
+            345
+        ],
+        "EDFFHQX4": [
+            "EDFFHQX4",
+            "MRSBr",
+            "module",
+            347
+        ],
+        "udp_dff": [
+            "udp_dff",
+            "exIG1",
+            "udp",
+            416
+        ],
+        "udp_tlatrf": [
+            "udp_tlatrf",
+            "i2VqJ",
+            "udp",
+            413
+        ],
+        "TLATNX2": [
+            "TLATNX2",
+            "Qjdgp",
+            "module",
+            387
+        ],
+        "EDFFHQX8": [
+            "EDFFHQX8",
+            "YtWJF",
+            "module",
+            348
+        ],
+        "MDFFHQX1": [
+            "MDFFHQX1",
+            "mrh7D",
+            "module",
+            349
+        ],
+        "MDFFHQX2": [
+            "MDFFHQX2",
+            "YEdPn",
+            "module",
+            350
+        ],
+        "SDFFHQX2": [
+            "SDFFHQX2",
+            "RhU1A",
+            "module",
+            354
+        ],
+        "SDFFRHQX2": [
+            "SDFFRHQX2",
+            "FpI0a",
+            "module",
+            358
+        ],
+        "SDFFRHQX4": [
+            "SDFFRHQX4",
+            "UW5ju",
+            "module",
+            359
+        ],
+        "SDFFSHQX1": [
+            "SDFFSHQX1",
+            "iBMZn",
+            "module",
+            361
+        ],
+        "SDFFSHQX2": [
+            "SDFFSHQX2",
+            "Nkabv",
+            "module",
+            362
+        ],
+        "SDFFSRHQX8": [
+            "SDFFSRHQX8",
+            "br7Gz",
+            "module",
+            368
+        ],
+        "SEDFFHQX8": [
+            "SEDFFHQX8",
+            "VpFeM",
+            "module",
+            372
+        ],
+        "SMDFFHQX8": [
+            "SMDFFHQX8",
+            "efc8I",
+            "module",
+            376
+        ],
+        "TLATXL": [
+            "TLATXL",
+            "pjx6i",
+            "module",
+            377
+        ],
+        "TLATX4": [
+            "TLATX4",
+            "y1QtB",
+            "module",
+            380
+        ],
+        "TLATSRX1": [
+            "TLATSRX1",
+            "PdEDM",
+            "module",
+            382
+        ],
+        "TLATSRX2": [
+            "TLATSRX2",
+            "KWJ5y",
+            "module",
+            383
+        ],
+        "TLATSRX4": [
+            "TLATSRX4",
+            "gSmkb",
+            "module",
+            384
+        ],
+        "TLATNXL": [
+            "TLATNXL",
+            "tHNAE",
+            "module",
+            385
+        ],
+        "TLATNX1": [
+            "TLATNX1",
+            "DE3sx",
+            "module",
+            386
+        ],
+        "TLATNSRXL": [
+            "TLATNSRXL",
+            "mIpYv",
+            "module",
+            389
+        ],
+        "TLATNSRX2": [
+            "TLATNSRX2",
+            "ey1uI",
+            "module",
+            391
+        ],
+        "udp_mux2": [
+            "udp_mux2",
+            "U7Vwg",
+            "udp",
+            412
+        ],
+        "RF2R1WX1": [
+            "RF2R1WX1",
+            "dI03d",
+            "module",
+            394
+        ],
+        "DLY1X1": [
+            "DLY1X1",
+            "vS5Vp",
+            "module",
+            398
+        ],
+        "DLY2X1": [
+            "DLY2X1",
+            "ua8g9",
+            "module",
+            399
+        ],
+        "DLY4X1": [
+            "DLY4X1",
+            "Us52I",
+            "module",
+            401
+        ],
+        "DLY1X4": [
+            "DLY1X4",
+            "qVE83",
+            "module",
+            402
+        ],
+        "DLY2X4": [
+            "DLY2X4",
+            "cWfwG",
+            "module",
+            403
+        ],
+        "DLY3X4": [
+            "DLY3X4",
+            "MgD7f",
+            "module",
+            404
+        ],
+        "DLY4X4": [
+            "DLY4X4",
+            "Unw7b",
+            "module",
+            405
+        ],
+        "TIEHI": [
+            "TIEHI",
+            "T6jZC",
+            "module",
+            406
+        ],
+        "...MASTER...": [
+            "SIM",
+            "amcQw",
+            "module",
+            2
+        ],
+        "udp_sedff": [
+            "udp_sedff",
+            "D2wHf",
+            "udp",
+            408
+        ],
+        "udp_edfft": [
+            "udp_edfft",
+            "uYEPC",
+            "udp",
+            409
+        ],
+        "udp_mux4": [
+            "udp_mux4",
+            "CjLsY",
+            "udp",
+            414
+        ],
+        "udp_outrf": [
+            "udp_outrf",
+            "sk4QJ",
+            "udp",
+            415
         ]
     },
+    "PEModules": [],
+    "cpu_cycles_pass2_start": 1068860433862028,
     "LVLData": [
         "SIM"
     ],
-    "CompileStatus": "Successful",
-    "stat": {
-        "ru_self_end": {
-            "ru_majflt": 3,
-            "ru_utime_sec": 0.13289000000000001,
-            "ru_stime_sec": 0.062939999999999996,
-            "ru_nivcsw": 53,
-            "ru_nvcsw": 61,
-            "ru_maxrss_kb": 66288,
-            "ru_minflt": 22637
-        },
-        "ru_self_cgstart": {
-            "ru_majflt": 3,
-            "ru_utime_sec": 0.097573999999999994,
-            "ru_stime_sec": 0.052804999999999998,
-            "ru_nivcsw": 49,
-            "ru_nvcsw": 54,
-            "ru_maxrss_kb": 57476,
-            "ru_minflt": 20062
-        },
-        "nMops": 4452,
-        "peak_mem_kb": 195048,
-        "ru_childs_end": {
-            "ru_majflt": 0,
-            "ru_utime_sec": 0.010819,
-            "ru_stime_sec": 0.034344,
-            "ru_nivcsw": 18,
-            "ru_nvcsw": 9,
-            "ru_maxrss_kb": 13452,
-            "ru_minflt": 4839
-        },
-        "realTime": 5.4921350734075531,
-        "ru_childs_cgstart": {
-            "ru_majflt": 0,
-            "ru_utime_sec": 0.010819,
-            "ru_stime_sec": 0.028108999999999999,
-            "ru_nivcsw": 16,
-            "ru_nvcsw": 8,
-            "ru_maxrss_kb": 12620,
-            "ru_minflt": 4255
-        },
-        "mop/quad": 2.5630397236614852,
-        "cpu_cycles_cgstart": 186708696316108,
-        "nQuads": 1737,
-        "quadSpeed": 49184.505606523933,
-        "totalObjSize": 103948,
-        "cpu_cycles_total": 20761199326,
-        "CodeGen(%)": 24.574661294699716,
-        "cpu_cycles_end": 186708894781494,
-        "mopSpeed": 126061.84165817188,
-        "outputSizePerQuad": 59.843408175014396,
-        "Frontend(%)": 75.425338705300291
-    },
-    "Misc": {
-        "default_output_dir": "csrc",
-        "vcs_version": "O-2018.09",
-        "csrc_abs": "/home/DICS/M10912039/CIC/CIC_2017_grad/final/csrc",
-        "vcs_build_date": "Build Date = Aug 30 2018 20:25:16",
-        "master_pid": 69085,
-        "daidir_abs": "/home/DICS/M10912039/CIC/CIC_2017_grad/final/simv.daidir",
-        "VCS_HOME": "/usr/cad/synopsys/vcs/cur/",
-        "csrc": "csrc",
-        "hostname": "dics03.ee.yuntech.edu.tw",
-        "cwd": "/home/DICS/M10912039/CIC/CIC_2017_grad/final",
-        "daidir": "simv.daidir",
-        "archive_dir": "archive.7"
-    },
     "CompileStrategy": "fullobj",
-    "CurCompileUdps": {},
+    "CurCompileUdps": {
+        "udp_edff": "objs/udps/Cpxa2.o",
+        "udp_sedff": "objs/udps/D2wHf.o",
+        "udp_edfft": "objs/udps/uYEPC.o",
+        "udp_mux2": "objs/udps/U7Vwg.o",
+        "udp_mux": "objs/udps/vCfas.o",
+        "udp_mux4": "objs/udps/CjLsY.o",
+        "udp_sedfft": "objs/udps/IEZrF.o",
+        "udp_bmx": "objs/udps/AubIW.o",
+        "udp_dff": "objs/udps/exIG1.o",
+        "udp_tlatrf": "objs/udps/i2VqJ.o",
+        "udp_outrf": "objs/udps/sk4QJ.o",
+        "udp_tlat": "objs/udps/gSqMj.o"
+    },
+    "SIMBData": {
+        "out": "amcQwB.o",
+        "bytes": 89134,
+        "text": 0,
+        "archive": "archive.8/_14966_archive_1.a"
+    },
     "incremental": "on",
-    "CurCompileModules": [
-        "...MASTER...",
-        "test",
-        "test"
-    ],
-    "CompileProcesses": [
-        "cgproc.69085.json"
-    ],
+    "Misc": {
+        "csrc_abs": "/home/DICS/M10912039/CIC/CIC_2017_grad/final/csrc",
+        "archive_dir": "archive.8",
+        "vcs_version": "O-2018.09",
+        "vcs_build_date": "Build Date = Aug 30 2018 20:25:16",
+        "cwd": "/home/DICS/M10912039/CIC/CIC_2017_grad/final",
+        "master_pid": 14966,
+        "VCS_HOME": "/usr/cad/synopsys/vcs/cur/",
+        "hostname": "dics03.ee.yuntech.edu.tw",
+        "default_output_dir": "csrc",
+        "csrc": "csrc",
+        "daidir": "simv.daidir",
+        "daidir_abs": "/home/DICS/M10912039/CIC/CIC_2017_grad/final/simv.daidir"
+    },
     "rlimit": {
         "data": -1,
         "stack": 134217728
-    }
+    },
+    "CompileStatus": "Successful"
 }

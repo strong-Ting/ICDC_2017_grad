@@ -1,8 +1,8 @@
 hsDirType                          	1
-fHsimDesignHasDebugNodes           	0
+fHsimDesignHasDebugNodes           	13
 fNSParam                           	1024
 fLargeSizeSdfTest                  	0
-fHsimDelayGateMbme                 	0
+fHsimDelayGateMbme                 	1
 fNoMergeDelays                     	0
 fHsimAllMtmPat                     	0
 fHsimCertRaptMode                  	0
@@ -42,7 +42,7 @@ fHsimNtbVl                         	0
 fHsimICTimeStamp                   	0
 fHsimICDiag                        	0
 fHsimNewCSDF                       	1
-vcselabIncrMode                    	2
+vcselabIncrMode                    	1
 fHsimMPPackDelay                   	0
 fHsimMultDriver                    	0
 fHsimPart                          	0
@@ -152,7 +152,7 @@ fHsimViWire                        	1
 fHsimPcCbOpt                       	1
 fHsimAmsTunneling                  	0
 fHsimAmsTunnelingDiag              	0
-fHsimScUpwardXmrNoSplit            	1
+fHsimScUpwardXmrNoSplit            	0
 fHsimOrigNdbViewOnly               	0
 fHsimVcsInterface                  	1
 fHsimVcsInterfaceAlias             	0
@@ -214,7 +214,7 @@ fHsimNewEvcdObnDrv                 	1
 fHsimNewEvcdW                      	1
 fHsimNewEvcdWTest                  	0
 fHsimEvcdDbgFlags                  	0
-fHsimDumpOffsetData                	0
+fHsimDumpOffsetData                	1
 fFlopGlitchDetect                  	0
 fHsimClkGlitch                     	0
 fHsimGlitchDumpOnce                	0
@@ -237,7 +237,7 @@ fFsdbGateOnepassTraverse           	0
 fHsimAllowVecGateInVpd             	1
 fHsimAllowAllVecGateInVpd          	0
 fHsimAllowUdpInVpd                 	1
-fHsimAllowAlwaysCombInVpd          	0
+fHsimAllowAlwaysCombInVpd          	1
 fHsimAllowAlwaysCombCmpDvcSimv     	0
 fHsimAllowAlwaysCombDbg            	0
 fHsimMakeAllP2SPrimary             	0
@@ -261,7 +261,7 @@ fHsimVpdOptDelay                   	0
 fHsimVpdOptMPDelay                 	0
 fHsimCbkOptDiag                    	0
 fHsimSK                            	0
-fHsimSharedKernel                  	1
+fHsimSharedKernel                  	0
 fHsimOnepass                       	0
 fHsimStitchNew                     	0
 fHsimParallelLevelize              	0
@@ -642,7 +642,7 @@ fHsimSchedMinput                   	0
 fHsimSchedSeqPrim                  	0
 fHsimSchedSelectFanout             	0
 fHsimSchedSelectFanoutDebug        	0
-fSpecifyInDesign                   	0
+fSpecifyInDesign                   	1
 fFgpDynamicReadOn                  	0
 fHsCgOptAllUc                      	0
 fHsimXmrRepl                       	0

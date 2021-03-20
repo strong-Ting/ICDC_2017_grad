@@ -1,5 +1,8 @@
-0 
-25
+1        
+0 ./LEDDC_syn.sdf_c
+26
++access+r
++define+wave
 -Mamsrun=
 -Masflags=--32
 -Mcc=gcc
@@ -18,20 +21,19 @@
 -Mxcflags= -pipe -m32 -I/usr/cad/synopsys/vcs/cur/include
 -P
 -Xvcs_run_simv=1
+-f run_syn_60.f
 -fsdb
 -gen_obj
 -picarchive
 /usr/cad/synopsys/vcs/cur/linux/bin/vcs1
 /usr/cad/synopsys/verdi/cur//share/PLI/VCS/LINUX/verdi.tab
-LEDDC.v
-testfixture_60fps.v
 40
 sysc_uni_pwd=/home/DICS/M10912039/CIC/CIC_2017_grad/final
 XLOCALEDIR=/usr/cad/synopsys/icc2/cur/etc/locale
 XDG_SESSION_ID=5
 XDG_RUNTIME_DIR=/run/user/1001
 XDG_DATA_DIRS=/home/DICS/M10912039//.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share
-VSCODE_IPC_HOOK_CLI=/run/user/1001/vscode-ipc-837bb3b7-990b-472b-83b0-63c0061c410f.sock
+VSCODE_IPC_HOOK_CLI=/run/user/1001/vscode-ipc-2b318c6b-fcdb-47a8-b331-dcc584ce9c97.sock
 VSCODE_GIT_IPC_HANDLE=/run/user/1001/vscode-git-c78b74fea3.sock
 VSCODE_GIT_ASKPASS_NODE=/home/DICS/M10912039/.vscode-server/bin/fd6f3bce6709b121a895d042d343d71f317d74e7/node
 VSCODE_GIT_ASKPASS_MAIN=/home/DICS/M10912039/.vscode-server/bin/fd6f3bce6709b121a895d042d343d71f317d74e7/extensions/git/dist/askpass-main.js
@@ -67,14 +69,19 @@ GROUP=M10912039
 GIT_ASKPASS=/home/DICS/M10912039/.vscode-server/bin/fd6f3bce6709b121a895d042d343d71f317d74e7/extensions/git/dist/askpass.sh
 COLORTERM=truecolor
 0
-3
-1615994600 LEDDC.v
-1615993914 testfixture_60fps.v
+8
+1616226663 ./LEDDC_syn.sdf
+1173075089 /usr/cad/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v
+1490076934 ./sram_256x16/sram_256x16.v
+1490076934 ./sram_512x16/sram_512x16.v
+1616226663 ./LEDDC_syn.v
+1616227173 ./testfixture_60fps.v
+1616227120 run_syn_60.f
 1535631252 /usr/cad/synopsys/verdi/cur//share/PLI/VCS/LINUX/verdi.tab
 4
 1535686105 /usr/cad/synopsys/vcs/cur/linux/lib/libvirsim.so
 1535685624 /usr/cad/synopsys/vcs/cur/linux/lib/liberrorinf.so
 1535685580 /usr/cad/synopsys/vcs/cur/linux/lib/libsnpsmalloc.so
 1535685860 /usr/cad/synopsys/vcs/cur/linux/lib/libvfs.so
-1615994633 simv.daidir
+1616227515 simv.daidir
 -1 partitionlib

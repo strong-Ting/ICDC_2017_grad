@@ -78,9 +78,11 @@ always begin #(`GCK_Period/2) if(GCK_en) GCK = ~GCK; end
 initial begin
 //$dumpfile("LEDDC.vcd");
 //$dumpvars;
+`ifdef wave 
 $fsdbDumpfile("LEDDC_30fps.fsdb");
 $fsdbDumpvars;
-$fsdbDumpMDA;
+//$fsdbDumpMDA;
+`endif
 end
 
 

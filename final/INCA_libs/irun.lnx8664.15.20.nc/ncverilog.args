@@ -1,0 +1,9 @@
+//
+// File created by:  ncverilog
+// Do not modify this file
+//
+testfixture_60fps.v
+LEDDC.v
+./sram_512x16/sram_512x16.v
+./sram_256x16/sram_256x16.v
++nc64bit

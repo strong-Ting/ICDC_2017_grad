@@ -201,3 +201,93 @@ s200(20Mar2021:01:22:52):  ncverilog testfixture_60fps.v LEDDC.v ./sram_512x16/s
 s201(20Mar2021:01:27:43):  ncverilog testfixture_60fps.v LEDDC.v ./sram_512x16/sram_512x16.v ./sram_256x16/sram_256x16.v +access+r 
 s202(20Mar2021:01:28:44):  ncverilog testfixture_60fps.v LEDDC.v ./sram_512x16/sram_512x16.v ./sram_256x16/sram_256x16.v +access+r 
 s203(20Mar2021:01:29:35):  ncverilog testfixture_60fps.v LEDDC.v ./sram_512x16/sram_512x16.v ./sram_256x16/sram_256x16.v +access+r 
+s204(20Mar2021:01:35:10):  ncverilog testfixture_30fps.v LEDDC_syn.v ./sram_512x16/sram_512x16.v ./sram_256x16/sram_256x16.v -v /usr/cad/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v +define+SDF +access+r 
+s205(20Mar2021:01:35:43):  ncverilog testfixture_30fps.v LEDDC_syn.v ./sram_512x16/sram_512x16.v ./sram_256x16/sram_256x16.v -v /usr/cad/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v +define+SDF +access+r +notimingchecks 
+s206(20Mar2021:01:38:36):  ncverilog testfixture_30fps.v LEDDC_syn.v ./sram_512x16/sram_512x16.v ./sram_256x16/sram_256x16.v -v /usr/cad/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v +define+SDF +notimingchecks 
+s207(20Mar2021:11:17:11):  ncverilog testfixture_60fps.v LEDDC.v ./sram_512x16/sram_512x16.v ./sram_256x16/sram_256x16.v +access+r define+delay=1 
+s208(20Mar2021:11:17:36):  ncverilog testfixture_60fps.v LEDDC.v ./sram_512x16/sram_512x16.v ./sram_256x16/sram_256x16.v define+delay=1 +access+r 
+s209(20Mar2021:11:18:04):  ncverilog testfixture_60fps.v LEDDC.v +define+delay=1 ./sram_512x16/sram_512x16.v ./sram_256x16/sram_256x16.v +access+r 
+s210(20Mar2021:11:18:38):  ncverilog testfixture_60fps.v LEDDC.v +define+delay=0.5 ./sram_512x16/sram_512x16.v ./sram_256x16/sram_256x16.v +access+r 
+s211(20Mar2021:11:18:55):  ncverilog testfixture_60fps.v LEDDC.v +define+delay=0.75 ./sram_512x16/sram_512x16.v ./sram_256x16/sram_256x16.v +access+r 
+s212(20Mar2021:11:19:09):  ncverilog testfixture_60fps.v LEDDC.v +define+delay=0.9 ./sram_512x16/sram_512x16.v ./sram_256x16/sram_256x16.v +access+r 
+s213(20Mar2021:11:19:24):  ncverilog testfixture_60fps.v LEDDC.v +define+delay=0.99 ./sram_512x16/sram_512x16.v ./sram_256x16/sram_256x16.v +access+r 
+s214(20Mar2021:11:19:39):  ncverilog testfixture_60fps.v LEDDC.v +define+delay=1.1 ./sram_512x16/sram_512x16.v ./sram_256x16/sram_256x16.v +access+r 
+s215(20Mar2021:11:19:57):  ncverilog testfixture_60fps.v LEDDC.v +define+delay=1.5 ./sram_512x16/sram_512x16.v ./sram_256x16/sram_256x16.v +access+r 
+s216(20Mar2021:11:20:54):  ncverilog testfixture_60fps.v LEDDC.v +define+delay=3 ./sram_512x16/sram_512x16.v ./sram_256x16/sram_256x16.v +access+r 
+s217(20Mar2021:11:21:16):  ncverilog testfixture_60fps.v LEDDC.v +define+delay=2 ./sram_512x16/sram_512x16.v ./sram_256x16/sram_256x16.v +access+r 
+s218(20Mar2021:11:21:35):  ncverilog testfixture_60fps.v LEDDC.v +define+delay=2.5 ./sram_512x16/sram_512x16.v ./sram_256x16/sram_256x16.v +access+r 
+s219(20Mar2021:11:21:54):  ncverilog testfixture_60fps.v LEDDC.v +define+delay=2.25 ./sram_512x16/sram_512x16.v ./sram_256x16/sram_256x16.v +access+r 
+s220(20Mar2021:11:22:16):  ncverilog testfixture_60fps.v LEDDC.v +define+delay=2.3 ./sram_512x16/sram_512x16.v ./sram_256x16/sram_256x16.v +access+r 
+s221(20Mar2021:11:22:36):  ncverilog testfixture_60fps.v LEDDC.v +define+delay=2.29 ./sram_512x16/sram_512x16.v ./sram_256x16/sram_256x16.v +access+r 
+s222(20Mar2021:11:22:54):  ncverilog testfixture_60fps.v LEDDC.v +define+delay=2.259 ./sram_512x16/sram_512x16.v ./sram_256x16/sram_256x16.v +access+r 
+s223(20Mar2021:11:23:11):  ncverilog testfixture_60fps.v LEDDC.v +define+delay=2.251 ./sram_512x16/sram_512x16.v ./sram_256x16/sram_256x16.v +access+r 
+s224(20Mar2021:11:23:42):  ncverilog testfixture_60fps.v LEDDC.v +define+delay=2.255 ./sram_512x16/sram_512x16.v ./sram_256x16/sram_256x16.v +access+r 
+s225(20Mar2021:12:21:59):  ncverilog testfixture_60fps.v LEDDC_syn.v sram_512x16/sram_512x16.v sram_256x16/sram_256x16.v -v /usr/cad/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v +define+SDF 
+s226(20Mar2021:13:34:21):  ncverilog testfixture_60fps.v LEDDC.v +define+delay=2.255 ./sram_512x16/sram_512x16.v ./sram_256x16/sram_256x16.v +access+r 
+s227(20Mar2021:13:34:44):  ncverilog testfixture_60fps.v LEDDC.v +define+delay=2.25 ./sram_512x16/sram_512x16.v ./sram_256x16/sram_256x16.v +access+r 
+s228(20Mar2021:13:36:22):  ncverilog testfixture_60fps.v LEDDC.v +define+delay=2.25 ./sram_512x16/sram_512x16.v ./sram_256x16/sram_256x16.v +access+r 
+s229(20Mar2021:13:40:47):  ncverilog testfixture_60fps.v LEDDC_syn.v sram_512x16/sram_512x16.v sram_256x16/sram_256x16.v -v /usr/cad/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v +define+SDF 
+s230(20Mar2021:13:41:14):  ncverilog testfixture_60fps.v LEDDC_syn.v sram_512x16/sram_512x16.v sram_256x16/sram_256x16.v -v /usr/cad/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v +define+SDF +notimingchecks 
+s231(20Mar2021:13:46:44):  ncverilog testfixture_60fps.v LEDDC.v ./sram_512x16/sram_512x16.v ./sram_256x16/sram_256x16.v +access+r 
+s232(20Mar2021:13:49:12):  ncverilog testfixture_60fps.v LEDDC.v ./sram_512x16/sram_512x16.v ./sram_256x16/sram_256x16.v +nc64bit +access+r 
+s233(20Mar2021:13:49:44):  ncverilog testfixture_60fps.v LEDDC.v ./sram_512x16/sram_512x16.v ./sram_256x16/sram_256x16.v +access+r 
+s234(20Mar2021:13:49:59):  ncverilog testfixture_60fps.v LEDDC.v ./sram_512x16/sram_512x16.v ./sram_256x16/sram_256x16.v +access+r +nc64bit 
+s235(20Mar2021:13:50:21):  ncverilog testfixture_60fps.v LEDDC.v ./sram_512x16/sram_512x16.v ./sram_256x16/sram_256x16.v +nc64bit +access+r 
+s236(20Mar2021:13:50:40):  ncverilog testfixture_60fps.v LEDDC.v ./sram_512x16/sram_512x16.v ./sram_256x16/sram_256x16.v +nc64bit 
+s237(20Mar2021:13:52:26):  ncverilog testfixture_60fps.v LEDDC.v ./sram_512x16/sram_512x16.v ./sram_256x16/sram_256x16.v +nc64bit 
+s238(20Mar2021:13:52:40):  ncverilog testfixture_60fps.v LEDDC.v ./sram_512x16/sram_512x16.v ./sram_256x16/sram_256x16.v +nc64bit 
+s239(20Mar2021:13:52:56):  ncverilog testfixture_60fps.v LEDDC.v ./sram_512x16/sram_512x16.v ./sram_256x16/sram_256x16.v 
+s240(20Mar2021:13:53:17):  ncverilog testfixture_60fps.v LEDDC.v ./sram_512x16/sram_512x16.v ./sram_256x16/sram_256x16.v 
+s241(20Mar2021:13:53:34):  ncverilog testfixture_60fps.v LEDDC.v ./sram_512x16/sram_512x16.v ./sram_256x16/sram_256x16.v +access=r 
+s242(20Mar2021:13:53:37):  ncverilog testfixture_60fps.v LEDDC.v ./sram_512x16/sram_512x16.v ./sram_256x16/sram_256x16.v +access+r 
+s243(20Mar2021:13:56:25):  ncverilog -f run_rtl.f 
+s244(20Mar2021:13:56:42):  ncverilog -f run_rtl.f +access+r 
+s245(20Mar2021:13:59:36):  ncverilog -f run_rtl.f +access+r 
+s246(20Mar2021:13:59:58):  ncverilog -f run_rtl.f 
+s247(20Mar2021:14:00:19):  ncverilog -f run_rtl.f +define+delay=0 
+s248(20Mar2021:14:00:31):  ncverilog -f run_rtl.f +define+delay=0 +notimingchecks 
+s249(20Mar2021:14:06:43):  ncverilog -f run_rtl.f +define+delay=0 +notimingchecks 
+s250(20Mar2021:14:06:58):  ncverilog -f run_rtl.f +define+delay=0 +notimingchecks +access+r 
+s251(20Mar2021:14:13:57):  ncverilog -f run_rtl.f +define+delay=0 +notimingchecks 
+s252(20Mar2021:14:15:35):  ncverilog -f run_rtl.f +define+delay=0 +notimingchecks +access+r 
+s253(20Mar2021:14:21:13):  ncverilog -f run_rtl.f 
+s254(20Mar2021:14:22:45):  ncverilog -f run_rtl.f 
+s255(20Mar2021:14:23:42):  ncverilog -f run_rtl.f 
+s256(20Mar2021:14:24:13):  ncverilog -f run_rtl.f +define+delay=0 +notimingchecks 
+s257(20Mar2021:14:25:38):  ncverilog -f run_rtl.f +define+delay=0 +notimingchecks +define+wave +access+r 
+s258(20Mar2021:14:33:50):  ncverilog -f run_rtl.f +define+delay=0 +notimingchecks +access+r 
+s259(20Mar2021:14:34:18):  ncverilog -f run_rtl.f +define+delay=0 +notimingchecks +access+r 
+s260(20Mar2021:14:34:54):  ncverilog -f run_rtl.f +define+delay=0 +notimingchecks +define+wave +access+r 
+s261(20Mar2021:14:40:22):  ncverilog -f run_rtl.f +define+delay=0 +notimingchecks +define+wave +access+r 
+s262(20Mar2021:14:41:00):  ncverilog -f run_rtl.f +define+delay=0 +notimingchecks +define+wave +access+r 
+s263(20Mar2021:14:43:39):  ncverilog -f run_rtl.f +define+delay=0 +notimingchecks 
+s264(20Mar2021:14:44:22):  ncverilog -f run_rtl.f +define+delay=0 +notimingchecks 
+s265(20Mar2021:14:44:46):  ncverilog -f run_rtl.f +define+delay=0 +notimingchecks 
+s266(20Mar2021:14:46:47):  ncverilog -f run_rtl.f +define+delay=0 +notimingchecks 
+s267(20Mar2021:14:47:43):  ncverilog -f run_rtl.f +define+delay=0 +notimingchecks 
+s268(20Mar2021:14:48:14):  ncverilog -f run_rtl.f +define+delay=0 +notimingchecks 
+s269(20Mar2021:14:50:33):  ncverilog -f run_rtl.f +define+delay=0 +notimingchecks 
+s270(20Mar2021:14:50:48):  ncverilog -f run_rtl.f +define+delay=0 +notimingchecks +define+wave +access+r 
+s271(20Mar2021:15:00:39):  ncverilog -f run_rtl.f +define+delay=0 +notimingchecks +define+wave +access+r 
+s272(20Mar2021:15:02:53):  ncverilog -f run_rtl.f +define+delay=0 +notimingchecks +define+wave +access+r 
+s273(20Mar2021:15:05:51):  ncverilog -f run_rtl.f +define+delay=0 +notimingchecks +define+wave +access+r 
+s274(20Mar2021:15:08:01):  ncverilog -f run_rtl.f +define+delay=0 +notimingchecks +define+wave +access+r 
+s275(20Mar2021:15:09:57):  ncverilog -f run_rtl.f +define+delay=0 +notimingchecks 
+s276(20Mar2021:15:10:52):  ncverilog -f run_rtl.f +define+delay=0 +notimingchecks 
+s277(20Mar2021:15:12:17):  ncverilog -f run_rtl.f +define+delay=0 +notimingchecks +define+wave +access+r 
+s278(20Mar2021:15:13:51):  ncverilog -f run_rtl.f +define+delay=0 +notimingchecks +define+wave +access+r 
+s279(20Mar2021:15:15:08):  ncverilog -f run_rtl.f +define+delay=0 +notimingchecks +define+wave +access+r 
+s280(20Mar2021:15:16:55):  ncverilog -f run_rtl.f +define+delay=0 +notimingchecks +define+wave +access+r 
+s281(20Mar2021:15:18:22):  ncverilog -f run_rtl.f +define+delay=0 +notimingchecks +define+wave +access+r 
+s282(20Mar2021:15:20:15):  ncverilog -f run_rtl.f +define+delay=0 +notimingchecks +define+wave +access+r 
+s283(20Mar2021:15:22:47):  ncverilog -f run_rtl.f +define+delay=0 +notimingchecks +define+wave +access+r 
+s284(20Mar2021:15:24:57):  ncverilog -f run_rtl.f +define+delay=0 +notimingchecks +define+wave +access+r 
+s285(20Mar2021:15:26:43):  ncverilog -f run_rtl.f +define+delay=0 +notimingchecks +define+wave +access+r 
+s286(20Mar2021:15:33:04):  ncverilog -f run_rtl.f +define+delay=0 +notimingchecks +define+wave +access+r 
+s287(20Mar2021:15:40:09):  ncverilog -f run_rtl.f +define+delay=0 +notimingchecks +define+wave +access+r 
+s288(20Mar2021:15:49:07):  ncverilog -f run_rtl.f +define+delay=0 +notimingchecks +define+wave +access+r 
+s289(20Mar2021:15:51:12):  ncverilog -f run_rtl.f +define+delay=0 
+s290(20Mar2021:15:51:32):  ncverilog -f run_syn.f 
+s291(20Mar2021:15:54:34):  ncverilog -f run_syn.f 
+s292(20Mar2021:15:57:33):  ncverilog -f run_syn.f +define+wave +access=r 
+s293(20Mar2021:15:57:36):  ncverilog -f run_syn.f +define+wave +access+r 

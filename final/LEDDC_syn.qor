@@ -1,0 +1,96 @@
+ 
+****************************************
+Report : qor
+Design : LEDDC
+Version: P-2019.03
+Date   : Sat Mar 20 15:51:03 2021
+****************************************
+
+
+  Timing Path Group 'DCK'
+  -----------------------------------
+  Levels of Logic:               5.00
+  Critical Path Length:          3.06
+  Critical Path Slack:        1295.60
+  Critical Path Clk Period:   1300.00
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+  Timing Path Group 'GCK'
+  -----------------------------------
+  Levels of Logic:              14.00
+  Critical Path Length:          3.40
+  Critical Path Slack:           0.00
+  Critical Path Clk Period:      4.50
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+
+  Cell Count
+  -----------------------------------
+  Hierarchical Cell Count:         19
+  Hierarchical Port Count:        592
+  Leaf Cell Count:               4115
+  Buf/Inv Cell Count:             801
+  Buf Cell Count:                 202
+  Inv Cell Count:                 599
+  CT Buf/Inv Cell Count:            0
+  Combinational Cell Count:      3725
+  Sequential Cell Count:          390
+  Macro Count:                      0
+  -----------------------------------
+
+
+  Area
+  -----------------------------------
+  Combinational Area:    37473.499602
+  Noncombinational Area: 15162.873810
+  Buf/Inv Area:           4596.559160
+  Total Buffer Area:          1817.92
+  Total Inverter Area:        2778.64
+  Macro/Black Box Area: 122983.527344
+  Net Area:             501155.850098
+  -----------------------------------
+  Cell Area:            175619.900756
+  Design Area:          676775.750854
+
+
+  Design Rules
+  -----------------------------------
+  Total Number of Nets:          4528
+  Nets With Violations:             0
+  Max Trans Violations:             0
+  Max Cap Violations:               0
+  -----------------------------------
+
+
+  Hostname: dics03.ee.yuntech.edu.tw
+
+  Compile CPU Statistics
+  -----------------------------------------
+  Resource Sharing:                    0.13
+  Logic Optimization:                  0.07
+  Mapping Optimization:                0.40
+  -----------------------------------------
+  Overall Compile Time:                1.81
+  Overall Compile Wall Clock Time:     2.41
+
+  --------------------------------------------------------------------
+
+  Design  WNS: 0.00  TNS: 0.00  Number of Violating Paths: 0
+
+
+  Design (Hold)  WNS: 0.00  TNS: 0.00  Number of Violating Paths: 0
+
+  --------------------------------------------------------------------
+
+
+1
