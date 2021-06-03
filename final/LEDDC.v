@@ -1,5 +1,5 @@
 `timescale 1ns/10ps
-`define delay 1
+`define delay 0
 module LEDDC( DCK, DAI, DEN, GCK, Vsync, mode, rst, OUT);
 input           DCK;
 input           DAI;
@@ -10,7 +10,6 @@ input           mode;
 input           rst;
 output [15:0]   OUT;
 
-reg [8:0] cnt_pixel_index;
 reg [3:0] cnt_pixel_serial;
 reg [15:0] pixel_value;
 reg [15:0] OUT;
@@ -41,24 +40,22 @@ reg en256_w_n;
 integer i;
 always@(posedge DCK or posedge rst) begin
     if(rst) begin
-        cnt_pixel_index <= 9'd511;
         cnt_pixel_serial <= 4'd0;
         pixel_value <= 16'd0;
 
-        sram512_addr_w <= 9'd0;
+        sram512_addr_w <= 9'd511;
         sram512_w <= 16'd0;
         en512_w_n <= 1'd1;
     end
     else if(DEN == 1'd1) begin
         cnt_pixel_serial <= cnt_pixel_serial + 4'd1;
         pixel_value[cnt_pixel_serial] <= DAI; 
+      
         if(cnt_pixel_serial == 4'd15) begin
-            cnt_pixel_index <= cnt_pixel_index + 9'd1;
-            
+            sram512_addr_w <= sram512_addr_w + 9'd1;
         end
     end
     else begin
-        sram512_addr_w <= cnt_pixel_index;
         sram512_w <= pixel_value;
         en512_w_n <= ~en512_w_n;
     end
