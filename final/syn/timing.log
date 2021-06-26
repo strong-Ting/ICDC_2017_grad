@@ -1,0 +1,96 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : LEDDC
+Version: Q-2019.12
+Date   : Sat Jun 26 22:45:25 2021
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: DEN (input port clocked by DCK)
+  Endpoint: pixel_value_reg[15]
+            (rising edge-triggered flip-flop clocked by DCK)
+  Path Group: DCK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  LEDDC              tsmc13_wl10           slow
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock DCK (rise edge)                    0.00       0.00
+  clock network delay (ideal)              1.00       1.00
+  input external delay                     1.00       2.00 f
+  DEN (in)                                 0.00       2.00 f
+  U1957/Y (CLKBUFX2)                       0.78       2.79 f
+  U3484/Y (NAND3X1)                        1.07       3.86 r
+  U2849/Y (NOR2XL)                         0.28       4.14 f
+  U2848/Y (CLKBUFX3)                       0.64       4.78 f
+  U3439/Y (CLKMX2X2)                       0.39       5.17 r
+  pixel_value_reg[15]/D (DFFRX1)           0.00       5.17 r
+  data arrival time                                   5.17
+
+  clock DCK (rise edge)                 1300.00    1300.00
+  clock network delay (ideal)              1.00    1301.00
+  clock uncertainty                       -0.10    1300.90
+  pixel_value_reg[15]/CK (DFFRX1)          0.00    1300.90 r
+  library setup time                      -0.23    1300.67
+  data required time                               1300.67
+  -----------------------------------------------------------
+  data required time                               1300.67
+  data arrival time                                  -5.17
+  -----------------------------------------------------------
+  slack (MET)                                      1295.50
+
+
+  Startpoint: OUT_buffer_reg[10][10]
+              (rising edge-triggered flip-flop clocked by GCK)
+  Endpoint: OUT[10] (output port clocked by GCK)
+  Path Group: GCK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  LEDDC              tsmc13_wl10           slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock GCK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  OUT_buffer_reg[10][10]/CK (DFFRX4)                      0.00       1.00 r
+  OUT_buffer_reg[10][10]/Q (DFFRX4)                       0.57       1.57 f
+  add_227_I11_round/A[10] (LEDDC_DW01_inc_25)             0.00       1.57 f
+  add_227_I11_round/U87/Y (INVX1)                         0.33       1.89 r
+  add_227_I11_round/U113/Y (NOR2X2)                       0.19       2.09 f
+  add_227_I11_round/U124/Y (NAND2X1)                      0.20       2.29 r
+  add_227_I11_round/U108/Y (NOR2X2)                       0.15       2.44 f
+  add_227_I11_round/U107/Y (XOR2X1)                       0.21       2.65 f
+  add_227_I11_round/SUM[12] (LEDDC_DW01_inc_25)           0.00       2.65 f
+  U1290/Y (INVX1)                                         0.42       3.07 r
+  U2752/Y (AOI2BB1X1)                                     0.33       3.40 r
+  U1877/Y (OAI222X4)                                      0.39       3.79 f
+  U1731/Y (AOI211X2)                                      0.26       4.05 r
+  U1597/Y (OR2X8)                                         0.19       4.24 r
+  U1728/Y (NAND3X8)                                       0.16       4.40 f
+  OUT[10] (out)                                           0.00       4.40 f
+  data arrival time                                                  4.40
+
+  clock GCK (rise edge)                                   4.50       4.50
+  clock network delay (ideal)                             1.00       5.50
+  clock uncertainty                                      -0.10       5.40
+  output external delay                                  -1.00       4.40
+  data required time                                                 4.40
+  --------------------------------------------------------------------------
+  data required time                                                 4.40
+  data arrival time                                                 -4.40
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1

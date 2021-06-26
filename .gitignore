@@ -31,5 +31,6 @@ BSSLib.lib++
 BSSLib.lib++/
 *.zip
 sram*
+sim/
 
 

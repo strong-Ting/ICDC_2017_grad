@@ -1,0 +1,32 @@
+ 
+****************************************
+Report : area
+Design : LEDDC
+Version: Q-2019.12
+Date   : Sat Jun 26 22:45:25 2021
+****************************************
+
+Library(s) Used:
+
+    slow (File: /usr/cad/CBDK_IC_Contest_v2.1/SynopsysDC/db/slow.db)
+    sram_256x16 (File: /home/DICS/M10912039/CIC/CIC_2017_grad/final/syn/sram_256x16/sram_256x16_slow_syn.db)
+    sram_512x16 (File: /home/DICS/M10912039/CIC/CIC_2017_grad/final/syn/sram_512x16/sram_512x16_slow_syn.db)
+
+Number of ports:                          615
+Number of nets:                          5043
+Number of cells:                         4092
+Number of combinational cells:           3692
+Number of sequential cells:               379
+Number of macros/black boxes:               2
+Number of buf/inv:                        785
+Number of references:                     192
+
+Combinational area:              37295.272594
+Buf/Inv area:                     4457.372350
+Noncombinational area:           14947.304020
+Macro/Black Box area:           122983.527344
+Net Interconnect area:          497702.500183
+
+Total cell area:                175226.103957
+Total area:                     672928.604141
+1

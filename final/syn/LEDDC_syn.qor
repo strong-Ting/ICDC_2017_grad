@@ -1,0 +1,96 @@
+ 
+****************************************
+Report : qor
+Design : LEDDC
+Version: Q-2019.12
+Date   : Sat Jun 26 22:45:25 2021
+****************************************
+
+
+  Timing Path Group 'DCK'
+  -----------------------------------
+  Levels of Logic:               5.00
+  Critical Path Length:          3.17
+  Critical Path Slack:        1295.50
+  Critical Path Clk Period:   1300.00
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+  Timing Path Group 'GCK'
+  -----------------------------------
+  Levels of Logic:              11.00
+  Critical Path Length:          3.40
+  Critical Path Slack:           0.00
+  Critical Path Clk Period:      4.50
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+
+  Cell Count
+  -----------------------------------
+  Hierarchical Cell Count:         19
+  Hierarchical Port Count:        592
+  Leaf Cell Count:               4073
+  Buf/Inv Cell Count:             785
+  Buf Cell Count:                 204
+  Inv Cell Count:                 581
+  CT Buf/Inv Cell Count:            0
+  Combinational Cell Count:      3692
+  Sequential Cell Count:          381
+  Macro Count:                      0
+  -----------------------------------
+
+
+  Area
+  -----------------------------------
+  Combinational Area:    37295.272594
+  Noncombinational Area: 14947.304020
+  Buf/Inv Area:           4457.372350
+  Total Buffer Area:          1758.51
+  Total Inverter Area:        2698.87
+  Macro/Black Box Area: 122983.527344
+  Net Area:             497702.500183
+  -----------------------------------
+  Cell Area:            175226.103957
+  Design Area:          672928.604141
+
+
+  Design Rules
+  -----------------------------------
+  Total Number of Nets:          4467
+  Nets With Violations:             0
+  Max Trans Violations:             0
+  Max Cap Violations:               0
+  -----------------------------------
+
+
+  Hostname: icsdws20.ee.yuntech.edu.tw
+
+  Compile CPU Statistics
+  -----------------------------------------
+  Resource Sharing:                    0.12
+  Logic Optimization:                  0.07
+  Mapping Optimization:                0.37
+  -----------------------------------------
+  Overall Compile Time:                1.78
+  Overall Compile Wall Clock Time:     2.35
+
+  --------------------------------------------------------------------
+
+  Design  WNS: 0.00  TNS: 0.00  Number of Violating Paths: 0
+
+
+  Design (Hold)  WNS: 0.00  TNS: 0.00  Number of Violating Paths: 0
+
+  --------------------------------------------------------------------
+
+
+1
